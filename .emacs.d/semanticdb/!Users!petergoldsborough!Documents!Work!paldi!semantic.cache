@@ -1,0 +1,23 @@
+;; Object paldi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "paldi/"
+  :tables
+  (list
+    (semanticdb-table "model.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Range" function
+               (:constructor-flag t
+                :parent "Model"
+                :arguments 
+                  ( ("minimum" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14 24])
+                    ("maximum" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25 35])
+                    ("weighting" variable (:type "double") (reparse-symbol arg-sub-list) [36 53]))                  
+                :type ("Model" type (:type "class") nil nil))
+                nil [1 71]))          
+      :file "model.cpp"
+      :pointmax 71
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!Documents!Work!paldi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

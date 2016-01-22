@@ -1,0 +1,815 @@
+;; Object source/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "source/"
+  :tables
+  (list
+    (semanticdb-table "appliance.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("appliance.hpp" include nil nil [321 345])
+            ("database.hpp" include nil nil [346 369])
+            ("meta.hpp" include nil nil [370 389])
+            ("timespan-collection.hpp" include nil nil [390 424])
+            ("utility.hpp" include nil nil [425 447])
+            ("numeric" include (:system-flag t) nil [449 467])
+            ("Appliance" function
+               (:constructor-flag t
+                :parent "Appliance"
+                :arguments 
+                  ( ("id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [525 547])
+                    ("states" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("State" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [548 574])
+                    ("time_window" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [596 615]))                  
+                :type ("Appliance" type (:type "class") nil nil))
+                nil [504 1082])
+            ("Appliance" function
+               (:constructor-flag t
+                :parent "Appliance"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Appliance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1105 1128]))                  
+                :type ("Appliance" type (:type "class") nil nil))
+                nil [1084 1451])
+            ("Appliance" function (:type "int") nil [1504 1534])
+            ("=" function
+               (:operator-flag t
+                :parent "Appliance"
+                :arguments 
+                  ( ("other" variable (:type ("Appliance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1568 1584]))                  
+                :type ("Appliance" type (:type "class") nil nil))
+                nil [1536 1620])
+            ("update" function
+               (:parent "Appliance"
+                :arguments 
+                  ( ("responsive_transitioning" variable (:type "bool") (reparse-symbol arg-sub-list) [2242 2272]))                  
+                :type "void")
+                nil [2219 2563])
+            ("reset" function
+               (:parent "Appliance"
+                :type "void")
+                nil [2565 2654])
+            ("on_states" function
+               (:parent "Appliance"
+                :type ("Appliance::Iterator" type (:type "class") nil nil))
+                nil [2917 2992])
+            ("on_states" function
+               (:parent "Appliance"
+                :type ("Appliance::ConstIterator" type (:type "class") nil nil))
+                nil [2994 3080])
+            ("con_states" function
+               (:parent "Appliance"
+                :type ("Appliance::ConstIterator" type (:type "class") nil nil))
+                nil [3082 3169])
+            ("[]" function
+               (:operator-flag t
+                :parent "Appliance"
+                :arguments 
+                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3449 3462]))                  
+                :type ("State" type (:type "class") nil nil))
+                nil [3420 3491])
+            ("[]" function
+               (:operator-flag t
+                :parent "Appliance"
+                :constant-flag t
+                :arguments 
+                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3528 3541]))                  
+                :type ("State" type (:type "class") nil nil))
+                nil [3493 3576])
+            ("id" function
+               (:parent "Appliance"
+                :arguments 
+                  ( ("id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3678 3700]))                  
+                :type "void")
+                nil [3659 3800])
+            ("transition" function
+               (:parent "Appliance"
+                :constant-flag t
+                :arguments 
+                  ( ("index" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3906 3919]))                  
+                :type ("Array" type (:type "class") nil nil))
+                nil [3871 3958])
+            ("observation" function
+               (:parent "Appliance"
+                :arguments 
+                  ( ("index" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4070 4083]))                  
+                :type "double")
+                nil [4040 4133])
+            ("current_state" function
+               (:parent "Appliance"
+                :arguments 
+                  ( ("state" variable (:type ("state_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4165 4179]))                  
+                :type "void")
+                nil [4135 4296])
+            ("add" function
+               (:parent "Appliance"
+                :arguments 
+                  ( ("state" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5003 5022]))                  
+                :type "void")
+                nil [4983 5489])
+            ("erase" function
+               (:parent "Appliance"
+                :arguments 
+                  ( ("Iterator" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5513 5531]))                  
+                :type "void")
+                nil [5491 5889])
+            ("erase" function
+               (:parent "Appliance"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5913 5920])
+                    ("" variable (:type ("state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5921 5927]))                  
+                :type "void")
+                nil [5891 5974])
+            ("save" function
+               (:parent "Appliance"
+                :type "void")
+                nil [6103 8708])
+            ("_create" function
+               (:parent "Appliance"
+                :type "void")
+                nil [8710 11624])
+            ("_update_off_state" function
+               (:parent "Appliance"
+                :type "void")
+                nil [12140 12398]))          
+      :file "appliance.cpp"
+      :pointmax 12399
+      :fsize 12398
+      :lastmodtime '(22169 19356 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "autonomous.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("appliance.hpp" include nil nil [323 347])
+            ("autonomous.hpp" include nil nil [348 373])
+            ("edge.hpp" include nil nil [374 393])
+            ("database.hpp" include nil nil [394 417])
+            ("meta.hpp" include nil nil [418 437])
+            ("paldi.hpp" include nil nil [438 458])
+            ("utility.hpp" include nil nil [459 481])
+            ("algorithm" include (:system-flag t) nil [483 503])
+            ("chrono" include (:system-flag t) nil [504 521])
+            ("iostream" include (:system-flag t) nil [522 541])
+            ("Autonomous" function
+               (:constructor-flag t
+                :parent "Autonomous"
+                :arguments 
+                  ( ("paldi" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("Paldi" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [566 595]))                  
+                :type ("Autonomous" type (:type "class") nil nil))
+                nil [543 1108])
+            ("Autonomous" function
+               (:constructor-flag t
+                :parent "Autonomous"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Autonomous" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1133 1157]))                  
+                :type ("Autonomous" type (:type "class") nil nil))
+                nil [1110 2042])
+            ("Autonomous" function (:type "int") nil [2098 2129])
+            ("=" function
+               (:operator-flag t
+                :parent "Autonomous"
+                :arguments 
+                  ( ("other" variable (:type ("Autonomous" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2165 2182]))                  
+                :type ("Autonomous" type (:type "class") nil nil))
+                nil [2131 2218])
+            ("process" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("sample" variable (:type "double") (reparse-symbol arg-sub-list) [3313 3327]))                  
+                :type ("Array" type (:type "class") nil nil))
+                nil [3287 3895])
+            ("time_window" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("time_window" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3926 3945]))                  
+                :type "void")
+                nil [3897 3980])
+            ("edge_threshold" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("threshold" variable (:type "double") (reparse-symbol arg-sub-list) [4377 4394]))                  
+                :type "void")
+                nil [4345 4571])
+            ("pair_distance" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("pair_distance" variable (:type "double") (reparse-symbol arg-sub-list) [5079 5100]))                  
+                :type "void")
+                nil [5048 5278])
+            ("dynamic_tolerance" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [5396 5413]))                  
+                :type "void")
+                nil [5361 5591])
+            ("static_tolerance" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [5715 5732]))                  
+                :type "void")
+                nil [5681 5908])
+            ("_initialize_features" function
+               (:parent "Autonomous"
+                :type "void")
+                nil [7001 7228])
+            ("_filter" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("samples" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7256 7277]))                  
+                :type ("Array" type (:type "class") nil nil))
+                nil [7230 7362])
+            ("_detect" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("samples" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7403 7424]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("State" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7364 8396])
+            ("_make_states" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("edges" variable
+                       (:reference 1
+                        :type ("edge_collection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8442 8467]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("State" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8398 9028])
+            ("_find_falling_edge" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("rising" variable (:type ("edge_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9087 9108])
+                    ("end" variable (:type ("edge_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9109 9127]))                  
+                :type ("Autonomous::edge_iterator" type (:type "class") nil nil))
+                nil [9030 9520])
+            ("_cluster" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("found" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("State" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9548 9574]))                  
+                :type "void")
+                nil [9522 10267])
+            ("_collect_cluster" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("states" variable
+                       (:reference 1
+                        :type ("std::list" type
+                             (:template-specifier 
+                                ( ("State" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10316 10342]))                  
+                :type ("std::list" type
+                     (:template-specifier 
+                        ( ("State" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10269 11604])
+            ("_equal_state_range" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("list" variable
+                       (:reference 1
+                        :type ("std::list" type
+                             (:template-specifier 
+                                ( ("State" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11642 11666])
+                    ("center" variable (:type "double") (reparse-symbol arg-sub-list) [11703 11717]))                  
+                :type ("auto" type (:type "class") nil nil))
+                nil [11606 12157])
+            ("_evaluate" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("cluster" variable
+                       (:reference 1
+                        :type ("std::list" type
+                             (:template-specifier 
+                                ( ("State" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12186 12213])
+                    ("from_apps" variable
+                       (:reference 1
+                        :type ("std::list" type
+                             (:template-specifier 
+                                ( ("State" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12241 12270]))                  
+                :type "void")
+                nil [12159 13130])
+            ("_classify" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("state" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13160 13179]))                  
+                :type "void")
+                nil [13133 14014])
+            ("_merge_appliances" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("begin" variable (:type ("std::list::iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14051 14085])
+                    ("end" variable (:type ("std::list::iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14121 14153])
+                    ("merged" variable
+                       (:reference 1
+                        :type ("State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14189 14203]))                  
+                :type "void")
+                nil [14016 14836])
+            ("_update" function
+               (:parent "Autonomous"
+                :type "void")
+                nil [14838 15992])
+            ("_clean" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16018 16025])
+                    ("" variable (:type ("state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16026 16032]))                  
+                :type "bool")
+                nil [15994 16820])
+            ("_update_appliance" function
+               (:parent "Autonomous"
+                :arguments 
+                  ( ("app" variable
+                       (:reference 1
+                        :type ("Appliance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16857 16872]))                  
+                :type "void")
+                nil [16822 17149]))          
+      :file "autonomous.cpp"
+      :pointmax 17149
+      :fsize 17148
+      :lastmodtime '(22167 3266 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "model.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("model.hpp" include nil nil [314 334])
+            ("appliance.hpp" include nil nil [335 359])
+            ("Feature" function
+               (:constructor-flag t
+                :parent "Model::Feature"
+                :arguments 
+                  ( ("feature" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("function_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [385 411])
+                    ("weighting" variable (:type "double") (reparse-symbol arg-sub-list) [412 429]))                  
+                :type ("Feature" type (:type "class") nil nil))
+                nil [361 473])
+            ("()" function
+               (:operator-flag t
+                :parent "Model::Feature"
+                :arguments 
+                  ( ("state" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [507 526]))                  
+                :type "bool")
+                nil [475 562])
+            ("Model" function
+               (:constructor-flag t
+                :parent "Model"
+                :arguments 
+                  ( ("category" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [604 632])
+                    ("power" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [633 660])
+                    ("duration" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type
+                             (:template-specifier 
+                                ( ("std::size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [674 709])
+                    ("occurrence" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type
+                             (:template-specifier 
+                                ( ("std::size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [723 760])
+                    ("threshold" variable (:type "double") (reparse-symbol arg-sub-list) [761 778]))                  
+                :type ("Model" type (:type "class") nil nil))
+                nil [591 1116])
+            ("fits" function
+               (:parent "Model"
+                :arguments 
+                  ( ("state" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1163 1182]))                  
+                :type "bool")
+                nil [1146 1615])
+            ("category" function
+               (:parent "Model"
+                :constant-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1617 1683])
+            ("add" function
+               (:parent "Model"
+                :arguments 
+                  ( ("feature" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Feature" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1701 1724]))                  
+                :type "void")
+                nil [1685 1801])
+            ("add" function
+               (:parent "Model"
+                :arguments 
+                  ( ("feature" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Feature::function_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1819 1854])
+                    ("weight" variable (:type "double") (reparse-symbol arg-sub-list) [1855 1869]))                  
+                :type "void")
+                nil [1803 1899])
+            ("erase" function
+               (:parent "Model"
+                :arguments 
+                  ( ("index" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1919 1937]))                  
+                :type "void")
+                nil [1901 2074])
+            ("threshold" function
+               (:parent "Model"
+                :arguments 
+                  ( ("threshold" variable (:type "double") (reparse-symbol arg-sub-list) [2261 2278]))                  
+                :type "void")
+                nil [2239 2463])
+            ("power" function
+               (:parent "Model"
+                :arguments 
+                  ( ("power" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2550 2577]))                  
+                :type "void")
+                nil [2532 2673])
+            ("duration" function
+               (:parent "Model"
+                :arguments 
+                  ( ("duration" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Range" type
+                             (:template-specifier 
+                                ( ("std::size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2777 2812]))                  
+                :type "void")
+                nil [2756 2920])
+            ("occurrence" function
+               (:parent "Model"
+                :arguments 
+                  ( ("occurrence" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Model::Range" type
+                             (:template-specifier 
+                                ( ("std::size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3037 3081]))                  
+                :type "void")
+                nil [3014 3193]))          
+      :file "model.cpp"
+      :pointmax 3289
+      :fsize 3288
+      :lastmodtime '(22167 2590 0 0)
+      :unmatched-syntax '((semantic-list 3263 . 3288) (symbol 3254 . 3262) (CONST 3248 . 3253) (semantic-list 3245 . 3247) (symbol 3235 . 3245) (punctuation 3234 . 3235) (punctuation 3233 . 3234) (symbol 3228 . 3233) (punctuation 3226 . 3227) (punctuation 3225 . 3226) (symbol 3219 . 3225) (punctuation 3218 . 3219) (punctuation 3217 . 3218) (symbol 3214 . 3217) (punctuation 3213 . 3214) (symbol 3208 . 3213) (punctuation 3207 . 3208) (punctuation 3206 . 3207) (symbol 3201 . 3206) (CONST 3195 . 3200) (semantic-list 2988 . 3011) (symbol 2979 . 2987) (CONST 2973 . 2978) (semantic-list 2970 . 2972) (symbol 2962 . 2970) (punctuation 2961 . 2962) (punctuation 2960 . 2961) (symbol 2955 . 2960) (punctuation 2953 . 2954) (punctuation 2952 . 2953) (symbol 2946 . 2952) (punctuation 2945 . 2946) (punctuation 2944 . 2945) (symbol 2941 . 2944) (punctuation 2940 . 2941) (symbol 2935 . 2940) (punctuation 2934 . 2935) (punctuation 2933 . 2934) (symbol 2928 . 2933) (CONST 2922 . 2927) (semantic-list 2733 . 2753) (symbol 2724 . 2732) (CONST 2718 . 2723) (semantic-list 2715 . 2717) (symbol 2710 . 2715) (punctuation 2709 . 2710) (punctuation 2708 . 2709) (symbol 2703 . 2708) (punctuation 2701 . 2702) (punctuation 2700 . 2701) (DOUBLE 2694 . 2700) (punctuation 2693 . 2694) (symbol 2688 . 2693) (punctuation 2687 . 2688) (punctuation 2686 . 2687) (symbol 2681 . 2686) (CONST 2675 . 2680) (semantic-list 2506 . 2530) (symbol 2497 . 2505) (CONST 2491 . 2496) (semantic-list 2488 . 2490) (symbol 2479 . 2488) (punctuation 2478 . 2479) (punctuation 2477 . 2478) (symbol 2472 . 2477) (DOUBLE 2465 . 2471) (semantic-list 2205 . 2237) (symbol 2196 . 2204) (CONST 2190 . 2195) (semantic-list 2187 . 2189) (symbol 2175 . 2187) (punctuation 2174 . 2175) (punctuation 2173 . 2174) (symbol 2168 . 2173) (BOOL 2163 . 2167) (semantic-list 2131 . 2161) (symbol 2122 . 2130) (CONST 2116 . 2121) (semantic-list 2113 . 2115) (symbol 2095 . 2113) (punctuation 2094 . 2095) (punctuation 2093 . 2094) (symbol 2088 . 2093) (symbol 2081 . 2087) (punctuation 2080 . 2081) (punctuation 2079 . 2080) (symbol 2076 . 2079) (punctuation 1143 . 1144) (DEFAULT 1136 . 1143) (punctuation 1134 . 1135) (semantic-list 1131 . 1133) (symbol 1126 . 1131) (punctuation 1125 . 1126) (punctuation 1124 . 1125) (punctuation 1123 . 1124) (symbol 1118 . 1123) (punctuation 588 . 589) (DEFAULT 581 . 588) (punctuation 579 . 580) (semantic-list 576 . 578) (symbol 571 . 576) (punctuation 570 . 571) (punctuation 569 . 570) (symbol 564 . 569) (punctuation 588 . 589) (DEFAULT 581 . 588) (punctuation 579 . 580) (semantic-list 576 . 578) (IF 1045 . 1047) (open-paren 1041 . 1042) (close-paren 1039 . 1040) (symbol 1030 . 1039) (open-paren 1029 . 1030) (symbol 1019 . 1029) (punctuation 1017 . 1018) (close-paren 1015 . 1016) (symbol 1009 . 1015) (punctuation 1008 . 1009) (symbol 998 . 1008) (punctuation 996 . 997) (symbol 989 . 995) (punctuation 988 . 989) (symbol 980 . 988) (punctuation 978 . 979) (symbol 971 . 977) (punctuation 970 . 971) (symbol 965 . 970) (open-paren 964 . 965) (symbol 949 . 964) (punctuation 947 . 948) (close-paren 945 . 946) (symbol 935 . 945) (open-paren 934 . 935) (symbol 923 . 934) (punctuation 921 . 922) (close-paren 919 . 920) (symbol 911 . 919) (open-paren 910 . 911) (symbol 901 . 910) (punctuation 899 . 900) (close-paren 897 . 898) (symbol 892 . 897) (open-paren 891 . 892) (symbol 885 . 891) (punctuation 883 . 884) (close-paren 881 . 882) (symbol 873 . 881) (open-paren 872 . 873) (symbol 863 . 872) (punctuation 861 . 862) (close-paren 859 . 860) (symbol 850 . 859) (DOUBLE 843 . 849) (punctuation 841 . 842) (symbol 831 . 841) (punctuation 829 . 830) (punctuation 828 . 829) (symbol 822 . 828) (punctuation 821 . 822) (punctuation 820 . 821) (symbol 817 . 820) (punctuation 816 . 817) (symbol 811 . 816) (CONST 805 . 810) (punctuation 790 . 791) (symbol 782 . 790) (punctuation 780 . 781) (punctuation 779 . 780) (symbol 773 . 779) (punctuation 772 . 773) (punctuation 771 . 772) (symbol 768 . 771) (punctuation 767 . 768) (symbol 762 . 767) (CONST 756 . 761) (punctuation 741 . 742) (symbol 736 . 741) (punctuation 734 . 735) (punctuation 733 . 734) (DOUBLE 727 . 733) (punctuation 726 . 727) (symbol 721 . 726) (CONST 715 . 720) (punctuation 713 . 714) (symbol 705 . 713) (punctuation 703 . 704) (symbol 697 . 703) (punctuation 696 . 697) (punctuation 695 . 696) (symbol 692 . 695) (CONST 686 . 691) (open-paren 685 . 686) (symbol 680 . 685) (punctuation 679 . 680) (punctuation 678 . 679) (symbol 673 . 678) (punctuation 670 . 671) (DEFAULT 663 . 670) (punctuation 661 . 662) (close-paren 659 . 660) (open-paren 658 . 659) (symbol 653 . 658) (punctuation 652 . 653) (punctuation 651 . 652) (symbol 646 . 651) (close-paren 643 . 644) (semantic-list 586 . 642) (symbol 581 . 586) (punctuation 580 . 581) (punctuation 579 . 580) (punctuation 578 . 579) (symbol 577 . 578) (punctuation 576 . 577) (symbol 571 . 576) (punctuation 570 . 571) (punctuation 569 . 570) (symbol 564 . 569) (close-paren 643 . 644) (semantic-list 586 . 642) (symbol 581 . 586) (punctuation 580 . 581) (punctuation 579 . 580) (punctuation 578 . 579) (symbol 577 . 578) (punctuation 576 . 577) (symbol 571 . 576) (punctuation 570 . 571) (punctuation 569 . 570) (symbol 564 . 569)))
+    (semanticdb-table "database.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("database.hpp" include nil nil [319 342])
+            ("fstream" include (:system-flag t) nil [344 362])
+            ("cstdlib" include (:system-flag t) nil [363 381])
+            ("stdexcept" include (:system-flag t) nil [382 402])
+            ("soci/sqlite3/soci-sqlite3.h" include (:system-flag t) nil [403 441])
+            ("Attribute" function
+               (:constructor-flag t
+                :parent "Database::Attribute"
+                :arguments 
+                  ( ("name_" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [474 499])
+                    ("type_" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [500 511]))                  
+                :type ("Attribute" type (:type "class") nil nil))
+                nil [443 543])
+            ("Database" function
+               (:constructor-flag t
+                :parent "Database"
+                :type ("Database" type (:type "class") nil nil))
+                nil [545 651])
+            ("Database" function
+               (:destructor-flag t
+                :parent "Database"
+                :type "void")
+                nil [653 703])
+            ("Database" function
+               (:constructor-flag t
+                :parent "Database"
+                :arguments 
+                  ( ("dbname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [724 750]))                  
+                :type ("Database" type (:type "class") nil nil))
+                nil [705 880])
+            ("Database" function
+               (:constructor-flag t
+                :parent "Database"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Database" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [901 923]))                  
+                :type ("Database" type (:type "class") nil nil))
+                nil [882 1167])
+            ("Database" function (:type "int") nil [1217 1246])
+            ("=" function
+               (:operator-flag t
+                :parent "Database"
+                :arguments 
+                  ( ("other" variable (:type ("Database" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1278 1293]))                  
+                :type ("Database" type (:type "class") nil nil))
+                nil [1248 1329])
+            ("open" function
+               (:parent "Database"
+                :arguments 
+                  ( ("dbname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1799 1825]))                  
+                :type "void")
+                nil [1779 2036])
+            ("remove" function
+               (:parent "Database"
+                :type "void")
+                nil [2038 2484])
+            ("close" function
+               (:parent "Database"
+                :type "void")
+                nil [2547 2641])
+            ("path" function
+               (:parent "Database"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2696 2769])
+            ("empty" function
+               (:parent "Database"
+                :type "bool")
+                nil [2771 2945])
+            ("create" function
+               (:parent "Database"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2969 2993])
+                    ("schema" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Schema" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2994 3015])
+                    ("if_not_exists" variable (:type "bool") (reparse-symbol arg-sub-list) [3038 3057]))                  
+                :type "void")
+                nil [2947 3486])
+            ("drop" function
+               (:parent "Database"
+                :arguments 
+                  ( ("table" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3508 3533]))                  
+                :type "void")
+                nil [3488 3588])
+            ("exists" function
+               (:parent "Database"
+                :arguments 
+                  ( ("table" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3612 3637]))                  
+                :type "bool")
+                nil [3590 3822])
+            ("focus" function
+               (:parent "Database"
+                :arguments 
+                  ( ("action" variable (:type ("Action" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3845 3859])
+                    ("table" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3860 3885])
+                    ("primary_key" variable (:type "long") (reparse-symbol arg-sub-list) [3886 3903]))                  
+                :type "void")
+                nil [3824 4437])
+            ("has_focus" function
+               (:parent "Database"
+                :type "bool")
+                nil [4439 4505])
+            ("flush" function
+               (:parent "Database"
+                :type "void")
+                nil [4507 5034])
+            ("done" function
+               (:parent "Database"
+                :type "void")
+                nil [5036 5095])
+            ("seek" function
+               (:parent "Database"
+                :arguments 
+                  ( ("primary_key" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5117 5141]))                  
+                :type "void")
+                nil [5097 5195])
+            ("tell" function
+               (:parent "Database"
+                :type ("std::size_t" type (:type "class") nil nil))
+                nil [5197 5278])
+            ("count" function
+               (:parent "Database"
+                :arguments 
+                  ( ("table" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5308 5333]))                  
+                :type ("std::size_t" type (:type "class") nil nil))
+                nil [5280 5457])
+            ("count" function
+               (:parent "Database"
+                :type ("std::size_t" type (:type "class") nil nil))
+                nil [5459 5536])
+            ("erase" function
+               (:parent "Database"
+                :arguments 
+                  ( ("table" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5559 5584])
+                    ("primary_key" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5585 5609]))                  
+                :type "void")
+                nil [5538 5732])
+            ("erase" function
+               (:parent "Database"
+                :arguments 
+                  ( ("primary_key" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5755 5779]))                  
+                :type "void")
+                nil [5734 5833])
+            ("clear" function
+               (:parent "Database"
+                :arguments 
+                  ( ("table" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5856 5881]))                  
+                :type "void")
+                nil [5835 5937])
+            ("clear" function
+               (:parent "Database"
+                :type "void")
+                nil [5939 6002])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6029 6050])
+                    ("token" variable (:type ("Database::Token" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6051 6073]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [6004 6306])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6333 6354])
+                    ("type" variable (:type ("Database::Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6355 6375]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [6308 6632])
+            ("_assert_open" function
+               (:parent "Database"
+                :type "void")
+                nil [6634 6765])
+            ("_assert_ready" function
+               (:parent "Database"
+                :arguments 
+                  ( ("check_iD" variable (:type "bool") (reparse-symbol arg-sub-list) [6796 6810]))                  
+                :type "void")
+                nil [6767 7017])
+            ("_clear_buffer" function
+               (:parent "Database"
+                :type "void")
+                nil [7019 7103])
+            ("_get_primary_key_string" function
+               (:parent "Database"
+                :arguments 
+                  ( ("table" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7151 7176]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [7105 7300]))          
+      :file "database.cpp"
+      :pointmax 7301
+      :fsize 7300
+      :lastmodtime '(22167 3266 0 0)
+      :unmatched-syntax '((semantic-list 2675 . 2694) (CONST 2669 . 2674) (semantic-list 2666 . 2668) (BOOL 2662 . 2666) (OPERATOR 2653 . 2661) (punctuation 2652 . 2653) (punctuation 2651 . 2652) (symbol 2643 . 2651) (semantic-list 2526 . 2545) (symbol 2517 . 2525) (CONST 2511 . 2516) (semantic-list 2508 . 2510) (symbol 2501 . 2508) (punctuation 2500 . 2501) (punctuation 2499 . 2500) (symbol 2491 . 2499) (BOOL 2486 . 2490) (semantic-list 1754 . 1777) (symbol 1745 . 1753) (semantic-list 1711 . 1744) (symbol 1707 . 1711) (VOID 1702 . 1706) (semantic-list 1377 . 1700) (symbol 1368 . 1376) (semantic-list 1350 . 1367) (symbol 1346 . 1350) (punctuation 1345 . 1346) (punctuation 1344 . 1345) (symbol 1336 . 1344) (VOID 1331 . 1335) (punctuation 1215 . 1216) (symbol 1206 . 1214) (semantic-list 1187 . 1205) (symbol 1179 . 1187) (punctuation 1197 . 1198) (punctuation 1178 . 1179) (punctuation 1177 . 1178) (symbol 1169 . 1177) (punctuation 1197 . 1198))))
+  :file "!Users!petergoldsborough!Documents!Work!paldi!source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

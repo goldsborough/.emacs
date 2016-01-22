@@ -1,0 +1,66 @@
+;; Object petergoldsborough/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "petergoldsborough/"
+  :tables
+  (list
+    (semanticdb-table ".emacs"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("package" include nil nil [12 30])
+            ("add-to-list" code nil nil [31 111])
+            ("when" code nil nil [112 277])
+            ("package-initialize" code nil nil [278 298])
+            ("let" code nil nil [340 451])
+            ("markdown-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [471 556])
+            ("add-to-list" code nil nil [557 619])
+            ("add-to-list" code nil nil [620 686])
+            ("add-to-list" code nil nil [687 747])
+            ("setq" code nil nil [759 784])
+            ("global-linum-mode" code nil nil [785 806])
+            ("hlinum-activate" code nil nil [808 825])
+            ("add-hook" code nil nil [842 899])
+            ("add-hook" code nil nil [918 1040])
+            ("setq" code nil nil [1051 1242])
+            ("helm-gtags" include nil nil [1244 1265])
+            ("add-hook" code nil nil [1292 1336])
+            ("add-hook" code nil nil [1337 1382])
+            ("add-hook" code nil nil [1383 1423])
+            ("add-hook" code nil nil [1424 1466])
+            ("add-hook" code nil nil [1467 1509])
+            ("define-key" code nil nil [1511 1593])
+            ("define-key" code nil nil [1594 1657])
+            ("define-key" code nil nil [1658 1719])
+            ("define-key" code nil nil [1720 1786])
+            ("define-key" code nil nil [1787 1862])
+            ("define-key" code nil nil [1863 1934])
+            ("add-hook" code nil nil [1948 1996])
+            ("add-hook" code nil nil [2042 2098])
+            ("my-other-delete-trailing-blank-lines" function (:user-visible-flag t) nil [2129 2536])
+            ("add-hook" code nil nil [2563 2665])
+            ("add-hook" code nil nil [2687 2741])
+            ("smart-line-beginning" function (:user-visible-flag t) nil [2816 3133])
+            ("global-set-key" code nil nil [3135 3185])
+            ("global-set-key" code nil nil [3215 3267])
+            ("global-set-key" code nil nil [3322 3368])
+            ("global-set-key" code nil nil [3386 3434])
+            ("eval-after-load" code nil nil [3463 3647])
+            ("add-hook" code nil nil [3682 3877])
+            ("semantic-mode" code nil nil [3893 3910])
+            ("define-key" code nil nil [3912 3980])
+            ("global-set-key" code nil nil [3982 4039])
+            ("global-set-key" code nil nil [4040 4100])
+            ("global-set-key" code nil nil [4101 4162])
+            ("global-set-key" code nil nil [4163 4225])
+            ("custom-set-variables" code nil nil [4236 4552])
+            ("custom-set-faces" code nil nil [4553 4880]))          
+      :file ".emacs"
+      :pointmax 4881
+      :fsize 4880
+      :lastmodtime '(22166 54928 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

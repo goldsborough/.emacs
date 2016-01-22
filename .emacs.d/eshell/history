@@ -1,0 +1,16 @@
+ls
+cd ../slides/
+ls
+open Kapitel7.pdf 
+ls
+cd ../sl
+cd ../slides/
+ls
+open Kapitel6.pdf 
+cd ../uni-schema/
+ls
+cd ../uebung/
+ls
+cd 10/
+ls
+open aufgabe.pdf 
