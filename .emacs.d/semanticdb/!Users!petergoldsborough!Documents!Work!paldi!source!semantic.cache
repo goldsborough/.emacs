@@ -6,12 +6,12 @@
     (semanticdb-table "appliance.cpp"
       :major-mode 'c++-mode
       :tags 
-        '( ("appliance.hpp" include nil nil [321 345])
-            ("database.hpp" include nil nil [346 369])
-            ("meta.hpp" include nil nil [370 389])
-            ("timespan-collection.hpp" include nil nil [390 424])
-            ("utility.hpp" include nil nil [425 447])
-            ("numeric" include (:system-flag t) nil [449 467])
+        '( ("appliance.hpp" include nil nil [330 354])
+            ("database.hpp" include nil nil [355 378])
+            ("meta.hpp" include nil nil [379 398])
+            ("timespan-collection.hpp" include nil nil [399 433])
+            ("utility.hpp" include nil nil [434 456])
+            ("numeric" include (:system-flag t) nil [458 476])
             ("Appliance" function
                (:constructor-flag t
                 :parent "Appliance"
@@ -20,15 +20,15 @@
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [525 547])
+                        (reparse-symbol arg-sub-list) [534 556])
                     ("states" variable (:type ("std::vector" type
                          (:template-specifier 
                             ( ("State" type nil nil nil))                            
                           :type "class")
-                          nil nil)) (reparse-symbol arg-sub-list) [548 574])
-                    ("time_window" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [596 615]))                  
+                          nil nil)) (reparse-symbol arg-sub-list) [557 583])
+                    ("time_window" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [605 624]))                  
                 :type ("Appliance" type (:type "class") nil nil))
-                nil [504 1082])
+                nil [513 1091])
             ("Appliance" function
                (:constructor-flag t
                 :parent "Appliance"
@@ -37,54 +37,54 @@
                        (:reference 1
                         :constant-flag t
                         :type ("Appliance" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [1105 1128]))                  
+                        (reparse-symbol arg-sub-list) [1114 1137]))                  
                 :type ("Appliance" type (:type "class") nil nil))
-                nil [1084 1451])
-            ("Appliance" function (:type "int") nil [1504 1534])
+                nil [1093 1460])
+            ("Appliance" function (:type "int") nil [1513 1543])
             ("=" function
                (:operator-flag t
                 :parent "Appliance"
                 :arguments 
-                  ( ("other" variable (:type ("Appliance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1568 1584]))                  
+                  ( ("other" variable (:type ("Appliance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1577 1593]))                  
                 :type ("Appliance" type (:type "class") nil nil))
-                nil [1536 1620])
+                nil [1545 1629])
             ("update" function
                (:parent "Appliance"
                 :arguments 
-                  ( ("responsive_transitioning" variable (:type "bool") (reparse-symbol arg-sub-list) [2242 2272]))                  
+                  ( ("responsive_transitioning" variable (:type "bool") (reparse-symbol arg-sub-list) [2251 2281]))                  
                 :type "void")
-                nil [2219 2563])
+                nil [2228 2572])
             ("reset" function
                (:parent "Appliance"
                 :type "void")
-                nil [2565 2654])
+                nil [2574 2663])
             ("on_states" function
                (:parent "Appliance"
                 :type ("Appliance::Iterator" type (:type "class") nil nil))
-                nil [2917 2992])
+                nil [2926 3001])
             ("on_states" function
                (:parent "Appliance"
                 :type ("Appliance::ConstIterator" type (:type "class") nil nil))
-                nil [2994 3080])
+                nil [3003 3089])
             ("con_states" function
                (:parent "Appliance"
                 :type ("Appliance::ConstIterator" type (:type "class") nil nil))
-                nil [3082 3169])
+                nil [3091 3178])
             ("[]" function
                (:operator-flag t
                 :parent "Appliance"
                 :arguments 
-                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3449 3462]))                  
+                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3458 3471]))                  
                 :type ("State" type (:type "class") nil nil))
-                nil [3420 3491])
+                nil [3429 3500])
             ("[]" function
                (:operator-flag t
                 :parent "Appliance"
                 :constant-flag t
                 :arguments 
-                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3528 3541]))                  
+                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3537 3550]))                  
                 :type ("State" type (:type "class") nil nil))
-                nil [3493 3576])
+                nil [3502 3585])
             ("id" function
                (:parent "Appliance"
                 :arguments 
@@ -92,28 +92,28 @@
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [3678 3700]))                  
+                        (reparse-symbol arg-sub-list) [3687 3709]))                  
                 :type "void")
-                nil [3659 3800])
+                nil [3668 3809])
             ("transition" function
                (:parent "Appliance"
                 :constant-flag t
                 :arguments 
-                  ( ("index" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3906 3919]))                  
+                  ( ("index" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3915 3928]))                  
                 :type ("Array" type (:type "class") nil nil))
-                nil [3871 3958])
+                nil [3880 3967])
             ("observation" function
                (:parent "Appliance"
                 :arguments 
-                  ( ("index" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4070 4083]))                  
+                  ( ("index" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4079 4092]))                  
                 :type "double")
-                nil [4040 4133])
+                nil [4049 4142])
             ("current_state" function
                (:parent "Appliance"
                 :arguments 
-                  ( ("state" variable (:type ("state_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4165 4179]))                  
+                  ( ("state" variable (:type ("state_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4174 4188]))                  
                 :type "void")
-                nil [4135 4296])
+                nil [4144 4305])
             ("add" function
                (:parent "Appliance"
                 :arguments 
@@ -121,41 +121,41 @@
                        (:reference 1
                         :constant-flag t
                         :type ("State" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [5003 5022]))                  
+                        (reparse-symbol arg-sub-list) [5012 5031]))                  
                 :type "void")
-                nil [4983 5489])
+                nil [4992 5498])
             ("erase" function
                (:parent "Appliance"
                 :arguments 
-                  ( ("Iterator" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5513 5531]))                  
+                  ( ("Iterator" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5522 5540]))                  
                 :type "void")
-                nil [5491 5889])
+                nil [5500 5898])
             ("erase" function
                (:parent "Appliance"
                 :arguments 
                   ( ("" variable
                        (:reference 1
                         :type ("State" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [5913 5920])
-                    ("" variable (:type ("state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5921 5927]))                  
+                        (reparse-symbol arg-sub-list) [5922 5929])
+                    ("" variable (:type ("state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5930 5936]))                  
                 :type "void")
-                nil [5891 5974])
+                nil [5900 5983])
             ("save" function
                (:parent "Appliance"
                 :type "void")
-                nil [6103 8708])
+                nil [6112 8717])
             ("_create" function
                (:parent "Appliance"
                 :type "void")
-                nil [8710 11624])
+                nil [8719 11633])
             ("_update_off_state" function
                (:parent "Appliance"
                 :type "void")
-                nil [12140 12398]))          
+                nil [12149 12407]))          
       :file "appliance.cpp"
-      :pointmax 12399
-      :fsize 12398
-      :lastmodtime '(22207 37700 0 0)
+      :pointmax 12408
+      :fsize 12407
+      :lastmodtime '(22214 61769 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "autonomous.cpp"
       :major-mode 'c++-mode
@@ -396,7 +396,7 @@
       :file "autonomous.cpp"
       :pointmax 17149
       :fsize 17148
-      :lastmodtime '(22167 3266 0 0)
+      :lastmodtime '(22213 48502 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "model.cpp"
       :major-mode 'c++-mode
@@ -558,7 +558,7 @@
       :file "model.cpp"
       :pointmax 3289
       :fsize 3288
-      :lastmodtime '(22167 2590 0 0)
+      :lastmodtime '(22213 48502 0 0)
       :unmatched-syntax '((semantic-list 3263 . 3288) (symbol 3254 . 3262) (CONST 3248 . 3253) (semantic-list 3245 . 3247) (symbol 3235 . 3245) (punctuation 3234 . 3235) (punctuation 3233 . 3234) (symbol 3228 . 3233) (punctuation 3226 . 3227) (punctuation 3225 . 3226) (symbol 3219 . 3225) (punctuation 3218 . 3219) (punctuation 3217 . 3218) (symbol 3214 . 3217) (punctuation 3213 . 3214) (symbol 3208 . 3213) (punctuation 3207 . 3208) (punctuation 3206 . 3207) (symbol 3201 . 3206) (CONST 3195 . 3200) (semantic-list 2988 . 3011) (symbol 2979 . 2987) (CONST 2973 . 2978) (semantic-list 2970 . 2972) (symbol 2962 . 2970) (punctuation 2961 . 2962) (punctuation 2960 . 2961) (symbol 2955 . 2960) (punctuation 2953 . 2954) (punctuation 2952 . 2953) (symbol 2946 . 2952) (punctuation 2945 . 2946) (punctuation 2944 . 2945) (symbol 2941 . 2944) (punctuation 2940 . 2941) (symbol 2935 . 2940) (punctuation 2934 . 2935) (punctuation 2933 . 2934) (symbol 2928 . 2933) (CONST 2922 . 2927) (semantic-list 2733 . 2753) (symbol 2724 . 2732) (CONST 2718 . 2723) (semantic-list 2715 . 2717) (symbol 2710 . 2715) (punctuation 2709 . 2710) (punctuation 2708 . 2709) (symbol 2703 . 2708) (punctuation 2701 . 2702) (punctuation 2700 . 2701) (DOUBLE 2694 . 2700) (punctuation 2693 . 2694) (symbol 2688 . 2693) (punctuation 2687 . 2688) (punctuation 2686 . 2687) (symbol 2681 . 2686) (CONST 2675 . 2680) (semantic-list 2506 . 2530) (symbol 2497 . 2505) (CONST 2491 . 2496) (semantic-list 2488 . 2490) (symbol 2479 . 2488) (punctuation 2478 . 2479) (punctuation 2477 . 2478) (symbol 2472 . 2477) (DOUBLE 2465 . 2471) (semantic-list 2205 . 2237) (symbol 2196 . 2204) (CONST 2190 . 2195) (semantic-list 2187 . 2189) (symbol 2175 . 2187) (punctuation 2174 . 2175) (punctuation 2173 . 2174) (symbol 2168 . 2173) (BOOL 2163 . 2167) (semantic-list 2131 . 2161) (symbol 2122 . 2130) (CONST 2116 . 2121) (semantic-list 2113 . 2115) (symbol 2095 . 2113) (punctuation 2094 . 2095) (punctuation 2093 . 2094) (symbol 2088 . 2093) (symbol 2081 . 2087) (punctuation 2080 . 2081) (punctuation 2079 . 2080) (symbol 2076 . 2079) (punctuation 1143 . 1144) (DEFAULT 1136 . 1143) (punctuation 1134 . 1135) (semantic-list 1131 . 1133) (symbol 1126 . 1131) (punctuation 1125 . 1126) (punctuation 1124 . 1125) (punctuation 1123 . 1124) (symbol 1118 . 1123) (punctuation 588 . 589) (DEFAULT 581 . 588) (punctuation 579 . 580) (semantic-list 576 . 578) (symbol 571 . 576) (punctuation 570 . 571) (punctuation 569 . 570) (symbol 564 . 569) (punctuation 588 . 589) (DEFAULT 581 . 588) (punctuation 579 . 580) (semantic-list 576 . 578) (IF 1045 . 1047) (open-paren 1041 . 1042) (close-paren 1039 . 1040) (symbol 1030 . 1039) (open-paren 1029 . 1030) (symbol 1019 . 1029) (punctuation 1017 . 1018) (close-paren 1015 . 1016) (symbol 1009 . 1015) (punctuation 1008 . 1009) (symbol 998 . 1008) (punctuation 996 . 997) (symbol 989 . 995) (punctuation 988 . 989) (symbol 980 . 988) (punctuation 978 . 979) (symbol 971 . 977) (punctuation 970 . 971) (symbol 965 . 970) (open-paren 964 . 965) (symbol 949 . 964) (punctuation 947 . 948) (close-paren 945 . 946) (symbol 935 . 945) (open-paren 934 . 935) (symbol 923 . 934) (punctuation 921 . 922) (close-paren 919 . 920) (symbol 911 . 919) (open-paren 910 . 911) (symbol 901 . 910) (punctuation 899 . 900) (close-paren 897 . 898) (symbol 892 . 897) (open-paren 891 . 892) (symbol 885 . 891) (punctuation 883 . 884) (close-paren 881 . 882) (symbol 873 . 881) (open-paren 872 . 873) (symbol 863 . 872) (punctuation 861 . 862) (close-paren 859 . 860) (symbol 850 . 859) (DOUBLE 843 . 849) (punctuation 841 . 842) (symbol 831 . 841) (punctuation 829 . 830) (punctuation 828 . 829) (symbol 822 . 828) (punctuation 821 . 822) (punctuation 820 . 821) (symbol 817 . 820) (punctuation 816 . 817) (symbol 811 . 816) (CONST 805 . 810) (punctuation 790 . 791) (symbol 782 . 790) (punctuation 780 . 781) (punctuation 779 . 780) (symbol 773 . 779) (punctuation 772 . 773) (punctuation 771 . 772) (symbol 768 . 771) (punctuation 767 . 768) (symbol 762 . 767) (CONST 756 . 761) (punctuation 741 . 742) (symbol 736 . 741) (punctuation 734 . 735) (punctuation 733 . 734) (DOUBLE 727 . 733) (punctuation 726 . 727) (symbol 721 . 726) (CONST 715 . 720) (punctuation 713 . 714) (symbol 705 . 713) (punctuation 703 . 704) (symbol 697 . 703) (punctuation 696 . 697) (punctuation 695 . 696) (symbol 692 . 695) (CONST 686 . 691) (open-paren 685 . 686) (symbol 680 . 685) (punctuation 679 . 680) (punctuation 678 . 679) (symbol 673 . 678) (punctuation 670 . 671) (DEFAULT 663 . 670) (punctuation 661 . 662) (close-paren 659 . 660) (open-paren 658 . 659) (symbol 653 . 658) (punctuation 652 . 653) (punctuation 651 . 652) (symbol 646 . 651) (close-paren 643 . 644) (semantic-list 586 . 642) (symbol 581 . 586) (punctuation 580 . 581) (punctuation 579 . 580) (punctuation 578 . 579) (symbol 577 . 578) (punctuation 576 . 577) (symbol 571 . 576) (punctuation 570 . 571) (punctuation 569 . 570) (symbol 564 . 569) (close-paren 643 . 644) (semantic-list 586 . 642) (symbol 581 . 586) (punctuation 580 . 581) (punctuation 579 . 580) (punctuation 578 . 579) (symbol 577 . 578) (punctuation 576 . 577) (symbol 571 . 576) (punctuation 570 . 571) (punctuation 569 . 570) (symbol 564 . 569)))
     (semanticdb-table "database.cpp"
       :major-mode 'c++-mode
@@ -808,7 +808,7 @@
       :file "database.cpp"
       :pointmax 7301
       :fsize 7300
-      :lastmodtime '(22167 3266 0 0)
+      :lastmodtime '(22213 48502 0 0)
       :unmatched-syntax '((semantic-list 2675 . 2694) (CONST 2669 . 2674) (semantic-list 2666 . 2668) (BOOL 2662 . 2666) (OPERATOR 2653 . 2661) (punctuation 2652 . 2653) (punctuation 2651 . 2652) (symbol 2643 . 2651) (semantic-list 2526 . 2545) (symbol 2517 . 2525) (CONST 2511 . 2516) (semantic-list 2508 . 2510) (symbol 2501 . 2508) (punctuation 2500 . 2501) (punctuation 2499 . 2500) (symbol 2491 . 2499) (BOOL 2486 . 2490) (semantic-list 1754 . 1777) (symbol 1745 . 1753) (semantic-list 1711 . 1744) (symbol 1707 . 1711) (VOID 1702 . 1706) (semantic-list 1377 . 1700) (symbol 1368 . 1376) (semantic-list 1350 . 1367) (symbol 1346 . 1350) (punctuation 1345 . 1346) (punctuation 1344 . 1345) (symbol 1336 . 1344) (VOID 1331 . 1335) (punctuation 1215 . 1216) (symbol 1206 . 1214) (semantic-list 1187 . 1205) (symbol 1179 . 1187) (punctuation 1197 . 1198) (punctuation 1178 . 1179) (punctuation 1177 . 1178) (symbol 1169 . 1177) (punctuation 1197 . 1198))))
   :file "!Users!petergoldsborough!Documents!Work!paldi!source!semantic.cache"
   :semantic-tag-version "2.0"

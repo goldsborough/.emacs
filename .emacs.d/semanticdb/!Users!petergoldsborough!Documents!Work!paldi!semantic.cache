@@ -3,20 +3,32 @@
 (semanticdb-project-database-file "paldi/"
   :tables
   (list
-    (semanticdb-table "model.cpp"
+
+    (semanticdb-table "main.cpp"
       :major-mode 'c++-mode
       :tags 
-        '( ("Range" function
-               (:constructor-flag t
-                :parent "Model"
-                :arguments 
-                  ( ("minimum" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14 24])
-                    ("maximum" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25 35])
-                    ("weighting" variable (:type "double") (reparse-symbol arg-sub-list) [36 53]))                  
-                :type ("Model" type (:type "class") nil nil))
-                nil [1 71]))          
-      :file "model.cpp"
-      :pointmax 71
+        '( ("parser.hpp" include nil nil [1 22])
+            ("paldi.hpp" include nil nil [23 43])
+            ("metrics.hpp" include nil nil [44 66])
+            ("autonomous.hpp" include nil nil [67 92])
+            ("appliance.hpp" include nil nil [93 117])
+            ("global.hpp" include nil nil [118 139])
+            ("model.hpp" include nil nil [140 160])
+            ("utility.hpp" include nil nil [161 183])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [194 203])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [204 218]))                  
+                :type "int")
+                nil [185 1676]))          
+      :file "main.cpp"
+      :pointmax 1676
+      :fsize 1675
+      :lastmodtime '(22213 48502 0 0)
       :unmatched-syntax nil))
   :file "!Users!petergoldsborough!Documents!Work!paldi!semantic.cache"
   :semantic-tag-version "2.0"

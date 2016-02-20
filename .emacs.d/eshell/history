@@ -14,3 +14,4 @@ ls
 cd 10/
 ls
 open aufgabe.pdf 
+psql
