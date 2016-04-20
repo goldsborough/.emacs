@@ -1,0 +1,231 @@
+;; Object tcp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tcp/"
+  :tables
+  (list
+    (semanticdb-table "client.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("netdb.h" include (:system-flag t) nil [1 19])
+            ("netinet/in.h" include (:system-flag t) nil [20 43])
+            ("sys/socket.h" include (:system-flag t) nil [44 67])
+            ("../common.h" include nil nil [69 91])
+            ("PORT" variable (:constant-flag t) nil [101 105])
+            ("HOST" variable (:constant-flag t) nil [121 125])
+            ("get_address" function
+               (:arguments 
+                  ( ("server_info" variable
+                       (:pointer 1
+                        :type ("addrinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [155 184]))                  
+                :type "int")
+                nil [139 1865])
+            ("cleanup" function
+               (:arguments 
+                  ( ("descriptor" variable (:type "int") (reparse-symbol arg-sub-list) [1880 1895])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1896 1909]))                  
+                :type "void")
+                nil [1867 1950])
+            ("read_data" function
+               (:arguments 
+                  ( ("descriptor" variable (:type "int") (reparse-symbol arg-sub-list) [1967 1982])
+                    ("bytes" variable (:type "int") (reparse-symbol arg-sub-list) [1983 1993]))                  
+                :type "void")
+                nil [1952 2398])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2409 2418])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2419 2438]))                  
+                :type "int")
+                nil [2400 5504]))          
+      :file "client.c"
+      :pointmax 5505
+      :fsize 5504
+      :lastmodtime '(22292 42477 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PORT" . ((string "\"6969\"" 106 . 112)))
+          ("HOST" . ((string "\"localhost\"" 126 . 137)))
+          )
+)
+    (semanticdb-table "server.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("netdb.h" include (:system-flag t) nil [1 19])
+            ("netinet/in.h" include (:system-flag t) nil [20 43])
+            ("sys/socket.h" include (:system-flag t) nil [44 67])
+            ("../common.h" include nil nil [69 91])
+            ("PORT" variable (:constant-flag t) nil [101 105])
+            ("HOST" variable (:constant-flag t) nil [121 125])
+            ("handle_blocking" function
+               (:arguments 
+                  ( ("socket_descriptor" variable (:type "int") (reparse-symbol arg-sub-list) [160 182]))                  
+                :type "void")
+                nil [139 620])
+            ("get_address" function
+               (:pointer 1
+                :arguments 
+                  ( ("server_info" variable
+                       (:pointer 1
+                        :type ("addrinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [651 680])
+                    ("socket_descriptor" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [681 704]))                  
+                :type ("addrinfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [622 2263])
+            ("cleanup" function
+               (:arguments 
+                  ( ("descriptor" variable (:type "int") (reparse-symbol arg-sub-list) [2278 2293])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2294 2307]))                  
+                :type "void")
+                nil [2265 2349])
+            ("accept_communication" function
+               (:arguments 
+                  ( ("socket_descriptor" variable (:type "int") (reparse-symbol arg-sub-list) [2376 2398]))                  
+                :type "int")
+                nil [2351 3656])
+            ("buffer" variable
+               (:pointer 1
+                :default-value "(char*)malloc(bytes)"
+                :type "char")
+                nil [3705 3741])
+            ("buffer" variable
+               (:pointer 1
+                :default-value "'2'"
+                :type "int")
+                nil [3827 3841])
+            ("send" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("descriptor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3866 3877])
+                    ("" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3878 3885])
+                    ("" variable (:type ("bytes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3886 3892]))                  
+                :type "int")
+                nil [3861 3896])
+            ("cleanup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("descriptor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3926 3937])
+                    ("" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3938 3945]))                  
+                :type "int")
+                nil [3918 3946])
+            ("write_data" function
+               (:arguments 
+                  ( ("descriptor" variable (:type "int") (reparse-symbol arg-sub-list) [3674 3689])
+                    ("bytes" variable (:type "int") (reparse-symbol arg-sub-list) [3690 3700]))                  
+                :type "void")
+                nil [3658 3948])
+            ("socket_descriptor" variable (:type "int") nil [4285 4333])
+            ("communication_descriptor" variable (:type "int") nil [4285 4333])
+            ("hints" variable (:type ("addrinfo" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [5924 5976])
+            ("server_info" variable
+               (:pointer 1
+                :type ("addrinfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5924 5976])
+            ("valid_address" variable
+               (:pointer 1
+                :type ("addrinfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5924 5976])
+            ("return_code" variable (:type "int") nil [6015 6031])
+            ("bytes" variable
+               (:default-value "get_bytes(argc, argv)"
+                :type "int")
+                nil [6058 6092])
+            ("memset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("hints" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6141 6147])
+                    ("" variable (:type ("hints" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6158 6164]))                  
+                :type "int")
+                nil [6133 6165])
+            ("ai_family" variable
+               (:default-value "AF_UNSPEC"
+                :type "int")
+                nil [6249 6271])
+            ("ai_socktype" variable
+               (:default-value "SOCK_STREAM"
+                :type "int")
+                nil [6342 6368])
+            ("return_code" variable
+               (:default-value "getaddrinfo(HOST, PORT, &hints, &server_info)"
+                :type "int")
+                nil [6897 6957])
+            ("valid_address" variable
+               (:default-value "get_address(server_info, &socket_descriptor)"
+                :type "int")
+                nil [7092 7153])
+            ("freeaddrinfo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("server_info" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7199 7211]))                  
+                :type "int")
+                nil [7186 7212])
+            ("return_code" variable
+               (:default-value "listen(socket_descriptor, 10)"
+                :type "int")
+                nil [7628 7672])
+            ("communication_descriptor" variable
+               (:default-value "accept_communication(socket_descriptor)"
+                :type "int")
+                nil [7753 7820])
+            ("close" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("socket_descriptor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7974 7992]))                  
+                :type "int")
+                nil [7968 7993])
+            ("write_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("communication_descriptor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8008 8033])
+                    ("" variable (:type ("bytes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8034 8040]))                  
+                :type "int")
+                nil [7997 8041])
+            ("EXIT_SUCCESS" variable (:type "int") nil [8052 8065]))          
+      :file "server.c"
+      :pointmax 8068
+      :fsize 8067
+      :lastmodtime '(22292 42480 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PORT" . ((string "\"6969\"" 106 . 112)))
+          ("HOST" . ((string "\"localhost\"" 126 . 137)))
+          )
+)
+
+
+)
+  :file "!Users!petergoldsborough!Documents!Work!tum!research!tcp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

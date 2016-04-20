@@ -1,0 +1,91 @@
+;; Object other/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "other/"
+  :tables
+  (list
+    (semanticdb-table "server.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("arpa/inet.h" include (:system-flag t) nil [1 23])
+            ("errno.h" include (:system-flag t) nil [24 42])
+            ("netdb.h" include (:system-flag t) nil [43 61])
+            ("netinet/in.h" include (:system-flag t) nil [62 85])
+            ("signal.h" include (:system-flag t) nil [86 105])
+            ("stdio.h" include (:system-flag t) nil [106 124])
+            ("stdlib.h" include (:system-flag t) nil [125 144])
+            ("string.h" include (:system-flag t) nil [145 164])
+            ("sys/socket.h" include (:system-flag t) nil [165 188])
+            ("sys/types.h" include (:system-flag t) nil [189 211])
+            ("sys/wait.h" include (:system-flag t) nil [212 233])
+            ("unistd.h" include (:system-flag t) nil [234 253])
+            ("sigchld_handler" function
+               (:arguments 
+                  ( ("_" variable (:type "int") (reparse-symbol arg-sub-list) [276 282]))                  
+                :type "void")
+                nil [255 465])
+            ("get_in_addr" function
+               (:pointer 1
+                :arguments 
+                  ( ("sa" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [485 505]))                  
+                :type "void")
+                nil [467 910])
+            ("print_address" function
+               (:arguments 
+                  ( ("address_info" variable
+                       (:pointer 1
+                        :type ("addrinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [931 961]))                  
+                :type "void")
+                nil [912 1469])
+            ("PORT" variable (:constant-flag t) nil [1479 1483])
+            ("true" variable (:constant-flag t) nil [1499 1503])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1516 1525])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1526 1545]))                  
+                :type "int")
+                nil [1507 5038]))          
+      :file "server.c"
+      :pointmax 5039
+      :fsize 5038
+      :lastmodtime '(22292 9569 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PORT" . ((string "\"3490\"" 1484 . 1490)))
+          ("true" . ((number "1" 1504 . 1505)))
+          )
+)
+    (semanticdb-table "server.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdint" include (:system-flag t) nil [1 19])
+            ("iostream" include (:system-flag t) nil [20 39])
+            ("netdb.h" include (:system-flag t) nil [40 58])
+            ("netinet/in.h" include (:system-flag t) nil [59 82])
+            ("stdexcept" include (:system-flag t) nil [83 103])
+            ("stdlib.h" include (:system-flag t) nil [104 123])
+            ("sys/socket.h" include (:system-flag t) nil [124 147])
+            ("sys/types.h" include (:system-flag t) nil [148 170])
+            ("unistd.h" include (:system-flag t) nil [171 190]))          
+      :file "server.cpp"
+      :pointmax 3592
+      :fsize 3591
+      :lastmodtime '(22292 8366 0 0)
+      :unmatched-syntax '((semantic-list 211 . 3591) (INT 207 . 210) (punctuation 205 . 206) (punctuation 204 . 205) (semantic-list 201 . 203) (symbol 197 . 201) (symbol 192 . 196))))
+  :file "!Users!petergoldsborough!Documents!Work!tum!research!tcp!other!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

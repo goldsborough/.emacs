@@ -809,7 +809,157 @@
       :pointmax 7301
       :fsize 7300
       :lastmodtime '(22213 48502 0 0)
-      :unmatched-syntax '((semantic-list 2675 . 2694) (CONST 2669 . 2674) (semantic-list 2666 . 2668) (BOOL 2662 . 2666) (OPERATOR 2653 . 2661) (punctuation 2652 . 2653) (punctuation 2651 . 2652) (symbol 2643 . 2651) (semantic-list 2526 . 2545) (symbol 2517 . 2525) (CONST 2511 . 2516) (semantic-list 2508 . 2510) (symbol 2501 . 2508) (punctuation 2500 . 2501) (punctuation 2499 . 2500) (symbol 2491 . 2499) (BOOL 2486 . 2490) (semantic-list 1754 . 1777) (symbol 1745 . 1753) (semantic-list 1711 . 1744) (symbol 1707 . 1711) (VOID 1702 . 1706) (semantic-list 1377 . 1700) (symbol 1368 . 1376) (semantic-list 1350 . 1367) (symbol 1346 . 1350) (punctuation 1345 . 1346) (punctuation 1344 . 1345) (symbol 1336 . 1344) (VOID 1331 . 1335) (punctuation 1215 . 1216) (symbol 1206 . 1214) (semantic-list 1187 . 1205) (symbol 1179 . 1187) (punctuation 1197 . 1198) (punctuation 1178 . 1179) (punctuation 1177 . 1178) (symbol 1169 . 1177) (punctuation 1197 . 1198))))
+      :unmatched-syntax '((semantic-list 2675 . 2694) (CONST 2669 . 2674) (semantic-list 2666 . 2668) (BOOL 2662 . 2666) (OPERATOR 2653 . 2661) (punctuation 2652 . 2653) (punctuation 2651 . 2652) (symbol 2643 . 2651) (semantic-list 2526 . 2545) (symbol 2517 . 2525) (CONST 2511 . 2516) (semantic-list 2508 . 2510) (symbol 2501 . 2508) (punctuation 2500 . 2501) (punctuation 2499 . 2500) (symbol 2491 . 2499) (BOOL 2486 . 2490) (semantic-list 1754 . 1777) (symbol 1745 . 1753) (semantic-list 1711 . 1744) (symbol 1707 . 1711) (VOID 1702 . 1706) (semantic-list 1377 . 1700) (symbol 1368 . 1376) (semantic-list 1350 . 1367) (symbol 1346 . 1350) (punctuation 1345 . 1346) (punctuation 1344 . 1345) (symbol 1336 . 1344) (VOID 1331 . 1335) (punctuation 1215 . 1216) (symbol 1206 . 1214) (semantic-list 1187 . 1205) (symbol 1179 . 1187) (punctuation 1197 . 1198) (punctuation 1178 . 1179) (punctuation 1177 . 1178) (symbol 1169 . 1177) (punctuation 1197 . 1198)))
+    (semanticdb-table "paldi.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("appliance.hpp" include nil nil [313 337])
+            ("database.hpp" include nil nil [338 361])
+            ("metrics.hpp" include nil nil [362 384])
+            ("paldi.hpp" include nil nil [385 405])
+            ("utility.hpp" include nil nil [406 428])
+            ("numeric" include (:system-flag t) nil [430 448])
+            ("Paldi" function
+               (:constructor-flag t
+                :parent "Paldi"
+                :arguments 
+                  ( ("house" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("House" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [463 499])
+                    ("num_particles" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [500 527])
+                    ("level" variable (:type "double") (reparse-symbol arg-sub-list) [541 554])
+                    ("noise_frequency" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [555 586])
+                    ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [587 604]))                  
+                :type ("Paldi" type (:type "class") nil nil))
+                nil [450 1383])
+            ("Paldi" function
+               (:constructor-flag t
+                :parent "Paldi"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Paldi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1398 1417]))                  
+                :type ("Paldi" type (:type "class") nil nil))
+                nil [1385 1868])
+            ("Paldi" function
+               (:arguments 
+                  ( ("" variable (:type ("nullptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1915 1923]))                  
+                :type "int")
+                nil [1909 1942])
+            ("=" function
+               (:operator-flag t
+                :parent "Paldi"
+                :arguments 
+                  ( ("other" variable (:type ("Paldi" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1968 1980]))                  
+                :type ("Paldi" type (:type "class") nil nil))
+                nil [1944 2016])
+            ("process" function
+               (:parent "Paldi"
+                :arguments 
+                  ( ("sample" variable (:type "double") (reparse-symbol arg-sub-list) [2727 2741]))                  
+                :type ("Array" type (:type "class") nil nil))
+                nil [2706 3339])
+            ("number_of_particles" function
+               (:parent "Paldi"
+                :arguments 
+                  ( ("num_particles" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [3373 3402]))                  
+                :type "void")
+                nil [3341 3626])
+            ("noise_level" function
+               (:parent "Paldi"
+                :arguments 
+                  ( ("noise_level" variable (:type "double") (reparse-symbol arg-sub-list) [3741 3760]))                  
+                :type "void")
+                nil [3717 3896])
+            ("noise_frequency" function
+               (:parent "Paldi"
+                :arguments 
+                  ( ("noise_frequency" variable (:type "double") (reparse-symbol arg-sub-list) [3997 4020]))                  
+                :type "void")
+                nil [3969 4062])
+            ("house" function
+               (:parent "Paldi"
+                :arguments 
+                  ( ("house" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("House" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4161 4197]))                  
+                :type "void")
+                nil [4143 4238])
+            ("tolerance" function
+               (:parent "Paldi"
+                :arguments 
+                  ( ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [4337 4354]))                  
+                :type "void")
+                nil [4315 4384])
+            ("update_house" function
+               (:parent "Paldi"
+                :type "void")
+                nil [4453 4902])
+            ("_calculate_particles" function
+               (:parent "Paldi"
+                :arguments 
+                  ( ("sample" variable (:type "double") (reparse-symbol arg-sub-list) [4937 4951]))                  
+                :type "void")
+                nil [4904 5636])
+            ("_resample" function
+               (:parent "Paldi"
+                :type "void")
+                nil [5638 6601])
+            ("_get_particle" function
+               (:parent "Paldi"
+                :arguments 
+                  ( ("app" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Appliance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6631 6652])
+                    ("xpart_val" variable (:type "double") (reparse-symbol arg-sub-list) [6653 6670]))                  
+                :type "double")
+                nil [6603 7668])
+            ("_set_states" function
+               (:parent "Paldi"
+                :arguments 
+                  ( ("estimates" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7694 7717]))                  
+                :type "void")
+                nil [7670 8864])
+            ("_threshold" function
+               (:parent "Paldi"
+                :arguments 
+                  ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [8891 8904]))                  
+                :type "double")
+                nil [8866 8952])
+            ("_insert_noise" function
+               (:parent "Paldi"
+                :arguments 
+                  ( ("matrix" variable
+                       (:reference 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8980 8995]))                  
+                :type "void")
+                nil [8954 9123]))          
+      :file "paldi.cpp"
+      :pointmax 9124
+      :fsize 9123
+      :lastmodtime '(22213 48502 0 0)
+      :unmatched-syntax '((semantic-list 4427 . 4451) (symbol 4418 . 4426) (CONST 4412 . 4417) (semantic-list 4409 . 4411) (symbol 4400 . 4409) (punctuation 4399 . 4400) (punctuation 4398 . 4399) (symbol 4393 . 4398) (DOUBLE 4386 . 4392) (semantic-list 4293 . 4313) (symbol 4284 . 4292) (CONST 4278 . 4283) (semantic-list 4275 . 4277) (symbol 4270 . 4275) (punctuation 4269 . 4270) (punctuation 4268 . 4269) (symbol 4263 . 4268) (punctuation 4261 . 4262) (symbol 4256 . 4261) (punctuation 4255 . 4256) (symbol 4245 . 4255) (punctuation 4244 . 4245) (punctuation 4243 . 4244) (symbol 4240 . 4243) (semantic-list 4111 . 4141) (symbol 4102 . 4110) (CONST 4096 . 4101) (semantic-list 4093 . 4095) (symbol 4078 . 4093) (punctuation 4077 . 4078) (punctuation 4076 . 4077) (symbol 4071 . 4076) (DOUBLE 4064 . 4070) (semantic-list 3941 . 3967) (symbol 3932 . 3940) (CONST 3926 . 3931) (semantic-list 3923 . 3925) (symbol 3912 . 3923) (punctuation 3911 . 3912) (punctuation 3910 . 3911) (symbol 3905 . 3910) (DOUBLE 3898 . 3904) (semantic-list 3687 . 3715) (symbol 3678 . 3686) (CONST 3672 . 3677) (semantic-list 3669 . 3671) (symbol 3650 . 3669) (punctuation 3649 . 3650) (punctuation 3648 . 3649) (symbol 3643 . 3648) (SHORT 3637 . 3642) (UNSIGNED 3628 . 3636) (punctuation 2703 . 2704) (DEFAULT 2696 . 2703) (punctuation 2694 . 2695) (semantic-list 2691 . 2693) (symbol 2686 . 2691) (punctuation 2685 . 2686) (punctuation 2684 . 2685) (punctuation 2683 . 2684) (symbol 2678 . 2683) (semantic-list 2653 . 2676) (symbol 2644 . 2652) (semantic-list 2616 . 2643) (symbol 2612 . 2616) (VOID 2607 . 2611) (semantic-list 2058 . 2605) (symbol 2049 . 2057) (semantic-list 2034 . 2048) (symbol 2030 . 2034) (punctuation 2029 . 2030) (punctuation 2028 . 2029) (symbol 2023 . 2028) (VOID 2018 . 2022) (punctuation 1907 . 1908) (symbol 1898 . 1906) (semantic-list 1882 . 1897) (symbol 1877 . 1882) (punctuation 1889 . 1890) (punctuation 1876 . 1877) (punctuation 1875 . 1876) (symbol 1870 . 1875) (punctuation 1889 . 1890))))
   :file "!Users!petergoldsborough!Documents!Work!paldi!source!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

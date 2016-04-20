@@ -9418,6 +9418,988 @@
           ("FP_ILOGBNAN" . ((semantic-list "(-2147483647 - 1)" 3940 . 3957)))
           ("FP_QNAN" . ((symbol "FP_NAN" 31281 . 31287)))
           )
+)
+    (semanticdb-table "assert.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("sys/cdefs.h" include (:system-flag t) nil [2251 2273])
+            ("stdlib.h" include (:system-flag t) nil [2293 2312])
+            ("__assert_rtn" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2965 2978])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2979 2992])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2993 2997])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2998 3011]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2947 3020])
+            ("__assert" variable (:constant-flag t) nil [3542 3550])
+            ("assert" variable (:constant-flag t) nil [3656 3662])
+            ("_ASSERT_H_" variable (:constant-flag t) nil [3987 3997]))          
+      :file "assert.h"
+      :pointmax 4198
+      :fsize 4197
+      :lastmodtime '(21976 60510 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("assert" (spp-arg-list ("e") 3662 . 3665) . ((semantic-list "(__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)" 3672 . 3758)))
+          ("_ASSERT_H_")
+          ("__assert" (spp-arg-list ("e" "file" "line") 3550 . 3565) . ((symbol "__assert_rtn" 3572 . 3584) (semantic-list "((const char *)-1L, file, line, e)" 3585 . 3619)))
+          )
+)
+    (semanticdb-table "netdb.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_NETDB_H_" variable (:constant-flag t) nil [4001 4010])
+            ("_types.h" include (:system-flag t) nil [4012 4031])
+            ("sys/_types/_size_t.h" include (:system-flag t) nil [4032 4063])
+            ("sys/_types/_socklen_t.h" include (:system-flag t) nil [4064 4098])
+            ("stdint.h" include (:system-flag t) nil [4100 4119])
+            ("netinet/in.h" include (:system-flag t) nil [4120 4143])
+            ("_PATH_HEQUIV" variable (:constant-flag t) nil [4198 4210])
+            ("_PATH_HOSTS" variable (:constant-flag t) nil [4245 4256])
+            ("_PATH_NETWORKS" variable (:constant-flag t) nil [4278 4292])
+            ("_PATH_PROTOCOLS" variable (:constant-flag t) nil [4317 4332])
+            ("_PATH_SERVICES" variable (:constant-flag t) nil [4358 4372])
+            ("h_errno" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [4390 4409])
+            ("IPPORT_RESERVED" variable (:constant-flag t) nil [4443 4458])
+            ("hostent" type
+               (:members 
+                  ( ("h_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4686 4699])
+                    ("h_aliases" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [4729 4746])
+                    ("h_addrtype" variable (:type "int") (reparse-symbol classsubparts) [4765 4780])
+                    ("h_length" variable (:type "int") (reparse-symbol classsubparts) [4806 4819])
+                    ("h_addr_list" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [4845 4864])
+                    ("h_addr" variable (:constant-flag t) (reparse-symbol classsubparts) [4973 4979]))                  
+                :type "struct")
+                nil [4668 5091])
+            ("netent" type
+               (:members 
+                  ( ("n_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5213 5227])
+                    ("n_aliases" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [5256 5274])
+                    ("n_addrtype" variable (:type "int") (reparse-symbol classsubparts) [5293 5309])
+                    ("n_net" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5334 5349]))                  
+                :type "struct")
+                nil [5196 5369])
+            ("servent" type
+               (:members 
+                  ( ("s_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5389 5402])
+                    ("s_aliases" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [5432 5449])
+                    ("s_port" variable (:type "int") (reparse-symbol classsubparts) [5468 5479])
+                    ("s_proto" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5495 5509]))                  
+                :type "struct")
+                nil [5371 5534])
+            ("protoent" type
+               (:members 
+                  ( ("p_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5555 5568])
+                    ("p_aliases" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [5599 5616])
+                    ("p_proto" variable (:type "int") (reparse-symbol classsubparts) [5635 5647]))                  
+                :type "struct")
+                nil [5536 5667])
+            ("addrinfo" type
+               (:members 
+                  ( ("ai_flags" variable (:type "int") (reparse-symbol classsubparts) [5688 5701])
+                    ("ai_family" variable (:type "int") (reparse-symbol classsubparts) [5750 5764])
+                    ("ai_socktype" variable (:type "int") (reparse-symbol classsubparts) [5779 5795])
+                    ("ai_protocol" variable (:type "int") (reparse-symbol classsubparts) [5812 5828])
+                    ("ai_addrlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5871 5892])
+                    ("ai_canonname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5918 5937])
+                    ("ai_addr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5973 5998])
+                    ("ai_next" variable
+                       (:pointer 1
+                        :type ("addrinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6021 6046]))                  
+                :type "struct")
+                nil [5669 6085])
+            ("rpcent" type
+               (:members 
+                  ( ("r_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6170 6186])
+                    ("r_aliases" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [6244 6264])
+                    ("r_number" variable (:type "int") (reparse-symbol classsubparts) [6293 6310]))                  
+                :type "struct")
+                nil [6146 6344])
+            ("NETDB_INTERNAL" variable (:constant-flag t) nil [6557 6571])
+            ("NETDB_SUCCESS" variable (:constant-flag t) nil [6599 6612])
+            ("HOST_NOT_FOUND" variable (:constant-flag t) nil [6692 6706])
+            ("TRY_AGAIN" variable (:constant-flag t) nil [6759 6768])
+            ("NO_RECOVERY" variable (:constant-flag t) nil [6833 6844])
+            ("NO_DATA" variable (:constant-flag t) nil [6910 6917])
+            ("NO_ADDRESS" variable (:constant-flag t) nil [7039 7049])
+            ("EAI_ADDRFAMILY" variable (:constant-flag t) nil [7263 7277])
+            ("EAI_AGAIN" variable (:constant-flag t) nil [7389 7398])
+            ("EAI_BADFLAGS" variable (:constant-flag t) nil [7453 7465])
+            ("EAI_FAIL" variable (:constant-flag t) nil [7510 7518])
+            ("EAI_FAMILY" variable (:constant-flag t) nil [7579 7589])
+            ("EAI_MEMORY" variable (:constant-flag t) nil [7631 7641])
+            ("EAI_NODATA" variable (:constant-flag t) nil [7744 7754])
+            ("EAI_NONAME" variable (:constant-flag t) nil [7860 7870])
+            ("EAI_SERVICE" variable (:constant-flag t) nil [7933 7944])
+            ("EAI_SOCKTYPE" variable (:constant-flag t) nil [8001 8013])
+            ("EAI_SYSTEM" variable (:constant-flag t) nil [8057 8067])
+            ("EAI_BADHINTS" variable (:constant-flag t) nil [8175 8187])
+            ("EAI_PROTOCOL" variable (:constant-flag t) nil [8229 8241])
+            ("EAI_OVERFLOW" variable (:constant-flag t) nil [8340 8352])
+            ("EAI_MAX" variable (:constant-flag t) nil [8454 8461])
+            ("AI_PASSIVE" variable (:constant-flag t) nil [8567 8577])
+            ("AI_CANONNAME" variable (:constant-flag t) nil [8629 8641])
+            ("AI_NUMERICHOST" variable (:constant-flag t) nil [8685 8699])
+            ("AI_NUMERICSERV" variable (:constant-flag t) nil [8754 8768])
+            ("AI_MASK" variable (:constant-flag t) nil [8961 8968])
+            ("AI_ALL" variable (:constant-flag t) nil [9120 9126])
+            ("AI_V4MAPPED_CFG" variable (:constant-flag t) nil [9252 9267])
+            ("AI_ADDRCONFIG" variable (:constant-flag t) nil [9383 9396])
+            ("AI_V4MAPPED" variable (:constant-flag t) nil [9454 9465])
+            ("AI_DEFAULT" variable (:constant-flag t) nil [9634 9644])
+            ("NI_MAXHOST" variable (:constant-flag t) nil [9837 9847])
+            ("NI_MAXSERV" variable (:constant-flag t) nil [9861 9871])
+            ("NI_NOFQDN" variable (:constant-flag t) nil [9975 9984])
+            ("NI_NUMERICHOST" variable (:constant-flag t) nil [10004 10018])
+            ("NI_NAMEREQD" variable (:constant-flag t) nil [10038 10049])
+            ("NI_NUMERICSERV" variable (:constant-flag t) nil [10069 10083])
+            ("NI_DGRAM" variable (:constant-flag t) nil [10103 10111])
+            ("NI_WITHSCOPEID" variable (:constant-flag t) nil [10190 10204])
+            ("SCOPE_DELIMITER" variable (:constant-flag t) nil [10259 10274])
+            ("setnetgrent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12222 12235]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12204 12236])
+            ("endnetgrent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12197 12202]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12179 12203])
+            ("getnetgrent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12151 12159])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12160 12168])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12169 12177]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12133 12178])
+            ("innetgr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12076 12089])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12090 12103])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12104 12117])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12118 12131]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12062 12132])
+            ("hstrerror" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [12056 12060]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12034 12061])
+            ("herror" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12019 12032]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12006 12033])
+            ("endrpcent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11999 12004]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11983 12005])
+            ("setrpcent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("stayopen" variable (:type "int") (reparse-symbol arg-sub-list) [11968 11981]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11952 11982])
+            ("getrpcent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("rpcent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11945 11950]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11920 11951])
+            ("getrpcbynumber" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("rpcent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("number" variable (:type "int") (reparse-symbol arg-sub-list) [11850 11861]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11820 11862])
+            ("getrpcbyname" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("rpcent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11785 11802]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11757 11803])
+            ("getipnodebyname" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("hostent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11725 11738])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [11739 11743])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [11744 11748])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11749 11755]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11693 11756])
+            ("getipnodebyaddr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("hostent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11658 11671])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11672 11679])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [11680 11684])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11685 11691]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11626 11692])
+            ("gethostbyname2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("hostent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11606 11619])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [11620 11624]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11575 11625])
+            ("freehostent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("hostent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11556 11573]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11538 11574])
+            ("setservent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [11472 11476]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11455 11477])
+            ("setprotoent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [11449 11453]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11431 11454])
+            ("setnetent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [11425 11429]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11409 11430])
+            ("sethostent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [11364 11368]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11347 11369])
+            ("getservent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("servent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11340 11345]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11313 11346])
+            ("getservbyport" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("servent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [11293 11297])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11298 11311]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11263 11312])
+            ("getservbyname" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("servent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11234 11247])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11248 11261]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11204 11262])
+            ("getprotoent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("protoent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11197 11202]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11168 11203])
+            ("getprotobynumber" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("protoent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [11162 11166]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11128 11167])
+            ("getprotobyname" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("protoent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11113 11126]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11081 11127])
+            ("getnetent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("netent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11074 11079]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11049 11080])
+            ("getnetbyname" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("netent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11034 11047]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11006 11048])
+            ("getnetbyaddr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("netent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10990 10999])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [11000 11004]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10962 11005])
+            ("getnameinfo" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10831 10866])
+                    ("" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10867 10877])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10887 10905])
+                    ("" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10906 10916])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10917 10935])
+                    ("" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10945 10955])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10956 10960]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10803 10961])
+            ("gethostent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("hostent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10796 10801]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10769 10802])
+            ("gethostbyname" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("hostent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10754 10767]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10724 10768])
+            ("gethostbyaddr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("hostent" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10693 10706])
+                    ("" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10707 10717])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10718 10722]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10663 10723])
+            ("getaddrinfo" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10531 10555])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10556 10580])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("addrinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10588 10623])
+                    ("" variable
+                       (:pointer 2
+                        :type ("addrinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10631 10661]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10514 10662])
+            ("gai_strerror" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [10508 10512]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10483 10513])
+            ("freeaddrinfo" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("addrinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10463 10481]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10444 10482])
+            ("endservent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10436 10441]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10419 10442])
+            ("endprotoent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10412 10417]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10394 10418])
+            ("endnetent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10387 10392]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10371 10393])
+            ("endhostent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10364 10369]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10347 10370]))          
+      :file "netdb.h"
+      :pointmax 12327
+      :fsize 12326
+      :lastmodtime '(21976 60948 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TRY_AGAIN" . ((number "2" 6769 . 6770)))
+          ("NO_ADDRESS" . ((symbol "NO_DATA" 7050 . 7057)))
+          ("AI_V4MAPPED_CFG" . ((number "0x00000200" 9268 . 9278)))
+          ("NETDB_INTERNAL" . ((punctuation "-" 6572 . 6573) (number "1" 6573 . 6574)))
+          ("EAI_MEMORY" . ((number "6" 7643 . 7644)))
+          ("_PATH_SERVICES" . ((string "\"/etc/services\"" 4373 . 4388)))
+          ("NETDB_SUCCESS" . ((number "0" 6613 . 6614)))
+          ("AI_NUMERICSERV" . ((number "0x00001000" 8769 . 8779)))
+          ("NI_NUMERICSERV" . ((number "0x00000008" 10084 . 10094)))
+          ("NO_DATA" . ((number "4" 6919 . 6920)))
+          ("EAI_BADFLAGS" . ((number "3" 7467 . 7468)))
+          ("AI_V4MAPPED" . ((number "0x00000800" 9466 . 9476)))
+          ("NI_DGRAM" . ((number "0x00000010" 10112 . 10122)))
+          ("EAI_NODATA" . ((number "7" 7756 . 7757)))
+          ("AI_CANONNAME" . ((number "0x00000002" 8642 . 8652)))
+          ("AI_NUMERICHOST" . ((number "0x00000004" 8700 . 8710)))
+          ("AI_MASK" . ((semantic-list "(AI_PASSIVE | AI_CANONNAME | AI_NUMERICHOST | AI_NUMERICSERV | \\
+    AI_ADDRCONFIG)" 8975 . 9058)))
+          ("NI_NUMERICHOST" . ((number "0x00000002" 10019 . 10029)))
+          ("EAI_SERVICE" . ((number "9" 7946 . 7947)))
+          ("NI_MAXSERV" . ((number "32" 9872 . 9874)))
+          ("EAI_AGAIN" . ((number "2" 7400 . 7401)))
+          ("EAI_FAIL" . ((number "4" 7520 . 7521)))
+          ("EAI_BADHINTS" . ((number "12" 8188 . 8190)))
+          ("AI_DEFAULT" . ((semantic-list "(AI_V4MAPPED_CFG | AI_ADDRCONFIG)" 9645 . 9678)))
+          ("h_addr" . ((symbol "h_addr_list" 4980 . 4991) (semantic-list "[0]" 4991 . 4994)))
+          ("EAI_PROTOCOL" . ((number "13" 8242 . 8244)))
+          ("EAI_MAX" . ((number "15" 8463 . 8465)))
+          ("AI_ALL" . ((number "0x00000100" 9128 . 9138)))
+          ("NI_MAXHOST" . ((number "1025" 9848 . 9852)))
+          ("NI_NOFQDN" . ((number "0x00000001" 9985 . 9995)))
+          ("_PATH_HEQUIV" . ((string "\"/etc/hosts.equiv\"" 4211 . 4229)))
+          ("IPPORT_RESERVED" . ((symbol "__DARWIN_IPPORT_RESERVED" 4460 . 4484)))
+          ("HOST_NOT_FOUND" . ((number "1" 6707 . 6708)))
+          ("EAI_OVERFLOW" . ((number "14" 8353 . 8355)))
+          ("NI_NAMEREQD" . ((number "0x00000004" 10050 . 10060)))
+          ("_NETDB_H_")
+          ("_PATH_HOSTS" . ((string "\"/etc/hosts\"" 4257 . 4269)))
+          ("EAI_ADDRFAMILY" . ((number "1" 7279 . 7280)))
+          ("EAI_FAMILY" . ((number "5" 7591 . 7592)))
+          ("EAI_NONAME" . ((number "8" 7872 . 7873)))
+          ("SCOPE_DELIMITER" . ((string "'%'" 10275 . 10278)))
+          ("_PATH_NETWORKS" . ((string "\"/etc/networks\"" 4293 . 4308)))
+          ("_PATH_PROTOCOLS" . ((string "\"/etc/protocols\"" 4333 . 4349)))
+          ("NO_RECOVERY" . ((number "3" 6845 . 6846)))
+          ("EAI_SYSTEM" . ((number "11" 8068 . 8070)))
+          ("AI_PASSIVE" . ((number "0x00000001" 8578 . 8588)))
+          ("NI_WITHSCOPEID" . ((number "0x00000020" 10205 . 10215)))
+          ("EAI_SOCKTYPE" . ((number "10" 8014 . 8016)))
+          ("AI_ADDRCONFIG" . ((number "0x00000400" 9397 . 9407)))
+          )
+)
+    (semanticdb-table "stdint.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_STDINT_H_" variable (:constant-flag t) nil [98 108])
+            ("__WORDSIZE" variable (:constant-flag t) nil [131 141])
+            ("sys/_types/_int8_t.h" include (:system-flag t) nil [256 287])
+            ("sys/_types/_int16_t.h" include (:system-flag t) nil [288 320])
+            ("sys/_types/_int32_t.h" include (:system-flag t) nil [321 353])
+            ("sys/_types/_int64_t.h" include (:system-flag t) nil [354 386])
+            ("_types/_uint8_t.h" include (:system-flag t) nil [388 416])
+            ("_types/_uint16_t.h" include (:system-flag t) nil [417 446])
+            ("_types/_uint32_t.h" include (:system-flag t) nil [447 476])
+            ("_types/_uint64_t.h" include (:system-flag t) nil [477 506])
+            ("int_least8_t" type
+               (:typedef ("int8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [551 589])
+            ("int_least16_t" type
+               (:typedef ("int16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [590 628])
+            ("int_least32_t" type
+               (:typedef ("int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [629 667])
+            ("int_least64_t" type
+               (:typedef ("int64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [668 706])
+            ("uint_least8_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [707 745])
+            ("uint_least16_t" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [746 784])
+            ("uint_least32_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [785 823])
+            ("uint_least64_t" type
+               (:typedef ("uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [824 862])
+            ("int_fast8_t" type
+               (:typedef ("int8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [908 946])
+            ("int_fast16_t" type
+               (:typedef ("int16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [947 985])
+            ("int_fast32_t" type
+               (:typedef ("int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [986 1024])
+            ("int_fast64_t" type
+               (:typedef ("int64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1025 1063])
+            ("uint_fast8_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1064 1102])
+            ("uint_fast16_t" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1103 1141])
+            ("uint_fast32_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1142 1180])
+            ("uint_fast64_t" type
+               (:typedef ("uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1181 1219])
+            ("sys/_types.h" include (:system-flag t) nil [1287 1310])
+            ("sys/_types/_intptr_t.h" include (:system-flag t) nil [1311 1344])
+            ("sys/_types/_uintptr_t.h" include (:system-flag t) nil [1345 1379])
+            ("_types/_intmax_t.h" include (:system-flag t) nil [1426 1455])
+            ("_types/_uintmax_t.h" include (:system-flag t) nil [1456 1486])
+            ("INT8_MAX" variable (:constant-flag t) nil [1705 1713])
+            ("INT16_MAX" variable (:constant-flag t) nil [1734 1743])
+            ("INT32_MAX" variable (:constant-flag t) nil [1765 1774])
+            ("INT64_MAX" variable (:constant-flag t) nil [1801 1810])
+            ("INT8_MIN" variable (:constant-flag t) nil [1849 1857])
+            ("INT16_MIN" variable (:constant-flag t) nil [1880 1889])
+            ("INT32_MIN" variable (:constant-flag t) nil [2209 2218])
+            ("INT64_MIN" variable (:constant-flag t) nil [2249 2258])
+            ("UINT8_MAX" variable (:constant-flag t) nil [2290 2299])
+            ("UINT16_MAX" variable (:constant-flag t) nil [2320 2330])
+            ("UINT32_MAX" variable (:constant-flag t) nil [2352 2362])
+            ("UINT64_MAX" variable (:constant-flag t) nil [2390 2400])
+            ("INT_LEAST8_MIN" variable (:constant-flag t) nil [2494 2508])
+            ("INT_LEAST16_MIN" variable (:constant-flag t) nil [2529 2544])
+            ("INT_LEAST32_MIN" variable (:constant-flag t) nil [2565 2580])
+            ("INT_LEAST64_MIN" variable (:constant-flag t) nil [2601 2616])
+            ("INT_LEAST8_MAX" variable (:constant-flag t) nil [2638 2652])
+            ("INT_LEAST16_MAX" variable (:constant-flag t) nil [2673 2688])
+            ("INT_LEAST32_MAX" variable (:constant-flag t) nil [2709 2724])
+            ("INT_LEAST64_MAX" variable (:constant-flag t) nil [2745 2760])
+            ("UINT_LEAST8_MAX" variable (:constant-flag t) nil [2782 2797])
+            ("UINT_LEAST16_MAX" variable (:constant-flag t) nil [2818 2834])
+            ("UINT_LEAST32_MAX" variable (:constant-flag t) nil [2855 2871])
+            ("UINT_LEAST64_MAX" variable (:constant-flag t) nil [2892 2908])
+            ("INT_FAST8_MIN" variable (:constant-flag t) nil [2991 3004])
+            ("INT_FAST16_MIN" variable (:constant-flag t) nil [3026 3040])
+            ("INT_FAST32_MIN" variable (:constant-flag t) nil [3062 3076])
+            ("INT_FAST64_MIN" variable (:constant-flag t) nil [3098 3112])
+            ("INT_FAST8_MAX" variable (:constant-flag t) nil [3135 3148])
+            ("INT_FAST16_MAX" variable (:constant-flag t) nil [3170 3184])
+            ("INT_FAST32_MAX" variable (:constant-flag t) nil [3206 3220])
+            ("INT_FAST64_MAX" variable (:constant-flag t) nil [3242 3256])
+            ("UINT_FAST8_MAX" variable (:constant-flag t) nil [3279 3293])
+            ("UINT_FAST16_MAX" variable (:constant-flag t) nil [3315 3330])
+            ("UINT_FAST32_MAX" variable (:constant-flag t) nil [3352 3367])
+            ("UINT_FAST64_MAX" variable (:constant-flag t) nil [3389 3404])
+            ("INTPTR_MIN" variable (:constant-flag t) nil [3523 3533])
+            ("INTPTR_MAX" variable (:constant-flag t) nil [3554 3564])
+            ("UINTPTR_MAX" variable (:constant-flag t) nil [3692 3703])
+            ("INTMAX_MIN" variable (:constant-flag t) nil [3830 3840])
+            ("INTMAX_MAX" variable (:constant-flag t) nil [3866 3876])
+            ("UINTMAX_MAX" variable (:constant-flag t) nil [3903 3914])
+            ("PTRDIFF_MIN" variable (:constant-flag t) nil [3983 3994])
+            ("PTRDIFF_MAX" variable (:constant-flag t) nil [4015 4026])
+            ("SIZE_MAX" variable (:constant-flag t) nil [4154 4162])
+            ("RSIZE_MAX" variable (:constant-flag t) nil [4302 4311])
+            ("WCHAR_MAX" variable (:constant-flag t) nil [4397 4406])
+            ("WCHAR_MIN" variable (:constant-flag t) nil [4781 4790])
+            ("WINT_MIN" variable (:constant-flag t) nil [4837 4845])
+            ("WINT_MAX" variable (:constant-flag t) nil [4866 4874])
+            ("SIG_ATOMIC_MIN" variable (:constant-flag t) nil [4896 4910])
+            ("SIG_ATOMIC_MAX" variable (:constant-flag t) nil [4931 4945])
+            ("INT8_C" variable (:constant-flag t) nil [5009 5015])
+            ("INT16_C" variable (:constant-flag t) nil [5034 5041])
+            ("INT32_C" variable (:constant-flag t) nil [5059 5066])
+            ("INT64_C" variable (:constant-flag t) nil [5084 5091])
+            ("UINT8_C" variable (:constant-flag t) nil [5116 5123])
+            ("UINT16_C" variable (:constant-flag t) nil [5146 5154])
+            ("UINT32_C" variable (:constant-flag t) nil [5176 5184])
+            ("UINT64_C" variable (:constant-flag t) nil [5206 5214])
+            ("INTMAX_C" variable (:constant-flag t) nil [5255 5263])
+            ("UINTMAX_C" variable (:constant-flag t) nil [5285 5294]))          
+      :file "stdint.h"
+      :pointmax 5409
+      :fsize 5408
+      :lastmodtime '(21976 60510 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INT_LEAST16_MAX" . ((symbol "INT16_MAX" 2691 . 2700)))
+          ("INT_LEAST64_MAX" . ((symbol "INT64_MAX" 2763 . 2772)))
+          ("UINT_FAST32_MAX" . ((symbol "UINT32_MAX" 3370 . 3380)))
+          ("PTRDIFF_MAX" . ((symbol "INT64_MAX" 4029 . 4038)))
+          ("_STDINT_H_")
+          ("INT_LEAST16_MIN" . ((symbol "INT16_MIN" 2547 . 2556)))
+          ("INT_LEAST64_MIN" . ((symbol "INT64_MIN" 2619 . 2628)))
+          ("PTRDIFF_MIN" . ((symbol "INT64_MIN" 3997 . 4006)))
+          ("UINT8_MAX" . ((number "255" 2308 . 2311)))
+          ("INT_FAST32_MAX" . ((symbol "INT32_MAX" 3224 . 3233)))
+          ("RSIZE_MAX" . ((semantic-list "(SIZE_MAX >> 1)" 4320 . 4335)))
+          ("INT32_MAX" . ((number "2147483647" 1782 . 1792)))
+          ("UINT_LEAST8_MAX" . ((symbol "UINT8_MAX" 2800 . 2809)))
+          ("UINT_LEAST32_MAX" . ((symbol "UINT32_MAX" 2873 . 2883)))
+          ("INT_FAST32_MIN" . ((symbol "INT32_MIN" 3080 . 3089)))
+          ("UINT_FAST8_MAX" . ((symbol "UINT8_MAX" 3297 . 3306)))
+          ("UINTPTR_MAX" . ((symbol "UINT64_MAX" 3706 . 3716)))
+          ("UINTMAX_MAX" . ((symbol "UINT64_MAX" 3921 . 3931)))
+          ("INT16_C" (spp-arg-list ("v") 5041 . 5044) . ((semantic-list "(v)" 5047 . 5050)))
+          ("INT64_C" (spp-arg-list ("v") 5091 . 5094) . ((semantic-list "(v ## LL)" 5097 . 5106)))
+          ("UINT32_C" (spp-arg-list ("v") 5184 . 5187) . ((semantic-list "(v ## U)" 5189 . 5197)))
+          ("INT8_MAX" . ((number "127" 1722 . 1725)))
+          ("INT32_MIN" . ((semantic-list "(-INT32_MAX-1)" 2226 . 2240)))
+          ("UINT16_MAX" . ((number "65535" 2338 . 2343)))
+          ("UINT64_MAX" . ((symbol "18446744073709551615ULL" 2408 . 2431)))
+          ("INT8_MIN" . ((punctuation "-" 1867 . 1868) (number "128" 1868 . 1871)))
+          ("INT_LEAST8_MAX" . ((symbol "INT8_MAX" 2656 . 2664)))
+          ("SIZE_MAX" . ((symbol "UINT64_MAX" 4165 . 4175)))
+          ("UINT8_C" (spp-arg-list ("v") 5123 . 5126) . ((semantic-list "(v ## U)" 5129 . 5137)))
+          ("INT_LEAST8_MIN" . ((symbol "INT8_MIN" 2512 . 2520)))
+          ("INT_LEAST32_MAX" . ((symbol "INT32_MAX" 2727 . 2736)))
+          ("WINT_MAX" . ((symbol "INT32_MAX" 4877 . 4886)))
+          ("INT_LEAST32_MIN" . ((symbol "INT32_MIN" 2583 . 2592)))
+          ("UINT_FAST16_MAX" . ((symbol "UINT16_MAX" 3333 . 3343)))
+          ("UINT_FAST64_MAX" . ((symbol "UINT64_MAX" 3407 . 3417)))
+          ("WCHAR_MAX" . ((symbol "__WCHAR_MAX__" 4411 . 4424)))
+          ("WINT_MIN" . ((symbol "INT32_MIN" 4848 . 4857)))
+          ("SIG_ATOMIC_MAX" . ((symbol "INT32_MAX" 4948 . 4957)))
+          ("INT_FAST8_MAX" . ((symbol "INT8_MAX" 3153 . 3161)))
+          ("INTPTR_MAX" . ((symbol "INT64_MAX" 3567 . 3576)))
+          ("INTMAX_MAX" . ((symbol "INT64_MAX" 3884 . 3893)))
+          ("WCHAR_MIN" . ((semantic-list "(-WCHAR_MAX-1)" 4797 . 4811)))
+          ("SIG_ATOMIC_MIN" . ((symbol "INT32_MIN" 4913 . 4922)))
+          ("INT32_C" (spp-arg-list ("v") 5066 . 5069) . ((semantic-list "(v)" 5072 . 5075)))
+          ("UINTMAX_C" (spp-arg-list ("v") 5294 . 5297) . ((semantic-list "(v ## UL)" 5298 . 5307)))
+          ("__WORDSIZE" . ((number "64" 142 . 144)))
+          ("INT_FAST8_MIN" . ((symbol "INT8_MIN" 3009 . 3017)))
+          ("INT_FAST16_MAX" . ((symbol "INT16_MAX" 3188 . 3197)))
+          ("INT_FAST64_MAX" . ((symbol "INT64_MAX" 3260 . 3269)))
+          ("INTPTR_MIN" . ((symbol "INT64_MIN" 3536 . 3545)))
+          ("INTMAX_MIN" . ((symbol "INT64_MIN" 3848 . 3857)))
+          ("INT16_MAX" . ((number "32767" 1751 . 1756)))
+          ("INT64_MAX" . ((symbol "9223372036854775807LL" 1818 . 1839)))
+          ("UINT32_MAX" . ((symbol "4294967295U" 2370 . 2381)))
+          ("UINT_LEAST16_MAX" . ((symbol "UINT16_MAX" 2836 . 2846)))
+          ("UINT_LEAST64_MAX" . ((symbol "UINT64_MAX" 2910 . 2920)))
+          ("INT_FAST16_MIN" . ((symbol "INT16_MIN" 3044 . 3053)))
+          ("INT_FAST64_MIN" . ((symbol "INT64_MIN" 3116 . 3125)))
+          ("INTMAX_C" (spp-arg-list ("v") 5263 . 5266) . ((semantic-list "(v ## L)" 5268 . 5276)))
+          ("INT16_MIN" . ((punctuation "-" 1898 . 1899) (number "32768" 1899 . 1904)))
+          ("INT64_MIN" . ((semantic-list "(-INT64_MAX-1)" 2266 . 2280)))
+          ("INT8_C" (spp-arg-list ("v") 5015 . 5018) . ((semantic-list "(v)" 5022 . 5025)))
+          ("UINT16_C" (spp-arg-list ("v") 5154 . 5157) . ((semantic-list "(v ## U)" 5159 . 5167)))
+          ("UINT64_C" (spp-arg-list ("v") 5214 . 5217) . ((semantic-list "(v ## ULL)" 5219 . 5229)))
+          )
 ))
   :file "!Applications!Xcode.app!Contents!Developer!Platforms!MacOSX.platform!Developer!SDKs!MacOSX10.11.sdk!usr!include!semantic.cache"
   :semantic-tag-version "2.0"

@@ -2112,13 +2112,10 @@
       :lastmodtime '(21976 60447 0 0)
       :unmatched-syntax '((semantic-list 7568 . 7595) (symbol 7544 . 7568) (semantic-list 6931 . 6958) (symbol 6907 . 6931))
       :lexical-table 
-        '(("..."nil ;; bogus macro found.
-)
+        '(("..." . (nil))
           ("_SYS_QOS_H")
-          ("type"nil ;; bogus macro found.
-)
-          ("name"nil ;; bogus macro found.
-)
+          ("type" . (nil))
+          ("name" . (nil))
           ("__QOS_CLASS_AVAILABLE_STARTING" (spp-arg-list ("...") 5377 . 5382))
           ("QOS_MIN_RELATIVE_PRIORITY" . ((semantic-list "(-15)" 6662 . 6667)))
           )
@@ -2159,6 +2156,859 @@
           ("htonll" (spp-arg-list ("x") 5254 . 5257) . ((semantic-list "((__uint64_t)(x))" 5264 . 5281)))
           ("NTOHLL" (spp-arg-list ("x") 5353 . 5356) . ((semantic-list "(x)" 5363 . 5366)))
           ("HTONLL" (spp-arg-list ("x") 5437 . 5440) . ((semantic-list "(x)" 5447 . 5450)))
+          )
+)
+    (semanticdb-table "socket.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SYS_SOCKET_H_" variable (:constant-flag t) nil [3713 3727])
+            ("sys/types.h" include (:system-flag t) nil [3729 3751])
+            ("sys/cdefs.h" include (:system-flag t) nil [3752 3774])
+            ("machine/_param.h" include (:system-flag t) nil [3775 3802])
+            ("Availability.h" include (:system-flag t) nil [3805 3830])
+            ("sys/_types/_gid_t.h" include (:system-flag t) nil [3932 3962])
+            ("sys/_types/_off_t.h" include (:system-flag t) nil [3963 3993])
+            ("sys/_types/_pid_t.h" include (:system-flag t) nil [3994 4024])
+            ("sys/_types/_sa_family_t.h" include (:system-flag t) nil [4025 4061])
+            ("sys/_types/_socklen_t.h" include (:system-flag t) nil [4062 4096])
+            ("sys/_types/_size_t.h" include (:system-flag t) nil [4171 4202])
+            ("sys/_types/_ssize_t.h" include (:system-flag t) nil [4278 4310])
+            ("sys/_types/_iovec_t.h" include (:system-flag t) nil [4394 4426])
+            ("SOCK_STREAM" variable (:constant-flag t) nil [4454 4465])
+            ("SOCK_DGRAM" variable (:constant-flag t) nil [4497 4507])
+            ("SOCK_RAW" variable (:constant-flag t) nil [4541 4549])
+            ("SOCK_RDM" variable (:constant-flag t) nil [4649 4657])
+            ("SOCK_SEQPACKET" variable (:constant-flag t) nil [4754 4768])
+            ("SO_DEBUG" variable (:constant-flag t) nil [4846 4854])
+            ("SO_ACCEPTCONN" variable (:constant-flag t) nil [4910 4923])
+            ("SO_REUSEADDR" variable (:constant-flag t) nil [4970 4982])
+            ("SO_KEEPALIVE" variable (:constant-flag t) nil [5031 5043])
+            ("SO_DONTROUTE" variable (:constant-flag t) nil [5089 5101])
+            ("SO_BROADCAST" variable (:constant-flag t) nil [5153 5165])
+            ("SO_USELOOPBACK" variable (:constant-flag t) nil [5280 5294])
+            ("SO_LINGER" variable (:constant-flag t) nil [5347 5356])
+            ("SO_OOBINLINE" variable (:constant-flag t) nil [5573 5585])
+            ("SO_REUSEPORT" variable (:constant-flag t) nil [5699 5711])
+            ("SO_TIMESTAMP" variable (:constant-flag t) nil [5767 5779])
+            ("SO_TIMESTAMP_MONOTONIC" variable (:constant-flag t) nil [5835 5857])
+            ("SO_DONTTRUNC" variable (:constant-flag t) nil [6016 6028])
+            ("SO_WANTMORE" variable (:constant-flag t) nil [6104 6115])
+            ("SO_WANTOOBFLAG" variable (:constant-flag t) nil [6176 6190])
+            ("SO_SNDBUF" variable (:constant-flag t) nil [6388 6397])
+            ("SO_RCVBUF" variable (:constant-flag t) nil [6437 6446])
+            ("SO_SNDLOWAT" variable (:constant-flag t) nil [6489 6500])
+            ("SO_RCVLOWAT" variable (:constant-flag t) nil [6543 6554])
+            ("SO_SNDTIMEO" variable (:constant-flag t) nil [6600 6611])
+            ("SO_RCVTIMEO" variable (:constant-flag t) nil [6647 6658])
+            ("SO_ERROR" variable (:constant-flag t) nil [6697 6705])
+            ("SO_TYPE" variable (:constant-flag t) nil [6755 6762])
+            ("SO_LABEL" variable (:constant-flag t) nil [6922 6930])
+            ("SO_PEERLABEL" variable (:constant-flag t) nil [6987 6999])
+            ("SO_NREAD" variable (:constant-flag t) nil [7074 7082])
+            ("SO_NKE" variable (:constant-flag t) nil [7138 7144])
+            ("SO_NOSIGPIPE" variable (:constant-flag t) nil [7200 7212])
+            ("SO_NOADDRERR" variable (:constant-flag t) nil [7262 7274])
+            ("SO_NWRITE" variable (:constant-flag t) nil [7360 7369])
+            ("SO_REUSESHAREUID" variable (:constant-flag t) nil [7451 7467])
+            ("SO_LINGER_SEC" variable (:constant-flag t) nil [7782 7795])
+            ("SO_RANDOMPORT" variable (:constant-flag t) nil [7871 7884])
+            ("SO_NP_EXTENSIONS" variable (:constant-flag t) nil [7949 7965])
+            ("SO_NUMRCVPKT" variable (:constant-flag t) nil [8027 8039])
+            ("sae_associd_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [8100 8133])
+            ("SAE_ASSOCID_ANY" variable (:constant-flag t) nil [8142 8157])
+            ("SAE_ASSOCID_ALL" variable (:constant-flag t) nil [8168 8183])
+            ("sae_connid_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [8210 8242])
+            ("SAE_CONNID_ANY" variable (:constant-flag t) nil [8251 8265])
+            ("SAE_CONNID_ALL" variable (:constant-flag t) nil [8276 8290])
+            ("CONNECT_RESUME_ON_READ_WRITE" variable (:constant-flag t) nil [8357 8385])
+            ("CONNECT_DATA_IDEMPOTENT" variable (:constant-flag t) nil [8435 8458])
+            ("sa_endpoints" type
+               (:members 
+                  ( ("sae_srcif" variable (:type "unsigned int") (reparse-symbol classsubparts) [8546 8569])
+                    ("sae_srcaddr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8608 8637])
+                    ("sae_srcaddrlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8671 8696])
+                    ("sae_dstaddr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8727 8756])
+                    ("sae_dstaddrlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8786 8811]))                  
+                :type "struct")
+                nil [8515 8863])
+            ("sa_endpoints_t" type
+               (:typedef ("sa_endpoints" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [8515 8863])
+            ("linger" type
+               (:members 
+                  ( ("l_onoff" variable (:type "int") (reparse-symbol classsubparts) [8991 9003])
+                    ("l_linger" variable (:type "int") (reparse-symbol classsubparts) [9026 9039]))                  
+                :type "struct")
+                nil [8974 9061])
+            ("so_np_extensions" type
+               (:members 
+                  ( ("npx_flags" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9337 9357])
+                    ("npx_mask" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9359 9378]))                  
+                :type "struct")
+                nil [9310 9381])
+            ("SONPX_SETOPTSHUT" variable (:constant-flag t) nil [9391 9407])
+            ("SOL_SOCKET" variable (:constant-flag t) nil [9573 9583])
+            ("AF_UNSPEC" variable (:constant-flag t) nil [9661 9670])
+            ("AF_UNIX" variable (:constant-flag t) nil [9700 9707])
+            ("AF_LOCAL" variable (:constant-flag t) nil [9807 9815])
+            ("AF_INET" variable (:constant-flag t) nil [9914 9921])
+            ("AF_IMPLINK" variable (:constant-flag t) nil [10028 10038])
+            ("AF_PUP" variable (:constant-flag t) nil [10078 10084])
+            ("AF_CHAOS" variable (:constant-flag t) nil [10127 10135])
+            ("AF_NS" variable (:constant-flag t) nil [10173 10178])
+            ("AF_ISO" variable (:constant-flag t) nil [10216 10222])
+            ("AF_OSI" variable (:constant-flag t) nil [10255 10261])
+            ("AF_ECMA" variable (:constant-flag t) nil [10278 10285])
+            ("AF_DATAKIT" variable (:constant-flag t) nil [10336 10346])
+            ("AF_CCITT" variable (:constant-flag t) nil [10382 10390])
+            ("AF_SNA" variable (:constant-flag t) nil [10435 10441])
+            ("AF_DECnet" variable (:constant-flag t) nil [10469 10478])
+            ("AF_DLI" variable (:constant-flag t) nil [10504 10510])
+            ("AF_LAT" variable (:constant-flag t) nil [10561 10567])
+            ("AF_HYLINK" variable (:constant-flag t) nil [10591 10600])
+            ("AF_APPLETALK" variable (:constant-flag t) nil [10636 10648])
+            ("AF_ROUTE" variable (:constant-flag t) nil [10678 10686])
+            ("AF_LINK" variable (:constant-flag t) nil [10731 10738])
+            ("pseudo_AF_XTP" variable (:constant-flag t) nil [10779 10792])
+            ("AF_COIP" variable (:constant-flag t) nil [10845 10852])
+            ("AF_CNT" variable (:constant-flag t) nil [10906 10912])
+            ("pseudo_AF_RTIP" variable (:constant-flag t) nil [10960 10974])
+            ("AF_IPX" variable (:constant-flag t) nil [11020 11026])
+            ("AF_SIP" variable (:constant-flag t) nil [11071 11077])
+            ("pseudo_AF_PIP" variable (:constant-flag t) nil [11122 11135])
+            ("AF_NDRV" variable (:constant-flag t) nil [11254 11261])
+            ("AF_ISDN" variable (:constant-flag t) nil [11309 11316])
+            ("AF_E164" variable (:constant-flag t) nil [11371 11378])
+            ("pseudo_AF_KEY" variable (:constant-flag t) nil [11430 11443])
+            ("AF_INET6" variable (:constant-flag t) nil [11547 11555])
+            ("AF_NATM" variable (:constant-flag t) nil [11638 11645])
+            ("AF_SYSTEM" variable (:constant-flag t) nil [11683 11692])
+            ("AF_NETBIOS" variable (:constant-flag t) nil [11733 11743])
+            ("AF_PPP" variable (:constant-flag t) nil [11770 11776])
+            ("pseudo_AF_HDRCMPLT" variable (:constant-flag t) nil [11823 11841])
+            ("AF_RESERVED_36" variable (:constant-flag t) nil [11931 11945])
+            ("AF_IEEE80211" variable (:constant-flag t) nil [11992 12004])
+            ("AF_UTUN" variable (:constant-flag t) nil [12059 12066])
+            ("AF_MAX" variable (:constant-flag t) nil [12079 12085])
+            ("sockaddr" type
+               (:members 
+                  ( ("sa_len" variable (:type ("__uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12228 12245])
+                    ("sa_family" variable (:type ("sa_family_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12267 12289])
+                    ("sa_data" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [12318 12336]))                  
+                :type "struct")
+                nil [12209 12380])
+            ("SOCK_MAXADDRLEN" variable (:constant-flag t) nil [12449 12464])
+            ("sockproto" type
+               (:members 
+                  ( ("sp_family" variable (:type ("__uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12607 12628])
+                    ("sp_protocol" variable (:type ("__uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12652 12675]))                  
+                :type "struct")
+                nil [12587 12694])
+            ("_SS_MAXSIZE" variable (:constant-flag t) nil [12829 12840])
+            ("_SS_ALIGNSIZE" variable (:constant-flag t) nil [12853 12866])
+            ("_SS_PAD1SIZE" variable (:constant-flag t) nil [12895 12907])
+            ("_SS_PAD2SIZE" variable (:constant-flag t) nil [12978 12990])
+            ("sockaddr_storage" type
+               (:members 
+                  ( ("ss_len" variable (:type ("__uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13149 13166])
+                    ("ss_family" variable (:type ("sa_family_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13190 13212])
+                    ("__ss_pad1" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [13241 13272])
+                    ("__ss_align" variable (:type ("__int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13274 13295])
+                    ("__ss_pad2" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [13337 13368]))                  
+                :type "struct")
+                nil [13122 13371])
+            ("PF_UNSPEC" variable (:constant-flag t) nil [13445 13454])
+            ("PF_LOCAL" variable (:constant-flag t) nil [13473 13481])
+            ("PF_UNIX" variable (:constant-flag t) nil [13499 13506])
+            ("PF_INET" variable (:constant-flag t) nil [13554 13561])
+            ("PF_IMPLINK" variable (:constant-flag t) nil [13579 13589])
+            ("PF_PUP" variable (:constant-flag t) nil [13609 13615])
+            ("PF_CHAOS" variable (:constant-flag t) nil [13632 13640])
+            ("PF_NS" variable (:constant-flag t) nil [13658 13663])
+            ("PF_ISO" variable (:constant-flag t) nil [13679 13685])
+            ("PF_OSI" variable (:constant-flag t) nil [13702 13708])
+            ("PF_ECMA" variable (:constant-flag t) nil [13725 13732])
+            ("PF_DATAKIT" variable (:constant-flag t) nil [13750 13760])
+            ("PF_CCITT" variable (:constant-flag t) nil [13780 13788])
+            ("PF_SNA" variable (:constant-flag t) nil [13806 13812])
+            ("PF_DECnet" variable (:constant-flag t) nil [13829 13838])
+            ("PF_DLI" variable (:constant-flag t) nil [13857 13863])
+            ("PF_LAT" variable (:constant-flag t) nil [13880 13886])
+            ("PF_HYLINK" variable (:constant-flag t) nil [13903 13912])
+            ("PF_APPLETALK" variable (:constant-flag t) nil [13931 13943])
+            ("PF_ROUTE" variable (:constant-flag t) nil [13965 13973])
+            ("PF_LINK" variable (:constant-flag t) nil [13991 13998])
+            ("PF_XTP" variable (:constant-flag t) nil [14016 14022])
+            ("PF_COIP" variable (:constant-flag t) nil [14084 14091])
+            ("PF_CNT" variable (:constant-flag t) nil [14109 14115])
+            ("PF_SIP" variable (:constant-flag t) nil [14132 14138])
+            ("PF_IPX" variable (:constant-flag t) nil [14155 14161])
+            ("PF_RTIP" variable (:constant-flag t) nil [14206 14213])
+            ("PF_PIP" variable (:constant-flag t) nil [14267 14273])
+            ("PF_NDRV" variable (:constant-flag t) nil [14297 14304])
+            ("PF_ISDN" variable (:constant-flag t) nil [14322 14329])
+            ("PF_KEY" variable (:constant-flag t) nil [14347 14353])
+            ("PF_INET6" variable (:constant-flag t) nil [14377 14385])
+            ("PF_NATM" variable (:constant-flag t) nil [14403 14410])
+            ("PF_SYSTEM" variable (:constant-flag t) nil [14428 14437])
+            ("PF_NETBIOS" variable (:constant-flag t) nil [14456 14466])
+            ("PF_PPP" variable (:constant-flag t) nil [14486 14492])
+            ("PF_RESERVED_36" variable (:constant-flag t) nil [14509 14523])
+            ("PF_UTUN" variable (:constant-flag t) nil [14548 14555])
+            ("PF_MAX" variable (:constant-flag t) nil [14573 14579])
+            ("PF_VLAN" variable (:constant-flag t) nil [14647 14654])
+            ("PF_BOND" variable (:constant-flag t) nil [14700 14707])
+            ("NET_MAXID" variable (:constant-flag t) nil [15013 15022])
+            ("NET_RT_DUMP" variable (:constant-flag t) nil [15356 15367])
+            ("NET_RT_FLAGS" variable (:constant-flag t) nil [15409 15421])
+            ("NET_RT_IFLIST" variable (:constant-flag t) nil [15464 15477])
+            ("NET_RT_STAT" variable (:constant-flag t) nil [15517 15528])
+            ("NET_RT_TRASH" variable (:constant-flag t) nil [15565 15577])
+            ("NET_RT_IFLIST2" variable (:constant-flag t) nil [15629 15643])
+            ("NET_RT_DUMP2" variable (:constant-flag t) nil [15691 15703])
+            ("NET_RT_MAXID" variable (:constant-flag t) nil [15745 15757])
+            ("SOMAXCONN" variable (:constant-flag t) nil [15878 15887])
+            ("msghdr" type
+               (:members 
+                  ( ("msg_name" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [16030 16046])
+                    ("msg_namelen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16077 16099])
+                    ("msg_iov" variable
+                       (:pointer 1
+                        :type ("iovec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [16129 16152])
+                    ("msg_iovlen" variable (:type "int") (reparse-symbol classsubparts) [16187 16203])
+                    ("msg_control" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [16239 16258])
+                    ("msg_controllen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16298 16323])
+                    ("msg_flags" variable (:type "int") (reparse-symbol classsubparts) [16363 16378]))                  
+                :type "struct")
+                nil [16013 16419])
+            ("MSG_OOB" variable (:constant-flag t) nil [16431 16438])
+            ("MSG_PEEK" variable (:constant-flag t) nil [16484 16492])
+            ("MSG_DONTROUTE" variable (:constant-flag t) nil [16537 16550])
+            ("MSG_EOR" variable (:constant-flag t) nil [16604 16611])
+            ("MSG_TRUNC" variable (:constant-flag t) nil [16654 16663])
+            ("MSG_CTRUNC" variable (:constant-flag t) nil [16715 16725])
+            ("MSG_WAITALL" variable (:constant-flag t) nil [16780 16791])
+            ("MSG_DONTWAIT" variable (:constant-flag t) nil [16902 16914])
+            ("MSG_EOF" variable (:constant-flag t) nil [16970 16977])
+            ("MSG_FLUSH" variable (:constant-flag t) nil [17169 17178])
+            ("MSG_HOLD" variable (:constant-flag t) nil [17234 17242])
+            ("MSG_SEND" variable (:constant-flag t) nil [17285 17293])
+            ("MSG_HAVEMORE" variable (:constant-flag t) nil [17343 17355])
+            ("MSG_RCVMORE" variable (:constant-flag t) nil [17400 17411])
+            ("MSG_NEEDSA" variable (:constant-flag t) nil [17469 17479])
+            ("cmsghdr" type
+               (:members 
+                  ( ("cmsg_len" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17849 17868])
+                    ("cmsg_level" variable (:type "int") (reparse-symbol classsubparts) [17913 17929])
+                    ("cmsg_type" variable (:type "int") (reparse-symbol classsubparts) [17964 17979]))                  
+                :type "struct")
+                nil [17831 18063])
+            ("CMSG_DATA" variable (:constant-flag t) nil [19072 19081])
+            ("CMSG_FIRSTHDR" variable (:constant-flag t) nil [19294 19307])
+            ("CMSG_NXTHDR" variable (:constant-flag t) nil [19628 19639])
+            ("CMSG_SPACE" variable (:constant-flag t) nil [20204 20214])
+            ("CMSG_LEN" variable (:constant-flag t) nil [20292 20300])
+            ("SCM_RIGHTS" variable (:constant-flag t) nil [20460 20470])
+            ("SCM_TIMESTAMP" variable (:constant-flag t) nil [20580 20593])
+            ("SCM_CREDS" variable (:constant-flag t) nil [20642 20651])
+            ("SCM_TIMESTAMP_MONOTONIC" variable (:constant-flag t) nil [20705 20728])
+            ("SHUT_RD" variable (:constant-flag t) nil [20892 20899])
+            ("SHUT_WR" variable (:constant-flag t) nil [20945 20952])
+            ("SHUT_RDWR" variable (:constant-flag t) nil [20998 21007])
+            ("sf_hdtr" type
+               (:members 
+                  ( ("headers" variable
+                       (:pointer 1
+                        :type ("iovec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [21131 21153])
+                    ("hdr_cnt" variable (:type "int") (reparse-symbol classsubparts) [21206 21218])
+                    ("trailers" variable
+                       (:pointer 1
+                        :type ("iovec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [21252 21275])
+                    ("trl_cnt" variable (:type "int") (reparse-symbol classsubparts) [21329 21341]))                  
+                :type "struct")
+                nil [21113 21377])
+            ("disconnectx" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [23149 23154])
+                    ("" variable (:type ("sae_associd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23155 23169])
+                    ("" variable (:type ("sae_connid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23170 23183]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23133 23184])
+            ("connectx" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [23007 23012])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sa_endpoints_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23013 23036])
+                    ("" variable (:type ("sae_associd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23037 23051])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23052 23065])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("iovec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23070 23091])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23092 23105])
+                    ("" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23106 23115])
+                    ("" variable
+                       (:pointer 1
+                        :type ("sae_connid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23116 23131]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22994 23132])
+            ("pfctlinput" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22969 22973])
+                    ("" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22974 22992]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22953 22993])
+            ("sendfile" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22813 22817])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22818 22822])
+                    ("" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22823 22829])
+                    ("" variable
+                       (:pointer 1
+                        :type ("off_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22830 22838])
+                    ("" variable
+                       (:pointer 1
+                        :type ("sf_hdtr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22839 22856])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22857 22861]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22800 22862])
+            ("socketpair" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22719 22723])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22724 22728])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22729 22733])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [22734 22740]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22704 22768])
+            ("socket" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22688 22692])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22693 22697])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22698 22702]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22677 22703])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22650 22661])
+                    ("" variable (:type ("__IPHONE_2_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22662 22675]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22625 22676])
+            ("shutdown" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22594 22598])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22599 22603]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22581 22604])
+            ("setsockopt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22540 22544])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22545 22549])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22550 22554])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22555 22568])
+                    ("" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22569 22579]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22525 22580])
+            ("sendto" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22429 22433])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22434 22447])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22448 22455])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22458 22462])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22463 22487])
+                    ("" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22488 22498]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22414 22524])
+            ("sendmsg" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22354 22358])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("msghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22359 22381])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22382 22386]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22338 22413])
+            ("send" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22282 22286])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22287 22300])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22301 22308])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22309 22313]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22269 22337])
+            ("recvmsg" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22215 22219])
+                    ("" variable
+                       (:pointer 1
+                        :type ("msghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22220 22236])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22237 22241]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22199 22268])
+            ("recvfrom" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22089 22093])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22094 22101])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22102 22109])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22110 22114])
+                    ("" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22115 22144])
+                    ("" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22147 22170]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22072 22198])
+            ("recv" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22022 22026])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22027 22034])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22035 22042])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [22043 22047]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22009 22071])
+            ("listen" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [21975 21979])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [21980 21984]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21964 22008])
+            ("getsockopt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [21905 21909])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [21910 21914])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [21915 21919])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21920 21938])
+                    ("" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21939 21962]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21890 21963])
+            ("getsockname" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [21800 21804])
+                    ("" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21805 21834])
+                    ("" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21835 21858]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21784 21889])
+            ("getpeername" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [21694 21698])
+                    ("" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21699 21728])
+                    ("" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21729 21752]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21678 21783])
+            ("connect" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [21609 21613])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21614 21638])
+                    ("" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21639 21649]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21597 21677])
+            ("bind" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [21534 21538])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21539 21563])
+                    ("" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21564 21574]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21525 21596])
+            ("accept" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [21438 21442])
+                    ("" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21443 21472])
+                    ("" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21473 21496]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21427 21524]))          
+      :file "socket.h"
+      :pointmax 23280
+      :fsize 23279
+      :lastmodtime '(21982 20999 0 0)
+      :unmatched-syntax '((semantic-list 22619 . 22624) (symbol 22609 . 22619) (INT 22605 . 22608))
+      :lexical-table 
+        '(("SO_DONTROUTE" . ((number "0x0010" 5102 . 5108)))
+          ("SO_LABEL" . ((number "0x1010" 6938 . 6944)))
+          ("SO_NOSIGPIPE" . ((number "0x1022" 7213 . 7219)))
+          ("SONPX_SETOPTSHUT" . ((number "0x000000001" 9408 . 9419)))
+          ("AF_LOCAL" . ((symbol "AF_UNIX" 9816 . 9823)))
+          ("AF_DECnet" . ((number "12" 10479 . 10481)))
+          ("AF_HYLINK" . ((number "15" 10601 . 10603)))
+          ("AF_NDRV" . ((number "27" 11263 . 11265)))
+          ("PF_PUP" . ((symbol "AF_PUP" 13617 . 13623)))
+          ("PF_NS" . ((symbol "AF_NS" 13665 . 13670)))
+          ("PF_ECMA" . ((symbol "AF_ECMA" 13734 . 13741)))
+          ("PF_RTIP" . ((symbol "pseudo_AF_RTIP" 14215 . 14229)))
+          ("SOCK_STREAM" . ((number "1" 4466 . 4467)))
+          ("SO_KEEPALIVE" . ((number "0x0008" 5044 . 5050)))
+          ("SAE_CONNID_ANY" . ((number "0" 8266 . 8267)))
+          ("CONNECT_RESUME_ON_READ_WRITE" . ((number "0x1" 8386 . 8389)))
+          ("SOL_SOCKET" . ((number "0xffff" 9584 . 9590)))
+          ("AF_E164" . ((symbol "AF_ISDN" 11380 . 11387)))
+          ("PF_IMPLINK" . ((symbol "AF_IMPLINK" 13590 . 13600)))
+          ("PF_DLI" . ((symbol "AF_DLI" 13865 . 13871)))
+          ("NET_RT_FLAGS" . ((number "2" 15423 . 15424)))
+          ("NET_RT_MAXID" . ((number "10" 15759 . 15761)))
+          ("MSG_OOB" . ((number "0x1" 16440 . 16443)))
+          ("MSG_DONTROUTE" . ((number "0x4" 16551 . 16554)))
+          ("CMSG_LEN" (spp-arg-list ("l") 20300 . 20303) . ((semantic-list "(__DARWIN_ALIGN32(sizeof(struct cmsghdr)) + (l))" 20305 . 20353)))
+          ("SCM_TIMESTAMP" . ((number "0x02" 20596 . 20600)))
+          ("SCM_TIMESTAMP_MONOTONIC" . ((number "0x04" 20730 . 20734)))
+          ("SO_BROADCAST" . ((number "0x0020" 5166 . 5172)))
+          ("SO_DONTTRUNC" . ((number "0x2000" 6029 . 6035)))
+          ("SAE_ASSOCID_ANY" . ((number "0" 8158 . 8159)))
+          ("AF_UNSPEC" . ((number "0" 9671 . 9672)))
+          ("AF_CCITT" . ((number "10" 10391 . 10393)))
+          ("AF_ISDN" . ((number "28" 11318 . 11320)))
+          ("_SS_PAD2SIZE" . ((semantic-list "(_SS_MAXSIZE - sizeof(__uint8_t) - sizeof(sa_family_t) - \\
+				_SS_PAD1SIZE - _SS_ALIGNSIZE)" 12995 . 13087)))
+          ("PF_ROUTE" . ((symbol "AF_ROUTE" 13974 . 13982)))
+          ("PF_NDRV" . ((symbol "AF_NDRV" 14306 . 14313)))
+          ("NET_RT_DUMP2" . ((number "7" 15705 . 15706)))
+          ("MSG_CTRUNC" . ((number "0x20" 16726 . 16730)))
+          ("CMSG_NXTHDR" (spp-arg-list ("mhdr" "cmsg") 19639 . 19651) . ((semantic-list "((char *)(cmsg) == (char *)0L ? CMSG_FIRSTHDR(mhdr) :		\\
+	 ((((unsigned char *)(cmsg) +					\\
+	    __DARWIN_ALIGN32((__uint32_t)(cmsg)->cmsg_len) +		\\
+	    __DARWIN_ALIGN32(sizeof(struct cmsghdr))) >			\\
+	    ((unsigned char *)(mhdr)->msg_control +			\\
+	     (mhdr)->msg_controllen)) ?					\\
+	  (struct cmsghdr *)0L /* NULL */ :				\\
+	  (struct cmsghdr *)(void *)((unsigned char *)(cmsg) +		\\
+	 		    __DARWIN_ALIGN32((__uint32_t)(cmsg)->cmsg_len))))" 19660 . 20110)))
+          ("_SYS_SOCKET_H_")
+          ("SO_OOBINLINE" . ((number "0x0100" 5586 . 5592)))
+          ("SO_TIMESTAMP" . ((number "0x0400" 5780 . 5786)))
+          ("SO_TIMESTAMP_MONOTONIC" . ((number "0x0800" 5858 . 5864)))
+          ("SO_RANDOMPORT" . ((number "0x1082" 7887 . 7893)))
+          ("CONNECT_DATA_IDEMPOTENT" . ((number "0x2" 8460 . 8463)))
+          ("AF_ISO" . ((number "7" 10224 . 10225)))
+          ("AF_DATAKIT" . ((number "9" 10347 . 10348)))
+          ("AF_COIP" . ((number "20" 10854 . 10856)))
+          ("AF_IPX" . ((number "23" 11028 . 11030)))
+          ("PF_CHAOS" . ((symbol "AF_CHAOS" 13641 . 13649)))
+          ("PF_PIP" . ((symbol "pseudo_AF_PIP" 14275 . 14288)))
+          ("PF_SYSTEM" . ((symbol "AF_SYSTEM" 14438 . 14447)))
+          ("MSG_FLUSH" . ((number "0x400" 17179 . 17184)))
+          ("MSG_HOLD" . ((number "0x800" 17243 . 17248)))
+          ("CMSG_DATA" (spp-arg-list ("cmsg") 19081 . 19087) . ((semantic-list "((unsigned char *)(cmsg) + \\
+				 __DARWIN_ALIGN32(sizeof(struct cmsghdr)))" 19089 . 19164)))
+          ("SCM_CREDS" . ((number "0x03" 20654 . 20658)))
+          ("SHUT_RD" . ((number "0" 20901 . 20902)))
+          ("SO_WANTMORE" . ((number "0x4000" 6116 . 6122)))
+          ("SO_NREAD" . ((number "0x1020" 7083 . 7089)))
+          ("SO_NOADDRERR" . ((number "0x1023" 7275 . 7281)))
+          ("SO_NP_EXTENSIONS" . ((number "0x1083" 7966 . 7972)))
+          ("AF_CNT" . ((number "21" 10914 . 10916)))
+          ("AF_INET6" . ((number "30" 11556 . 11558)))
+          ("AF_IEEE80211" . ((number "37" 12008 . 12010)))
+          ("PF_OSI" . ((symbol "AF_ISO" 13710 . 13716)))
+          ("PF_SNA" . ((symbol "AF_SNA" 13814 . 13820)))
+          ("PF_XTP" . ((symbol "pseudo_AF_XTP" 14024 . 14037)))
+          ("PF_SIP" . ((symbol "AF_SIP" 14140 . 14146)))
+          ("PF_ISDN" . ((symbol "AF_ISDN" 14331 . 14338)))
+          ("SO_SNDBUF" . ((number "0x1001" 6398 . 6404)))
+          ("SO_PEERLABEL" . ((number "0x1011" 7003 . 7009)))
+          ("SO_LINGER_SEC" . ((number "0x1080" 7796 . 7802)))
+          ("AF_INET" . ((number "2" 9923 . 9924)))
+          ("AF_APPLETALK" . ((number "16" 10649 . 10651)))
+          ("PF_DATAKIT" . ((symbol "AF_DATAKIT" 13761 . 13771)))
+          ("PF_DECnet" . ((symbol "AF_DECnet" 13839 . 13848)))
+          ("PF_HYLINK" . ((symbol "AF_HYLINK" 13913 . 13922)))
+          ("PF_COIP" . ((symbol "AF_COIP" 14093 . 14100)))
+          ("MSG_EOR" . ((number "0x8" 16613 . 16616)))
+          ("MSG_TRUNC" . ((number "0x10" 16664 . 16668)))
+          ("AF_PPP" . ((number "34" 11778 . 11780)))
+          ("pseudo_AF_HDRCMPLT" . ((number "35" 11842 . 11844)))
+          ("AF_RESERVED_36" . ((number "36" 11946 . 11948)))
+          ("PF_LOCAL" . ((symbol "AF_LOCAL" 13482 . 13490)))
+          ("MSG_EOF" . ((number "0x100" 16979 . 16984)))
+          ("SHUT_WR" . ((number "1" 20954 . 20955)))
+          ("SHUT_RDWR" . ((number "2" 21008 . 21009)))
+          ("SO_RCVBUF" . ((number "0x1002" 6447 . 6453)))
+          ("SO_SNDLOWAT" . ((number "0x1003" 6501 . 6507)))
+          ("SO_SNDTIMEO" . ((number "0x1005" 6612 . 6618)))
+          ("SO_ERROR" . ((number "0x1007" 6706 . 6712)))
+          ("SO_NUMRCVPKT" . ((number "0x1112" 8041 . 8047)))
+          ("AF_UNIX" . ((number "1" 9709 . 9710)))
+          ("AF_NS" . ((number "6" 10180 . 10181)))
+          ("AF_LAT" . ((number "14" 10569 . 10571)))
+          ("AF_LINK" . ((number "18" 10740 . 10742)))
+          ("pseudo_AF_PIP" . ((number "25" 11136 . 11138)))
+          ("AF_MAX" . ((number "40" 12087 . 12089)))
+          ("SOCK_MAXADDRLEN" . ((number "255" 12465 . 12468)))
+          ("_SS_ALIGNSIZE" . ((semantic-list "(sizeof(__int64_t))" 12867 . 12886)))
+          ("PF_UNSPEC" . ((symbol "AF_UNSPEC" 13455 . 13464)))
+          ("PF_INET" . ((symbol "AF_INET" 13563 . 13570)))
+          ("PF_KEY" . ((symbol "pseudo_AF_KEY" 14355 . 14368)))
+          ("PF_BOND" . ((semantic-list "((uint32_t)0x626f6e64)" 14709 . 14731)))
+          ("MSG_NEEDSA" . ((number "0x10000" 17480 . 17487)))
+          ("SCM_RIGHTS" . ((number "0x01" 20473 . 20477)))
+          ("SOCK_RDM" . ((number "4" 4658 . 4659)))
+          ("SO_NKE" . ((number "0x1021" 7146 . 7152)))
+          ("SO_NWRITE" . ((number "0x1024" 7370 . 7376)))
+          ("SAE_CONNID_ALL" . ((semantic-list "((sae_connid_t)(-1ULL))" 8291 . 8314)))
+          ("AF_PUP" . ((number "4" 10086 . 10087)))
+          ("pseudo_AF_XTP" . ((number "19" 10793 . 10795)))
+          ("PF_ISO" . ((symbol "AF_ISO" 13687 . 13693)))
+          ("PF_CCITT" . ((symbol "AF_CCITT" 13789 . 13797)))
+          ("PF_IPX" . ((symbol "AF_IPX" 14163 . 14169)))
+          ("NET_RT_IFLIST" . ((number "3" 15479 . 15480)))
+          ("MSG_WAITALL" . ((number "0x40" 16792 . 16796)))
+          ("MSG_SEND" . ((number "0x1000" 17294 . 17300)))
+          ("MSG_HAVEMORE" . ((number "0x2000" 17356 . 17362)))
+          ("MSG_RCVMORE" . ((number "0x4000" 17412 . 17418)))
+          ("SOCK_RAW" . ((number "3" 4550 . 4551)))
+          ("SOCK_SEQPACKET" . ((number "5" 4769 . 4770)))
+          ("SO_REUSEADDR" . ((number "0x0004" 4983 . 4989)))
+          ("SAE_ASSOCID_ALL" . ((semantic-list "((sae_associd_t)(-1ULL))" 8184 . 8208)))
+          ("AF_DLI" . ((number "13" 10512 . 10514)))
+          ("AF_ROUTE" . ((number "17" 10687 . 10689)))
+          ("AF_NATM" . ((number "31" 11647 . 11649)))
+          ("AF_UTUN" . ((number "38" 12068 . 12070)))
+          ("PF_UNIX" . ((symbol "PF_LOCAL" 13508 . 13516)))
+          ("PF_LINK" . ((symbol "AF_LINK" 14000 . 14007)))
+          ("PF_CNT" . ((symbol "AF_CNT" 14117 . 14123)))
+          ("NET_RT_TRASH" . ((number "5" 15579 . 15580)))
+          ("NET_RT_IFLIST2" . ((number "6" 15645 . 15646)))
+          ("SO_DEBUG" . ((number "0x0001" 4855 . 4861)))
+          ("SO_ACCEPTCONN" . ((number "0x0002" 4924 . 4930)))
+          ("AF_CHAOS" . ((number "5" 10136 . 10137)))
+          ("AF_NETBIOS" . ((number "33" 11744 . 11746)))
+          ("PF_APPLETALK" . ((symbol "AF_APPLETALK" 13944 . 13956)))
+          ("PF_INET6" . ((symbol "AF_INET6" 14386 . 14394)))
+          ("PF_VLAN" . ((semantic-list "((uint32_t)0x766c616e)" 14656 . 14678)))
+          ("NET_RT_DUMP" . ((number "1" 15369 . 15370)))
+          ("NET_RT_STAT" . ((number "4" 15530 . 15531)))
+          ("SOMAXCONN" . ((number "128" 15888 . 15891)))
+          ("SO_USELOOPBACK" . ((number "0x0040" 5295 . 5301)))
+          ("SO_LINGER" . ((number "0x0080" 5357 . 5363)))
+          ("SO_REUSEPORT" . ((number "0x0200" 5712 . 5718)))
+          ("SO_TYPE" . ((number "0x1008" 6764 . 6770)))
+          ("AF_ECMA" . ((number "8" 10287 . 10288)))
+          ("pseudo_AF_KEY" . ((number "29" 11444 . 11446)))
+          ("AF_SYSTEM" . ((number "32" 11693 . 11695)))
+          ("PF_NATM" . ((symbol "AF_NATM" 14412 . 14419)))
+          ("PF_PPP" . ((symbol "AF_PPP" 14494 . 14500)))
+          ("PF_UTUN" . ((symbol "AF_UTUN" 14557 . 14564)))
+          ("MSG_PEEK" . ((number "0x2" 16493 . 16496)))
+          ("MSG_DONTWAIT" . ((number "0x80" 16915 . 16919)))
+          ("CMSG_FIRSTHDR" (spp-arg-list ("mhdr") 19307 . 19313) . ((semantic-list "((mhdr)->msg_controllen >= sizeof(struct cmsghdr) ? \\
+         (struct cmsghdr *)(mhdr)->msg_control : \\
+         (struct cmsghdr *)0L)" 19324 . 19459)))
+          ("SOCK_DGRAM" . ((number "2" 4508 . 4509)))
+          ("SO_WANTOOBFLAG" . ((number "0x8000" 6191 . 6197)))
+          ("SO_RCVLOWAT" . ((number "0x1004" 6555 . 6561)))
+          ("SO_RCVTIMEO" . ((number "0x1006" 6659 . 6665)))
+          ("SO_REUSESHAREUID" . ((number "0x1025" 7468 . 7474)))
+          ("AF_IMPLINK" . ((number "3" 10039 . 10040)))
+          ("AF_OSI" . ((symbol "AF_ISO" 10263 . 10269)))
+          ("AF_SNA" . ((number "11" 10443 . 10445)))
+          ("pseudo_AF_RTIP" . ((number "22" 10975 . 10977)))
+          ("AF_SIP" . ((number "24" 11079 . 11081)))
+          ("_SS_MAXSIZE" . ((number "128" 12841 . 12844)))
+          ("_SS_PAD1SIZE" . ((semantic-list "(_SS_ALIGNSIZE - sizeof(__uint8_t) - sizeof(sa_family_t))" 12912 . 12969)))
+          ("PF_LAT" . ((symbol "AF_LAT" 13888 . 13894)))
+          ("PF_NETBIOS" . ((symbol "AF_NETBIOS" 14467 . 14477)))
+          ("PF_RESERVED_36" . ((symbol "AF_RESERVED_36" 14525 . 14539)))
+          ("PF_MAX" . ((symbol "AF_MAX" 14581 . 14587)))
+          ("NET_MAXID" . ((symbol "AF_MAX" 15023 . 15029)))
+          ("CMSG_SPACE" (spp-arg-list ("l") 20214 . 20217) . ((semantic-list "(__DARWIN_ALIGN32(sizeof(struct cmsghdr)) + __DARWIN_ALIGN32(l))" 20219 . 20283)))
           )
 ))
   :file "!Applications!Xcode.app!Contents!Developer!Platforms!MacOSX.platform!Developer!SDKs!MacOSX10.11.sdk!usr!include!sys!semantic.cache"

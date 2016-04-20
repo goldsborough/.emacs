@@ -1,0 +1,19 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("backend/test_backend.hpp" include nil nil [1 36])
+            ("operations/test_operations.hpp" include nil nil [37 78])
+            ("gtest/gtest.h" include (:system-flag t) nil [80 104]))          
+      :file "main.cpp"
+      :pointmax 216
+      :fsize 215
+      :lastmodtime '(22288 59574 0 0)
+      :unmatched-syntax '((semantic-list 147 . 216) (INT 143 . 146) (punctuation 141 . 142) (punctuation 140 . 141) (semantic-list 115 . 139) (symbol 111 . 115) (symbol 106 . 110))))
+  :file "!Users!petergoldsborough!Documents!Projects!dali!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

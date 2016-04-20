@@ -1,0 +1,33 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "App.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("me.goldsborough.test" package nil nil [1 30])
+            ("java.util.ArrayList" include nil nil [32 59])
+            ("java.util.HashMap" include nil nil [60 85])
+            ("App" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [159 172]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [135 509]))                  
+                :type "class")
+                nil [114 511]))          
+      :file "App.java"
+      :pointmax 512
+      :fsize 510
+      :lastmodtime '(22207 51302 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!Documents!Java!test!src!main!java!me!goldsborough!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,71 @@
+;; Object backend/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "backend/"
+  :tables
+  (list
+    (semanticdb-table "test_backend.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_TEST_BACKEND_HPP" variable (:constant-flag t) nil [39 60])
+            ("backend/test_postgres.hpp" include nil nil [62 98])
+            ("backend/test_sqlite.hpp" include nil nil [99 133]))          
+      :file "test_backend.hpp"
+      :pointmax 169
+      :fsize 168
+      :lastmodtime '(22275 55903 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DALI_TEST_BACKEND_HPP")
+          )
+)
+    (semanticdb-table "test_postgres.hpp"
+      :file "test_postgres.hpp"
+      :fsize 158
+      :lastmodtime '(22275 55903 0 0))
+    (semanticdb-table "test_sqlite.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_TEST_SQLITE_HPP" variable (:constant-flag t) nil [38 58])
+            ("backend/sqlite-connection.hpp" include nil nil [60 100])
+            ("backend/sqlite.hpp" include nil nil [101 130])
+            ("selection/query.hpp" include nil nil [131 161])
+            ("selection/result.hpp" include nil nil [162 193])
+            ("gtest/gtest.h" include (:system-flag t) nil [195 219])
+            ("fstream" include (:system-flag t) nil [220 238])
+            ("memory" include (:system-flag t) nil [239 256])
+            ("tuple" include (:system-flag t) nil [257 273])
+            ("Dali" using (:type ("Dali" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [275 296])
+            ("testing::Test" variable (:type "int") nil [326 718])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("SQLiteTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [727 738])
+                    ("" variable (:type ("BackendConstructsWell" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [739 761]))                  
+                :type "int")
+                nil [720 803])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("SQLiteTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [812 823])
+                    ("" variable (:type ("ConnectionHandlesNonReturningQueriesWell" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [824 865]))                  
+                :type "int")
+                nil [805 1097])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("SQLiteTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1106 1117])
+                    ("" variable (:type ("ConnectionHandlesSelectionsWell" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1118 1150]))                  
+                :type "int")
+                nil [1099 1627]))          
+      :file "test_sqlite.hpp"
+      :pointmax 1662
+      :fsize 1661
+      :lastmodtime '(22275 55903 0 0)
+      :unmatched-syntax '((punctuation 325 . 326) (punctuation 324 . 325) (PUBLIC 317 . 323) (punctuation 315 . 316) (symbol 304 . 314) (CLASS 298 . 303))
+      :lexical-table 
+        '(("DALI_TEST_SQLITE_HPP")
+          )
+))
+  :file "!Users!petergoldsborough!Documents!Projects!dali!test!backend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

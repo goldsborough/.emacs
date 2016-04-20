@@ -1,0 +1,61 @@
+;; Object operations/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "operations/"
+  :tables
+  (list
+    (semanticdb-table "test_table.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_TEST_TABLE_HPP" variable (:constant-flag t) nil [37 56])
+            ("dali/backend/stream.hpp" include nil nil [58 92])
+            ("dali/creation/creation.hpp" include nil nil [93 130])
+            ("dali/database/database.hpp" include nil nil [131 168])
+            ("dali/syntax/syntax.hpp" include nil nil [169 202])
+            ("dali/utility/utility.hpp" include nil nil [203 238])
+            ("gtest/gtest.h" include (:system-flag t) nil [240 264])
+            ("fstream" include (:system-flag t) nil [265 283])
+            ("iterator" include (:system-flag t) nil [284 303])
+            ("numeric" include (:system-flag t) nil [304 322])
+            ("string" include (:system-flag t) nil [323 340])
+            ("unordered_map" include (:system-flag t) nil [341 365])
+            ("json.hpp" include nil nil [366 385])
+            ("Dali" using (:type ("Dali" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [387 408])
+            ("nlohmann::json" variable (:type "int") nil [422 437])
+            ("testing::Test" variable (:type "int") nil [467 1148])
+            ("TableTest::expected" variable
+               (:default-value "TableTest::get_expected()"
+                :type ("TableTest::Map" type (:type "class") nil nil))
+                nil [1150 1213])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("TableTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1222 1232])
+                    ("" variable (:type ("Simple" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1233 1240]))                  
+                :type "int")
+                nil [1215 1459])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("TableTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1468 1478])
+                    ("" variable (:type ("Medium" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1479 1486]))                  
+                :type "int")
+                nil [1461 1782])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("TableTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1791 1801])
+                    ("" variable (:type ("Complex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1802 1810]))                  
+                :type "int")
+                nil [1784 2264]))          
+      :file "test_table.hpp"
+      :pointmax 2299
+      :fsize 2298
+      :lastmodtime '(22289 30166 0 0)
+      :unmatched-syntax '((punctuation 466 . 467) (punctuation 465 . 466) (PUBLIC 458 . 464) (punctuation 456 . 457) (symbol 446 . 455) (STRUCT 439 . 445) (USING 409 . 414) (USING 409 . 414) (punctuation 466 . 467) (punctuation 465 . 466) (PUBLIC 458 . 464) (punctuation 456 . 457) (symbol 446 . 455) (STRUCT 439 . 445) (USING 409 . 414))
+      :lexical-table 
+        '(("DALI_TEST_TABLE_HPP")
+          )
+))
+  :file "!Users!petergoldsborough!Documents!Projects!dali!test!include!operations!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

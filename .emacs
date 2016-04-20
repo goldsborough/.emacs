@@ -23,7 +23,7 @@
  '(custom-enabled-themes (quote (spacemacs-dark)))
  '(custom-safe-themes
 	 (quote
-		("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "519d1b3cb7345cc9be10b4b0489436ae2d1b0690470d8d78f8e4e1ff19b83a86" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "f2503f0a035c2122984e90eb184185769ee665de5864edc19b339856942d2d2d" "7c1e99f9d46c397b3fd08c7fdd44fe47c4778ab69cc22c344f404204eb471baa" "0ae52e74c576120c6863403922ee00340a3bf3051615674c4b937f9c99b24535" "7e346cf2cb6a8324930c9f07ce050e9b7dfae5a315cd8ed3af6bcc94343f8402" "232f715279fc131ed4facf6a517b84d23dca145fcc0e09c5e0f90eb534e1680f" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "b04425cc726711a6c91e8ebc20cf5a3927160681941e06bc7900a5a5bfe1a77f" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "aed73c6d0afcf2232bb25ed2d872c7a1c4f1bda6759f84afc24de6a1aec93da8" "d69a0f6d860eeff5ca5f229d0373690782a99aee2410a3eed8a31332a7101f1e" "9567c8b113a53efdf4e7f3ab47564cb44b27ee231ece20811bb191698b1b8b6b" "c70cc9c4c6257d70f5c11b90cb9e8b1e54e6edd6aa43f39879746e16a70533f5" "03e3e79fb2b344e41a7df897818b7969ca51a15a67dc0c30ebbdeb9ea2cd4492" "16d6e7f87846801e17e0c8abc331cf6fa55bec73185a86a431aca6bec5d28a0a" "94ba29363bfb7e06105f68d72b268f85981f7fba2ddef89331660033101eb5e5" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "040eab9c119c33f184e9fd21290ecea9691efc807a89c328e12a50d3a0fe60f8" default)))
+		("d9b0d5c7077ddad798e9749d0629e86b925c2e146641b24130edd8f82cd0cf5d" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "519d1b3cb7345cc9be10b4b0489436ae2d1b0690470d8d78f8e4e1ff19b83a86" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "f2503f0a035c2122984e90eb184185769ee665de5864edc19b339856942d2d2d" "7c1e99f9d46c397b3fd08c7fdd44fe47c4778ab69cc22c344f404204eb471baa" "0ae52e74c576120c6863403922ee00340a3bf3051615674c4b937f9c99b24535" "7e346cf2cb6a8324930c9f07ce050e9b7dfae5a315cd8ed3af6bcc94343f8402" "232f715279fc131ed4facf6a517b84d23dca145fcc0e09c5e0f90eb534e1680f" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "b04425cc726711a6c91e8ebc20cf5a3927160681941e06bc7900a5a5bfe1a77f" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "aed73c6d0afcf2232bb25ed2d872c7a1c4f1bda6759f84afc24de6a1aec93da8" "d69a0f6d860eeff5ca5f229d0373690782a99aee2410a3eed8a31332a7101f1e" "9567c8b113a53efdf4e7f3ab47564cb44b27ee231ece20811bb191698b1b8b6b" "c70cc9c4c6257d70f5c11b90cb9e8b1e54e6edd6aa43f39879746e16a70533f5" "03e3e79fb2b344e41a7df897818b7969ca51a15a67dc0c30ebbdeb9ea2cd4492" "16d6e7f87846801e17e0c8abc331cf6fa55bec73185a86a431aca6bec5d28a0a" "94ba29363bfb7e06105f68d72b268f85981f7fba2ddef89331660033101eb5e5" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "040eab9c119c33f184e9fd21290ecea9691efc807a89c328e12a50d3a0fe60f8" default)))
  '(display-time-24hr-format t)
  '(display-time-day-and-date nil)
  '(display-time-format nil)
@@ -31,8 +31,7 @@
  '(eclim-eclipse-dirs (quote ("/Applications/Eclipse.app/Contents/Eclipse")))
  '(eclim-print-debug-messages nil)
  '(eclim-use-yasnippet nil)
- '(eclimd-executable
-	 "/opt/homebrew-cask/Caskroom/eclipse-java/4.5.1/Eclipse.app/Contents/Eclipse/eclimd")
+ '(eclimd-executable "/Applications/Eclipse.app/Contents/Eclipse/eclimd")
  '(fancy-battery-show-percentage t)
  '(fill-column 80)
  '(global-hl-line-mode t)
@@ -43,6 +42,7 @@
  '(markdown-enable-math t)
  '(powerline-default-separator (quote wave))
  '(powerline-height nil)
+ '(python-check-command "pylint")
  '(rm-blacklist ".*")
  '(show-paren-mode t)
  '(show-paren-ring-bell-on-mismatch t)
@@ -82,6 +82,7 @@
  '(indent-guide-face ((t (:foreground "cyan"))))
  '(isearch ((t (:background "brightmagenta"))))
  '(linum-highlight-face ((t (:inherit default :background "magenta" :foreground "black"))))
+ '(markdown-blockquote-face ((t (:foreground "green"))))
  '(markdown-bold-face ((t (:foreground "red" :weight bold))))
  '(markdown-header-face-4 ((t (:foreground "magenta"))))
  '(markdown-italic-face ((t (:foreground "green" :slant italic))))
@@ -90,7 +91,8 @@
  '(mmm-default-submode-face ((t nil)))
  '(show-paren-match ((t (:foreground "red" :background "#1B1D1E"))))
  '(show-paren-mismatch ((t (:foreground "red" :background "red"))))
- '(spaceline-unmodified ((t (:background "DarkGoldenrod2" :foreground "black" :inherit (quote mode-line))))))
+ '(spaceline-unmodified ((t (:background "DarkGoldenrod2" :foreground "black" :inherit (quote mode-line)))))
+ '(vertical-border ((t (:foreground "magenta")))))
 ;; Homebrew support for emacs packages
 
 (let ((default-directory "/usr/local/share/emacs/site-lisp/"))
@@ -108,6 +110,13 @@
 (global-linum-mode t)
 
 (hlinum-activate)
+
+;; column enforcement
+
+(require 'column-enforce-mode)
+
+(global-column-enforce-mode t)
+
 
 ;; yasnippet
 
@@ -240,6 +249,7 @@ the current position of point, then move it to the beginning of the line."
 
 (put 'erase-buffer 'disabled nil)
 (put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -307,11 +317,11 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 
 ;; clang-format on save
 
-(add-hook 'c++-mode-hook
-	  (lambda () (add-hook 'before-save-hook 'clang-format-buffer  nil 'local)))
+;; (add-hook 'c++-mode-hook
+;; 	  (lambda () (add-hook 'before-save-hook 'clang-format-buffer  nil 'local)))
 
-(add-hook 'java-mode-hook
-	  (lambda () (add-hook 'before-save-hook 'clang-format-buffer  nil 'local)))
+;; (add-hook 'java-mode-hook
+;; 	  (lambda () (add-hook 'before-save-hook 'clang-format-buffer  nil 'local)))
 
 ;; indentation higlighting
 
@@ -355,6 +365,18 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 					(lambda()
 						(define-key c++-mode-map (kbd "M-r") 'srefactor-refactor-at-point)))
 
+;; cpputils
+
+(add-hook 'c-mode-common-hook
+					(lambda ()
+						(if (derived-mode-p 'c-mode 'c++-mode)
+								(cppcm-reload-all))))
+
+;; cmake-ide
+
+;; (require 'rtags)
+(cmake-ide-setup)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; Java
@@ -371,16 +393,9 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 
 (define-key eclim-mode-map (kbd "C-c C-c") 'eclim-problems-correct)
 
-;; column enforcement
-
-(require 'column-enforce-mode)
-
-(global-column-enforce-mode t)
-
 ;; gradle for java
 
 (require 'gradle-mode)
-
 (add-hook 'java-mode-hook '(lambda() (gradle-mode 1)))
 
 (defun build-and-run ()
@@ -404,14 +419,15 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 (add-hook 'sql-interactive-mode-hook
 					(lambda () (toggle-truncate-lines t)))
 
-(eval-after-load "sql"
-	      (load-library "sql-indent"))
+(add-hook 'sql-mode-hook (lambda() (load-library "sql-indent")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; Python
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -428,3 +444,27 @@ If SUBMODE is not provided, use `LANG-mode' by default."
 ;; CSS
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; LaTeX
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Syntax checking
+
+(require 'flymake)
+(defun flymake-get-tex-args (file-name)
+	(list "pdflatex"
+				(list "-file-line-error" "-draftmode" "-interaction=nonstopmode"
+							file-name)))
+
+(add-hook 'LaTeX-mode-hook 'flymake-mode)
+
+;; Spell-checking
+
+(setq ispell-program-name "ispell")
+(setq ispell-dictionary "english")
+
+(add-hook 'LaTeX-mode 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'flyspell-buffer)

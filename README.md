@@ -96,7 +96,7 @@ Re-balance Buffers to fit screen: C-x +
 
 Increase height by one: C-x ^
 Increase height by argument: C-u -?\d C-x ^
-
+-
 ### One Buffer
 
 C-a: Move the cursor to the beginning of the line

@@ -308,6 +308,28 @@
           ("_MCONTEXT_T")
           ("_STRUCT_MCONTEXT_AVX32" . ((STRUCT "struct" 1710 . 1716) (symbol "__darwin_mcontext_avx32" 1717 . 1740)))
           )
+)
+    (semanticdb-table "_param.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_I386__PARAM_H_" variable (:constant-flag t) nil [1368 1383])
+            ("i386/_types.h" include (:system-flag t) nil [1385 1409])
+            ("__DARWIN_ALIGNBYTES" variable (:constant-flag t) nil [1611 1630])
+            ("__DARWIN_ALIGN" variable (:constant-flag t) nil [1669 1683])
+            ("__DARWIN_ALIGNBYTES32" variable (:constant-flag t) nil [1796 1817])
+            ("__DARWIN_ALIGN32" variable (:constant-flag t) nil [1861 1877]))          
+      :file "_param.h"
+      :pointmax 2017
+      :fsize 2016
+      :lastmodtime '(21982 20956 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__DARWIN_ALIGNBYTES" . ((semantic-list "(sizeof(__darwin_size_t) - 1)" 1631 . 1660)))
+          ("__DARWIN_ALIGNBYTES32" . ((semantic-list "(sizeof(__uint32_t) - 1)" 1822 . 1846)))
+          ("__DARWIN_ALIGN" (spp-arg-list ("p") 1683 . 1686) . ((semantic-list "((__darwin_size_t)((char *)(__darwin_size_t)(p) + __DARWIN_ALIGNBYTES) &~ __DARWIN_ALIGNBYTES)" 1687 . 1781)))
+          ("_I386__PARAM_H_")
+          ("__DARWIN_ALIGN32" (spp-arg-list ("p") 1877 . 1880) . ((semantic-list "((__darwin_size_t)((char *)(__darwin_size_t)(p) + __DARWIN_ALIGNBYTES32) &~ __DARWIN_ALIGNBYTES32)" 1887 . 1985)))
+          )
 ))
   :file "!Applications!Xcode.app!Contents!Developer!Platforms!MacOSX.platform!Developer!SDKs!MacOSX10.11.sdk!usr!include!i386!semantic.cache"
   :semantic-tag-version "2.0"

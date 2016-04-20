@@ -1,0 +1,31 @@
+;; Object cpr-example/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cpr-example/"
+  :tables
+  (list
+    (semanticdb-table "example.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("cpr/cpr.h" include (:system-flag t) nil [22 42])
+            ("json.hpp" include (:system-flag t) nil [43 62])
+            ("ctime" include (:system-flag t) nil [63 79])
+            ("string" include (:system-flag t) nil [80 97])
+            ("nlohmann::json" variable (:type "int") nil [112 127])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [138 147])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [148 160]))                  
+                :type "int")
+                nil [129 999]))          
+      :file "example.cpp"
+      :pointmax 1000
+      :fsize 999
+      :lastmodtime '(22289 13654 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!Documents!C++!libraries!cpr-example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -3,7 +3,6 @@
 (semanticdb-project-database-file "paldi/"
   :tables
   (list
-
     (semanticdb-table "main.cpp"
       :major-mode 'c++-mode
       :tags 
@@ -15,21 +14,12 @@
             ("global.hpp" include nil nil [118 139])
             ("model.hpp" include nil nil [140 160])
             ("utility.hpp" include nil nil [161 183])
-            ("main" function
-               (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [194 203])
-                    ("argv" variable
-                       (:pointer 1
-                        :dereference 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [204 218]))                  
-                :type "int")
-                nil [185 1676]))          
+            ("iostream" include (:system-flag t) nil [185 204]))          
       :file "main.cpp"
-      :pointmax 1676
-      :fsize 1675
-      :lastmodtime '(22213 48502 0 0)
-      :unmatched-syntax nil))
+      :pointmax 1527
+      :fsize 1526
+      :lastmodtime '(22238 63207 0 0)
+      :unmatched-syntax '((semantic-list 225 . 1526) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1528) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1526) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1514) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1514) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1520) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1514) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1520) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1514) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1520) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1514) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1518) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210) (semantic-list 225 . 1514) (INT 221 . 224) (punctuation 219 . 220) (punctuation 218 . 219) (semantic-list 215 . 217) (symbol 211 . 215) (symbol 206 . 210))))
   :file "!Users!petergoldsborough!Documents!Work!paldi!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

@@ -1,0 +1,23 @@
+;; Object utility/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utility/"
+  :tables
+  (list
+    (semanticdb-table "Point.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("capstone.utility" package nil nil [1 26])
+            ("java.util.regex.Matcher" include nil nil [28 59])
+            ("java.util.regex.Pattern" include nil nil [60 91]))          
+      :file "Point.java"
+      :pointmax 7065
+      :fsize 7078
+      :lastmodtime '(22158 59201 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 419 . 7064) (GT 417 . 418) (IDENTIFIER 412 . 417) (LT 411 . 412) (IDENTIFIER 401 . 411) (IMPLEMENTS 390 . 400) (GT 380 . 381) (IDENTIFIER 373 . 380) (COMMA 371 . 372) (IDENTIFIER 364 . 371) (PUBLIC 316 . 322) (LT 363 . 364) (BRACE_BLOCK 419 . 7078) (GT 417 . 418) (IDENTIFIER 412 . 417) (LT 411 . 412) (IDENTIFIER 401 . 411) (IMPLEMENTS 390 . 400) (GT 380 . 381) (IDENTIFIER 373 . 380) (COMMA 371 . 372) (IDENTIFIER 364 . 371) (PUBLIC 316 . 322) (LT 363 . 364)))
+    (semanticdb-table "Pattern.java"
+      :file "Pattern.java"
+      :fsize 10395
+      :lastmodtime '(22158 59201 0 0)))
+  :file "!Users!petergoldsborough!Documents!University!lectures!info!capstone!source!capstone!utility!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

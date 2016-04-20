@@ -67,6 +67,15 @@
       :pointmax 1452
       :fsize 1451
       :lastmodtime '(21982 20962 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "_param.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("i386/_param.h" include nil nil [1377 1401]))          
+      :file "_param.h"
+      :pointmax 1449
+      :fsize 1448
+      :lastmodtime '(21982 20962 0 0)
       :unmatched-syntax nil))
   :file "!Applications!Xcode.app!Contents!Developer!Platforms!MacOSX.platform!Developer!SDKs!MacOSX10.11.sdk!usr!include!machine!semantic.cache"
   :semantic-tag-version "2.0"

@@ -1,0 +1,42 @@
+;; Object research/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "research/"
+  :tables
+  (list
+
+
+
+    (semanticdb-table "common.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("sys/types.h" include (:system-flag t) nil [60 82])
+            ("unistd.h" include (:system-flag t) nil [83 102])
+            ("time.h" include (:system-flag t) nil [103 120])
+            ("now" function (:type "double") nil [200 266])
+            ("benchmark" function
+               (:arguments 
+                  ( ("start" variable (:type "int") (reparse-symbol arg-sub-list) [283 293]))                  
+                :type "void")
+                nil [268 329])
+            ("get_bytes" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [345 354])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [355 374]))                  
+                :type "int")
+                nil [331 563]))          
+      :file "common.h"
+      :pointmax 564
+      :fsize 563
+      :lastmodtime '(22292 1157 0 0)
+      :unmatched-syntax '((semantic-list 154 . 198) (semantic-list 132 . 153) (THROW 127 . 132) (VOID 122 . 126))))
+  :file "!Users!petergoldsborough!Documents!Work!tum!research!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

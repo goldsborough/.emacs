@@ -962,6 +962,62 @@
       :lexical-table 
         '(("_UINTPTR_T")
           )
+)
+    (semanticdb-table "_sa_family_t.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SA_FAMILY_T" variable (:constant-flag t) nil [1360 1372])
+            ("sa_family_t" type
+               (:typedef ("__uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1374 1405]))          
+      :file "_sa_family_t.h"
+      :pointmax 1433
+      :fsize 1432
+      :lastmodtime '(21982 20978 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_SA_FAMILY_T")
+          )
+)
+    (semanticdb-table "_socklen_t.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SOCKLEN_T" variable (:constant-flag t) nil [1357 1367])
+            ("socklen_t" type
+               (:typedef ("__darwin_socklen_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1368 1405]))          
+      :file "_socklen_t.h"
+      :pointmax 1414
+      :fsize 1413
+      :lastmodtime '(21982 20978 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_SOCKLEN_T")
+          )
+)
+    (semanticdb-table "_iovec_t.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_STRUCT_IOVEC" variable (:constant-flag t) nil [1360 1373])
+            ("iovec" type
+               (:members 
+                  ( ("iov_base" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1390 1408])
+                    ("iov_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1456 1472]))                  
+                :type "struct")
+                nil [1374 1521]))          
+      :file "_iovec_t.h"
+      :pointmax 1549
+      :fsize 1548
+      :lastmodtime '(21982 20977 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_STRUCT_IOVEC")
+          )
 ))
   :file "!Applications!Xcode.app!Contents!Developer!Platforms!MacOSX.platform!Developer!SDKs!MacOSX10.11.sdk!usr!include!sys!_types!semantic.cache"
   :semantic-tag-version "2.0"

@@ -1,0 +1,62 @@
+;; Object experimental/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "experimental/"
+  :tables
+  (list
+    (semanticdb-table "optional"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_LIBCPP_OPTIONAL" variable (:constant-flag t) nil [406 422])
+            ("experimental/__config" include (:system-flag t) nil [5571 5603])
+            ("functional" include (:system-flag t) nil [5604 5625])
+            ("stdexcept" include (:system-flag t) nil [5626 5646])
+            ("std::logic_error" variable (:type "int") nil [5746 5952]))          
+      :file "optional"
+      :pointmax 24580
+      :fsize 24579
+      :lastmodtime '(21945 3717 0 0)
+      :unmatched-syntax '((symbol 5954 . 5988) (PUBLIC 5739 . 5745) (punctuation 5737 . 5738) (symbol 5713 . 5732) (symbol 5691 . 5712) (CLASS 5685 . 5690) (symbol 5648 . 5684))
+      :lexical-table 
+        '(("_LIBCPP_OPTIONAL")
+          )
+)
+    (semanticdb-table "__config"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_LIBCPP_EXPERIMENTAL_CONFIG" variable (:constant-flag t) nil [417 444])
+            ("__config" include (:system-flag t) nil [446 465])
+            ("_LIBCPP_BEGIN_NAMESPACE_EXPERIMENTAL" variable (:constant-flag t) nil [475 511])
+            ("_LIBCPP_END_NAMESPACE_EXPERIMENTAL" variable (:constant-flag t) nil [561 595])
+            ("_VSTD_EXPERIMENTAL" variable (:constant-flag t) nil [609 627])
+            ("_LIBCPP_BEGIN_NAMESPACE_LFTS" variable (:constant-flag t) nil [655 683])
+            ("_LIBCPP_END_NAMESPACE_LFTS" variable (:constant-flag t) nil [764 790])
+            ("_VSTD_LFTS" variable (:constant-flag t) nil [806 816])
+            ("_LIBCPP_BEGIN_NAMESPACE_CHRONO_LFTS" variable (:constant-flag t) nil [862 897])
+            ("_LIBCPP_END_NAMESPACE_CHRONO_LFTS" variable (:constant-flag t) nil [1024 1057]))          
+      :file "__config"
+      :pointmax 1098
+      :fsize 1097
+      :lastmodtime '(21945 3717 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_VSTD_EXPERIMENTAL" . 
+              ((symbol "std" 628 . 631) (punctuation ":" 631 . 632) (punctuation ":" 632 . 633) (symbol "experimental" 633 . 645)))
+          ("_LIBCPP_BEGIN_NAMESPACE_EXPERIMENTAL" . 
+              ((NAMESPACE "namespace" 512 . 521) (symbol "std" 522 . 525) (open-paren "{" 526 . 527) (NAMESPACE "namespace" 528 . 537) (symbol "experimental" 538 . 550) (open-paren "{" 551 . 552)))
+          ("_LIBCPP_END_NAMESPACE_EXPERIMENTAL" . ((close-paren "}" 597 . 598) (close-paren "}" 599 . 600)))
+          ("_LIBCPP_BEGIN_NAMESPACE_LFTS" . 
+              ((symbol "_LIBCPP_BEGIN_NAMESPACE_EXPERIMENTAL" 684 . 720) (INLINE "inline" 721 . 727) (NAMESPACE "namespace" 728 . 737) (symbol "fundamentals_v1" 738 . 753) (open-paren "{" 754 . 755)))
+          ("_LIBCPP_END_NAMESPACE_CHRONO_LFTS" . 
+              ((symbol "_LIBCPP_END_NAMESPACE_STD" 1058 . 1083) (close-paren "}" 1084 . 1085) (close-paren "}" 1086 . 1087) (close-paren "}" 1088 . 1089)))
+          ("_VSTD_LFTS" . 
+              ((symbol "_VSTD_EXPERIMENTAL" 817 . 835) (punctuation ":" 835 . 836) (punctuation ":" 836 . 837) (symbol "fundamentals_v1" 837 . 852)))
+          ("_LIBCPP_BEGIN_NAMESPACE_CHRONO_LFTS" . 
+              ((symbol "_LIBCPP_BEGIN_NAMESPACE_STD" 898 . 925) (NAMESPACE "namespace" 937 . 946) (symbol "chrono" 947 . 953) (open-paren "{" 954 . 955) (NAMESPACE "namespace" 956 . 965) (symbol "experimental" 966 . 978) (open-paren "{" 979 . 980) (INLINE "inline" 981 . 987) (NAMESPACE "namespace" 988 . 997) (symbol "fundamentals_v1" 998 . 1013) (open-paren "{" 1014 . 1015)))
+          ("_LIBCPP_EXPERIMENTAL_CONFIG")
+          ("_LIBCPP_END_NAMESPACE_LFTS" . 
+              ((close-paren "}" 792 . 793) (close-paren "}" 794 . 795) (close-paren "}" 796 . 797)))
+          )
+))
+  :file "!Applications!Xcode.app!Contents!Developer!Toolchains!XcodeDefault.xctoolchain!usr!include!c++!v1!experimental!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object 13/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "13/"
+  :tables
+  (list
+    (semanticdb-table "notes.html"
+      :major-mode 'html-mode
+      :tags nil
+      :file "notes.html"
+      :pointmax 2838
+      :fsize 2873
+      :lastmodtime '(22183 48162 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!Documents!University!lectures!era!tutor!13!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
