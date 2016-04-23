@@ -1,0 +1,150 @@
+;; Object other/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "other/"
+  :tables
+  (list
+    (semanticdb-table "prepared.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_PREPARED_HPP" variable (:constant-flag t) nil [35 52])
+            ("memory" include (:system-flag t) nil [54 71])
+            ("dali/syntax/expression.hpp" include nil nil [72 109])
+            ("Dali" type
+               (:members 
+                  ( ("Transaction" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [129 147])
+                    ("Prepared" type
+                       (:superclasses 
+                          ( ("Syntax::Expression" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [195 202])
+                            ("Prepared" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Prepared" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [204 215])
+                            ("Prepared" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("transaction" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Transaction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [227 258]))                                  
+                                :type ("Prepared" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [218 259])
+                            ("<<" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("Expression" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Syntax::Expression" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [283 320]))                                  
+                                :type ("Prepared" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [262 321])
+                            ("+=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("Expression" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Syntax::Expression" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [344 381]))                                  
+                                :type ("Prepared" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [323 382])
+                            ("commit" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [385 399])
+                            ("rollback" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [401 417])
+                            ("private" label nil (reparse-symbol classsubparts) [420 428])
+                            ("_transaction" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("Transaction" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [430 472]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [149 475]))                  
+                :type "namespace")
+                nil [111 477]))          
+      :file "prepared.hpp"
+      :pointmax 510
+      :fsize 509
+      :lastmodtime '(22289 28851 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DALI_PREPARED_HPP")
+          )
+)
+    (semanticdb-table "transaction.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_TRANSACTION_HPP" variable (:constant-flag t) nil [38 58])
+            ("dali/operations/abstract-operation.hpp" include nil nil [60 109])
+            ("memory" include (:system-flag t) nil [111 128])
+            ("Dali" type
+               (:members 
+                  ( ("Transaction" type
+                       (:superclasses 
+                          ( ("Operations::AbstractOperation" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [208 215])
+                            ("Transaction" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("connection" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("Backend::Connection" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [229 284])
+                                    ("defer_begin" variable (:type "bool") (reparse-symbol arg-sub-list) [292 309]))                                  
+                                :type ("Transaction" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [217 310])
+                            ("begin" function
+                               (:prototype-flag t
+                                :type ("Transaction" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [313 334])
+                            ("rollback" function
+                               (:prototype-flag t
+                                :type ("Transaction" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [336 360])
+                            ("commit" function
+                               (:prototype-flag t
+                                :type ("Transaction" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [362 384]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [148 387]))                  
+                :type "namespace")
+                nil [130 389]))          
+      :file "transaction.hpp"
+      :pointmax 425
+      :fsize 424
+      :lastmodtime '(22288 57564 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DALI_TRANSACTION_HPP")
+          )
+))
+  :file "!Users!petergoldsborough!Documents!Projects!dali!include!dali!other!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

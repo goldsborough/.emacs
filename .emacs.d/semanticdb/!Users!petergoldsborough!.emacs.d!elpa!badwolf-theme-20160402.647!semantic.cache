@@ -1,0 +1,16 @@
+;; Object badwolf-theme-20160402.647/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "badwolf-theme-20160402.647/"
+  :tables
+  (list
+    (semanticdb-table "badwolf-theme-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "badwolf-theme-autoloads.el"
+      :pointmax 299
+      :fsize 561
+      :lastmodtime '(22299 19923 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!badwolf-theme-20160402.647!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

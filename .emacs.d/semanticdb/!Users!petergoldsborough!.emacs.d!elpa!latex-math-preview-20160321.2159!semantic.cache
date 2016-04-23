@@ -1,0 +1,16 @@
+;; Object latex-math-preview-20160321.2159/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "latex-math-preview-20160321.2159/"
+  :tables
+  (list
+    (semanticdb-table "latex-math-preview-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "latex-math-preview-autoloads.el"
+      :pointmax 309
+      :fsize 1937
+      :lastmodtime '(22299 19899 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!latex-math-preview-20160321.2159!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

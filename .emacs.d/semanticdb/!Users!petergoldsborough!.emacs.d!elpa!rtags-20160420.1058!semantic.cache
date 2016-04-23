@@ -1,0 +1,16 @@
+;; Object rtags-20160420.1058/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rtags-20160420.1058/"
+  :tables
+  (list
+    (semanticdb-table "rtags-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "rtags-autoloads.el"
+      :pointmax 283
+      :fsize 9293
+      :lastmodtime '(22299 19890 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!rtags-20160420.1058!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

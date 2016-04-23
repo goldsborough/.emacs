@@ -1,0 +1,16 @@
+;; Object pandoc-mode-20160405.2349/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pandoc-mode-20160405.2349/"
+  :tables
+  (list
+    (semanticdb-table "pandoc-mode-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "pandoc-mode-autoloads.el"
+      :pointmax 295
+      :fsize 818
+      :lastmodtime '(22299 19893 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!pandoc-mode-20160405.2349!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

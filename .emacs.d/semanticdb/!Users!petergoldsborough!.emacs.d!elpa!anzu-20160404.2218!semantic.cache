@@ -1,0 +1,16 @@
+;; Object anzu-20160404.2218/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "anzu-20160404.2218/"
+  :tables
+  (list
+    (semanticdb-table "anzu-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "anzu-autoloads.el"
+      :pointmax 281
+      :fsize 1708
+      :lastmodtime '(22299 19926 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!anzu-20160404.2218!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

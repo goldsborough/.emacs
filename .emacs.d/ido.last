@@ -1,0 +1,73 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/petergoldsborough/Documents/Projects/" . "dali/")
+ ("/Users/petergoldsborough/Documents/Projects/dali/source/" . "selection/")
+ ("/Users/petergoldsborough/Documents/University/courses/ml/topics/logistic-regression/" . "assignment/")
+ ("/Users/petergoldsborough/Documents/University/courses/ml/topics/" . "logistic-regression/")
+ ("/Users/petergoldsborough/Documents/University/courses/ml/" . "topics/")
+ ("/Users/petergoldsborough/Documents/University/courses/" . "ml/")
+ ("/Users/petergoldsborough/Documents/University/" . "courses/")
+ ("/Users/petergoldsborough/Documents/" . "Projects/")
+ ("/Users/petergoldsborough/" . "Documents/")
+ ("/" . "Users/")
+ ("/Users/" . "petergoldsborough/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/petergoldsborough/Documents/Projects/dali/source/selection/"
+ "/Users/petergoldsborough/Documents/Projects/dali/"
+ "/Users/petergoldsborough/"
+ "/Users/petergoldsborough/Documents/Projects/dali/source/creation/"
+ "/Users/petergoldsborough/Documents/University/courses/ml/topics/logistic-regression/assignment/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "query.cpp"
+ "main.cpp"
+ ".emacs"
+ "index.cpp"
+ ".dir-locals.el"
+ "logistic.py"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/petergoldsborough/Documents/Projects/dali/source/selection/" (22299 32962 0 0) "query.cpp" "order.cpp" "aggregation.cpp" ".#query.cpp" "#query.cpp#" "../" "./")
+
+ ("/Users/petergoldsborough/Documents/Projects/dali/" (22299 32831 0 0) "test/" "source/" "README.md" "main.cpp~" "main.cpp" "LICENSE" "lib/" "include/" "docs/" "dali.xcodeproj/" "CMakeLists.txt" "build/" ".travis.yml" ".gitmodules" ".gitignore" ".git/" ".dir-locals.el~" ".dir-locals.el" ".clang-format" ".#main.cpp" "#main.cpp#" "../" "./")
+
+ ("/Users/petergoldsborough/" (22299 32594 0 0) "~/" "z.sh" "workbench.xmi" "VirtualBox VMs/" "tmp/" "test.db" "tasks/" "t/" "Public/" "projects/" "Pictures/" "OR/" "node_modules/" "New document 1.2016_03_14_13_10_49.0.svg" "Music/" "Movies/" "libtool" "Library/" "Google Drive/" "fuck/" "Dropbox/" "doxygen/" "Downloads/" "Documents/" "Desktop/" "config.status" "config.log" "C++/" "build-test-tarball.mk" "Applications (Parallels)/" "Applications/" ".zshrc~" ".zshrc.pre-oh-my-zsh" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-peter-macbook-5.0.8" ".zcompdump-peter-macbook (2)-5.2" ".zcompdump-peter-macbook (2)-5.0.8" ".z.5728" ".z.32331" ".z.29757" ".z.25692" ".z.19062" ".z.1688" ".z.15557" ".z.12942" ".z.12661" ".z.12147" ".z.11575" ".z" ".Xauthority" ".viminfo" ".travis/" ".Trash/" ".tox/" ".thefuck/" ".swt/" ".swp" ".swo" ".subversion/" ".ssh/" ".sqlite_history" ".spotflux/" ".sh_history" ".serverauth.63311" ".rtags/" ".rnd" ".rdm" ".python_history" ".pypirc~" ".pypirc" ".pylintrc~" ".pylintrc" ".pylint.d/" ".pyenv/" ".psql_history" ".pip/" ".phet/" ".pgpass" ".pgadmin_histoqueries" ".p2/" ".oracle_jre_usage/" ".oh-my-zsh/" ".octave_hist" ".npm/" ".node_repl_history" ".node-gyp/" ".netrc" ".mysql_history" ".meteorsession" ".meteor/" ".matplotlib/" ".m2/" ".local/" ".lightpaper/" ".license" ".jupyter/" ".jssc/" ".jasmin" ".ispell_english" ".irssi/" ".ipython/" ".IntelliJIdea15/" ".inkscape-etc/" ".idlerc/" ".heroku/" ".graphlab/" ".gradle/" ".gnuplot_history-" ".gnuplot_history" ".gnupg/" ".gnome2/" ".gitconfig" ".git-templates/" ".git-stats" ".ghc/" ".gem/" ".fontconfig/" ".emacs~" ".emacs.d/" ".emacs" ".eclipse/" ".eclim/" ".DS_Store" ".dropbox/" ".distlib/" ".designer/" ".dbus-keyrings/" ".cups/" ".cookiecutters/" ".config/" ".clang-format" ".cheat/" ".CFUserTextEncoding" ".cache/" ".cabal/" ".bash_sessions/" ".bash_rc" ".bash_profile~" ".bash_profile" ".bash_history" ".atom/" ".android/" ".2008.padl" "../" "./")
+
+ ("/Users/petergoldsborough/Documents/Projects/dali/source/creation/" (22299 32056 0 0) "type.cpp" "table.cpp" "schema.cpp" "references.cpp" "index.cpp" "foreign-key.cpp" "constraint.cpp" "../" "./")
+
+ ("/Users/petergoldsborough/.emacs.d/" (22299 31396 0 0) "srecode-map.el" "snippets/" "semanticdb/" "ido.last~" "ido.last" "games/" "eshell/" "eproject.lst" "emacs-color-theme-solarized/" "elpa/" "autopair.el" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".python-environments/" ".hl-save" ".cask/" "../" "./")
+
+ ("/Users/petergoldsborough/Documents/Projects/dali/source/" (22299 30906 0 0) "syntax/" "selection/" "other/" "operations/" "Makefile" "insertion/" "database.cpp" "creation/" "CMakeLists.txt" "CMakeFiles/" "cmake_install.cmake" "backend/" "../" "./")
+
+ ("/Users/petergoldsborough/Documents/Projects/" (22299 30970 0 0) "your_app/" "weagree/" "undo/" "test/" "spoon/" "plot/" "markdownpp/" "markdown-editor/" "lnk/" "li/" "lecture/" "latexpp/" "kill/" "grid/" "euler/" "ecstasy/" "design-patterns/" "dali/" "changes/" ".DS_Store" "../" "./")
+
+ ("/Users/petergoldsborough/Documents/University/courses/ml/topics/logistic-regression/assignment/" (22299 26923 0 0) "logistic.py~" "logistic.py" "ex2.pdf" "ex2/" "#logistic.py#" "../" "./")
+
+ ("/Users/petergoldsborough/.dbus-keyrings/" (22246 18413 0 0) "org_freedesktop_general" "../" "./")
+
+ ("/Users/" (22031 55268 0 0) "Shared/" "petergoldsborough/" "Guest/" ".localized" "../" "./")
+
+ ("/Users/petergoldsborough/Documents/" (22297 61014 0 0) "workspace/" "Work/" "Web/" "Unix/" "University/" "Python/" "Projects/" "Parallels/" "Papers/" "Other/" "Java/" "goldsborough.github.io/" "Foo.anthem" "EYP/" "ExpressVPN Shortcuts/" "Design/" "C++/" "Blog/" "AVR/" "Arduino/" "Archive/" "Anthem/" "Algorithms/" ".parallels-vm-directory/" ".localized" ".DS_Store" "$RECYCLE.BIN/" "../" "./")
+
+ ("/Users/petergoldsborough/Documents/University/" (22285 23116 0 0) "urlaub/" "scholarships/" "invest/" "img/" "courses/" "application/" "admin/" ".DS_Store" "../" "./")
+
+ ("/Users/petergoldsborough/Documents/University/courses/" (22285 573 0 0) "praktikum/" "notes/" "netze/" "ml/" "linalg/" "archive/" "algo/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/petergoldsborough/Documents/University/courses/ml/" (22296 4732 0 0) "topics/" "papers/" "notes/" "env/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/petergoldsborough/Documents/University/courses/ml/topics/" (22297 16930 0 0) "logistic-regression/" "linear-regression/" "libs/" "../" "./")
+
+ ("/Users/petergoldsborough/Documents/University/courses/ml/topics/logistic-regression/" (22299 20900 0 0) "notes.md~" "notes.md" "assignment/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

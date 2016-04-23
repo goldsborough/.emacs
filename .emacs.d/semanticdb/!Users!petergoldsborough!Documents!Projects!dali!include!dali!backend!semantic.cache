@@ -1,0 +1,575 @@
+;; Object backend/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "backend/"
+  :tables
+  (list
+    (semanticdb-table "connection.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_CONNECTION_HPP" variable (:constant-flag t) nil [37 56])
+            ("dali/selection/raw-result.hpp" include nil nil [58 98])
+            ("string" include (:system-flag t) nil [100 117])
+            ("Dali" type
+               (:members 
+                  ( ("Syntax" type
+                       (:members 
+                          ( ("Expression" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [156 173]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [137 175])
+                    ("Selection" type
+                       (:members 
+                          ( ("Query" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [199 211]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [177 213])
+                    ("Backend" type
+                       (:members 
+                          ( ("AbstractBackend" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [236 258])
+                            ("Connection" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [280 287])
+                                    ("Connection" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [289 311])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [355 374])
+                                    ("select" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("query" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Selection::Query" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [413 443]))                                          
+                                        :type ("Selection::RawResult" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [377 448])
+                                    ("execute" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("statement" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [472 501]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [451 506])
+                                    ("execute" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("Expression" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Syntax::Expression" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [529 566]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [508 567])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("Expression" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Syntax::Expression" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [595 632]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [571 633])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("statement" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [659 688]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [635 689]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [260 692]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [215 694]))                  
+                :type "namespace")
+                nil [119 696]))          
+      :file "connection.hpp"
+      :pointmax 730
+      :fsize 729
+      :lastmodtime '(22288 7501 0 0)
+      :unmatched-syntax '((semantic-list 352 . 354) (symbol 345 . 352) (punctuation 343 . 344) (symbol 328 . 343) (CONST 322 . 327) (VIRTUAL 314 . 321))
+      :lexical-table 
+        '(("DALI_CONNECTION_HPP")
+          )
+)
+    (semanticdb-table "mysql.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_MYSQL_HPP" variable (:constant-flag t) nil [32 46])
+            ("dali/backend/abstract-backend.hpp" include nil nil [48 92])
+            ("memory" include (:system-flag t) nil [94 111])
+            ("string" include (:system-flag t) nil [112 129])
+            ("Dali" type
+               (:members 
+                  ( ("Backend" type
+                       (:members 
+                          ( ("Connection" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [169 186])
+                            ("MySQL" type
+                               (:superclasses 
+                                  ( ("AbstractBackend" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [228 235])
+                                    ("MySQL" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("database" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [243 271]))                                          
+                                        :type ("MySQL" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [237 272])
+                                    ("database" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("database" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [291 319]))                                          
+                                        :type ("MySQL" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [275 320])
+                                    ("hostname" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("hostname" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [338 366]))                                          
+                                        :type ("MySQL" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [322 367])
+                                    ("password" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("password" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [385 413]))                                          
+                                        :type ("MySQL" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [369 414])
+                                    ("port" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("port" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [428 452]))                                          
+                                        :type ("MySQL" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [416 453])
+                                    ("user" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("user" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [467 491]))                                          
+                                        :type ("MySQL" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [455 492])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [525 540])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [572 587])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [619 634])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [662 677])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [705 720])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [741 756])
+                                    ("private" label nil (reparse-symbol classsubparts) [759 767])
+                                    ("override" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [818 833])
+                                    ("_check_arguments" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [836 866])
+                                    ("_database" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [869 891])
+                                    ("_hostname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [893 915])
+                                    ("_password" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [917 939])
+                                    ("_port" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [941 959])
+                                    ("_user" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [961 979]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [188 982]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [148 984]))                  
+                :type "namespace")
+                nil [131 986]))          
+      :file "mysql.hpp"
+      :pointmax 1015
+      :fsize 1014
+      :lastmodtime '(22287 22744 0 0)
+      :unmatched-syntax '((semantic-list 815 . 817) (symbol 805 . 815) (punctuation 803 . 804) (symbol 793 . 803) (punctuation 792 . 793) (symbol 782 . 792) (punctuation 781 . 782) (punctuation 780 . 781) (symbol 777 . 780) (VIRTUAL 769 . 776) (semantic-list 738 . 740) (symbol 735 . 738) (symbol 728 . 734) (punctuation 727 . 728) (punctuation 726 . 727) (symbol 723 . 726) (semantic-list 702 . 704) (symbol 698 . 702) (punctuation 696 . 697) (symbol 690 . 696) (punctuation 689 . 690) (punctuation 688 . 689) (symbol 685 . 688) (CONST 679 . 684) (semantic-list 659 . 661) (symbol 655 . 659) (punctuation 653 . 654) (symbol 647 . 653) (punctuation 646 . 647) (punctuation 645 . 646) (symbol 642 . 645) (CONST 636 . 641) (semantic-list 616 . 618) (symbol 608 . 616) (punctuation 606 . 607) (symbol 600 . 606) (punctuation 599 . 600) (punctuation 598 . 599) (symbol 595 . 598) (CONST 589 . 594) (semantic-list 569 . 571) (symbol 561 . 569) (punctuation 559 . 560) (symbol 553 . 559) (punctuation 552 . 553) (punctuation 551 . 552) (symbol 548 . 551) (CONST 542 . 547) (semantic-list 522 . 524) (symbol 514 . 522) (punctuation 512 . 513) (symbol 506 . 512) (punctuation 505 . 506) (punctuation 504 . 505) (symbol 501 . 504) (CONST 495 . 500))
+      :lexical-table 
+        '(("DALI_MYSQL_HPP")
+          )
+)
+    (semanticdb-table "postgres.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_POSTGRES_BACKEND_HPP" variable (:constant-flag t) nil [43 68])
+            ("dali/backend/abstract-backend.hpp" include nil nil [70 114])
+            ("memory" include (:system-flag t) nil [116 133])
+            ("string" include (:system-flag t) nil [134 151])
+            ("Dali" type
+               (:members 
+                  ( ("Backend" type
+                       (:members 
+                          ( ("AbstractConnection" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [191 216])
+                            ("PostGres" type
+                               (:superclasses 
+                                  ( ("AbstractBackend" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [261 268])
+                                    ("PostGres" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("database" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [288 316]))                                          
+                                        :type ("PostGres" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [279 317])
+                                    ("database" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("database" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [339 367]))                                          
+                                        :type ("PostGres" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [320 368])
+                                    ("hostname" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("hostname" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [389 417]))                                          
+                                        :type ("PostGres" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [370 418])
+                                    ("user" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("user" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [435 459]))                                          
+                                        :type ("PostGres" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [420 460])
+                                    ("password" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("password" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [481 509]))                                          
+                                        :type ("PostGres" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [462 510])
+                                    ("port" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("port" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [527 551]))                                          
+                                        :type ("PostGres" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [512 552])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [585 600])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [632 647])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [675 690])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [722 737])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [765 780])
+                                    ("connection_string" function
+                                       (:prototype-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [783 821])
+                                    ("private" label nil (reparse-symbol classsubparts) [824 832])
+                                    ("override" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [883 898])
+                                    ("_check_arguments" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [901 931])
+                                    ("_database" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [934 956])
+                                    ("_hostname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [958 980])
+                                    ("_user" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [982 1000])
+                                    ("_password" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1002 1024])
+                                    ("_port" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1026 1044]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [218 1047]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [170 1049]))                  
+                :type "namespace")
+                nil [153 1051]))          
+      :file "postgres.hpp"
+      :pointmax 1094
+      :fsize 1093
+      :lastmodtime '(22289 65169 0 0)
+      :unmatched-syntax '((semantic-list 880 . 882) (symbol 870 . 880) (punctuation 868 . 869) (symbol 858 . 868) (punctuation 857 . 858) (symbol 847 . 857) (punctuation 846 . 847) (punctuation 845 . 846) (symbol 842 . 845) (VIRTUAL 834 . 841) (semantic-list 762 . 764) (symbol 758 . 762) (punctuation 756 . 757) (symbol 750 . 756) (punctuation 749 . 750) (punctuation 748 . 749) (symbol 745 . 748) (CONST 739 . 744) (semantic-list 719 . 721) (symbol 711 . 719) (punctuation 709 . 710) (symbol 703 . 709) (punctuation 702 . 703) (punctuation 701 . 702) (symbol 698 . 701) (CONST 692 . 697) (semantic-list 672 . 674) (symbol 668 . 672) (punctuation 666 . 667) (symbol 660 . 666) (punctuation 659 . 660) (punctuation 658 . 659) (symbol 655 . 658) (CONST 649 . 654) (semantic-list 629 . 631) (symbol 621 . 629) (punctuation 619 . 620) (symbol 613 . 619) (punctuation 612 . 613) (punctuation 611 . 612) (symbol 608 . 611) (CONST 602 . 607) (semantic-list 582 . 584) (symbol 574 . 582) (punctuation 572 . 573) (symbol 566 . 572) (punctuation 565 . 566) (punctuation 564 . 565) (symbol 561 . 564) (CONST 555 . 560) (EXPLICIT 270 . 278))
+      :lexical-table 
+        '(("DALI_POSTGRES_BACKEND_HPP")
+          )
+)
+    (semanticdb-table "sqlite.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_SQLITE_HPP" variable (:constant-flag t) nil [33 48])
+            ("dali/backend/abstract-backend.hpp" include nil nil [50 94])
+            ("memory" include (:system-flag t) nil [96 113])
+            ("string" include (:system-flag t) nil [114 131])
+            ("Dali" type
+               (:members 
+                  ( ("Backend" type
+                       (:members 
+                          ( ("Connection" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [171 188])
+                            ("SQLite" type
+                               (:superclasses 
+                                  ( ("AbstractBackend" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [231 238])
+                                    ("SQLite" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [256 280]))                                          
+                                        :type ("SQLite" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [249 281])
+                                    ("path" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [294 318]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [284 319])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [347 362])
+                                    ("private" label nil (reparse-symbol classsubparts) [365 373])
+                                    ("override" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [424 439])
+                                    ("_path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [442 460]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [190 463]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [150 465]))                  
+                :type "namespace")
+                nil [133 467]))          
+      :file "sqlite.hpp"
+      :pointmax 497
+      :fsize 496
+      :lastmodtime '(22287 22744 0 0)
+      :unmatched-syntax '((semantic-list 421 . 423) (symbol 411 . 421) (punctuation 409 . 410) (symbol 399 . 409) (punctuation 398 . 399) (symbol 388 . 398) (punctuation 387 . 388) (punctuation 386 . 387) (symbol 383 . 386) (VIRTUAL 375 . 382) (semantic-list 344 . 346) (symbol 340 . 344) (punctuation 338 . 339) (symbol 332 . 338) (punctuation 331 . 332) (punctuation 330 . 331) (symbol 327 . 330) (CONST 321 . 326) (EXPLICIT 240 . 248))
+      :lexical-table 
+        '(("DALI_SQLITE_HPP")
+          )
+)
+    (semanticdb-table "stream.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_STREAM_HPP" variable (:constant-flag t) nil [33 48])
+            ("dali/backend/abstract-backend.hpp" include nil nil [50 94])
+            ("iostream" include (:system-flag t) nil [96 115])
+            ("Dali" type
+               (:members 
+                  ( ("Backend" type
+                       (:members 
+                          ( ("Connection" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [155 172])
+                            ("Stream" type
+                               (:superclasses 
+                                  ( ("AbstractBackend" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [214 221])
+                                    ("Stream" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :default-value "std"
+                                                :type ("std::ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [231 257])
+                                            ("" variable (:type ("cout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [259 264]))                                          
+                                        :type ("Stream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [224 265])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [292 307])
+                                    ("private" label nil (reparse-symbol classsubparts) [310 318])
+                                    ("override" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [369 384])
+                                    ("_stream" variable (:type ("std::ostream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [387 409]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [174 412]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [134 415]))                  
+                :type "namespace")
+                nil [117 417]))          
+      :file "stream.hpp"
+      :pointmax 447
+      :fsize 446
+      :lastmodtime '(22287 22744 0 0)
+      :unmatched-syntax '((semantic-list 366 . 368) (symbol 356 . 366) (punctuation 354 . 355) (symbol 344 . 354) (punctuation 343 . 344) (symbol 333 . 343) (punctuation 332 . 333) (punctuation 331 . 332) (symbol 328 . 331) (VIRTUAL 320 . 327) (semantic-list 289 . 291) (symbol 283 . 289) (punctuation 281 . 282) (symbol 274 . 281) (punctuation 273 . 274) (punctuation 272 . 273) (symbol 269 . 272) (punctuation 258 . 259) (punctuation 257 . 258))
+      :lexical-table 
+        '(("DALI_STREAM_HPP")
+          )
+)
+    (semanticdb-table "abstract-backend.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_ABSTRACT_BACKEND_HPP" variable (:constant-flag t) nil [43 68])
+            ("memory" include (:system-flag t) nil [70 87])
+            ("Dali" type
+               (:members 
+                  ( ("Database" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [107 122])
+                    ("Backend" type
+                       (:members 
+                          ( ("Connection" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [145 162])
+                            ("AbstractBackend" type
+                               (:members 
+                                  ( ("protected" label nil (reparse-symbol classsubparts) [189 199])
+                                    ("Dali" friend nil (reparse-symbol classsubparts) [241 258])
+                                    ("Database" variable (:type "int") (reparse-symbol classsubparts) [260 269])
+                                    ("connection" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("std::unique_ptr" type
+                                             (:template-specifier 
+                                                ( ("Connection" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [272 331]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [164 334]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [124 336]))                  
+                :type "namespace")
+                nil [89 338]))          
+      :file "abstract-backend.hpp"
+      :pointmax 378
+      :fsize 377
+      :lastmodtime '(22287 21795 0 0)
+      :unmatched-syntax '((punctuation 259 . 260) (punctuation 258 . 259) (punctuation 237 . 238) (DEFAULT 230 . 237) (punctuation 228 . 229) (semantic-list 225 . 227) (symbol 210 . 225) (punctuation 209 . 210) (VIRTUAL 201 . 208))
+      :lexical-table 
+        '(("DALI_ABSTRACT_BACKEND_HPP")
+          )
+))
+  :file "!Users!petergoldsborough!Documents!Projects!dali!include!dali!backend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

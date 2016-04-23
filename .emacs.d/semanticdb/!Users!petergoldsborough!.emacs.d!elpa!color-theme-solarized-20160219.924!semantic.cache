@@ -1,0 +1,16 @@
+;; Object color-theme-solarized-20160219.924/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "color-theme-solarized-20160219.924/"
+  :tables
+  (list
+    (semanticdb-table "color-theme-solarized-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "color-theme-solarized-autoloads.el"
+      :pointmax 315
+      :fsize 1679
+      :lastmodtime '(22299 19921 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!color-theme-solarized-20160219.924!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

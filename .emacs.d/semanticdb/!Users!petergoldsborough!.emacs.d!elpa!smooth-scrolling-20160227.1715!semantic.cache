@@ -1,0 +1,16 @@
+;; Object smooth-scrolling-20160227.1715/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "smooth-scrolling-20160227.1715/"
+  :tables
+  (list
+    (semanticdb-table "smooth-scrolling-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "smooth-scrolling-autoloads.el"
+      :pointmax 305
+      :fsize 3200
+      :lastmodtime '(22299 19887 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!smooth-scrolling-20160227.1715!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

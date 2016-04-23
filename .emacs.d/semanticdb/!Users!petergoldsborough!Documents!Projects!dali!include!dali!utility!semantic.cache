@@ -1,0 +1,428 @@
+;; Object utility/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utility/"
+  :tables
+  (list
+    (semanticdb-table "exceptions.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_EXCEPTIONS_HPP" variable (:constant-flag t) nil [37 56])
+            ("cppformat/format.h" include (:system-flag t) nil [58 87])
+            ("stdexcept" include (:system-flag t) nil [88 108])
+            ("Dali" type
+               (:members 
+                  ( ("Exception" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("Exception" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("what" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [186 210]))                                  
+                                :type ("Exception" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [176 242]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [128 245])
+                    ("InvalidArgumentException" type
+                       (:superclasses 
+                          ( ("Exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("InvalidArgumentException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("what" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [326 350]))                                  
+                                :type ("InvalidArgumentException" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [301 373]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [247 376])
+                    ("OutOfBoundsException" type
+                       (:superclasses 
+                          ( ("InvalidArgumentException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("OutOfBoundsException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("what" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [464 488]))                                  
+                                :type ("OutOfBoundsException" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [443 527]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [378 530])
+                    ("TooManyTypesException" type
+                       (:superclasses 
+                          ( ("Exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("TooManyTypesException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("what" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [605 629]))                                  
+                                :type ("TooManyTypesException" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [583 652]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [532 655])
+                    ("ConnectionException" type
+                       (:superclasses 
+                          ( ("Exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("ConnectionException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("what" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [726 750]))                                  
+                                :type ("ConnectionException" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [706 773]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [657 776])
+                    ("SQLException" type
+                       (:superclasses 
+                          ( ("Exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("SQLException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("what" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [833 857]))                                  
+                                :type ("SQLException" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [820 880]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [778 883])
+                    ("MissingArgumentException" type
+                       (:superclasses 
+                          ( ("Exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("MissingArgumentException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("argument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [964 992]))                                  
+                                :type ("MissingArgumentException" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [939 1058]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [885 1061]))                  
+                :type "namespace")
+                nil [110 1063]))          
+      :file "exceptions.hpp"
+      :pointmax 1097
+      :fsize 1096
+      :lastmodtime '(22287 21795 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DALI_EXCEPTIONS_HPP")
+          )
+)
+    (semanticdb-table "utility.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_UTILITY_HPP" variable (:constant-flag t) nil [34 50])
+            ("cppformat/format.h" include (:system-flag t) nil [52 81])
+            ("iterator" include (:system-flag t) nil [82 101])
+            ("sstream" include (:system-flag t) nil [102 120])
+            ("string" include (:system-flag t) nil [121 138])
+            ("type_traits" include (:system-flag t) nil [139 161])
+            ("vector" include (:system-flag t) nil [162 179])
+            ("Dali" type
+               (:members 
+                  ( ("Syntax" type
+                       (:members 
+                          ( ("Expression" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [218 235]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [199 237])
+                    ("Utility" type
+                       (:members 
+                          ( ("all_of" function (:type ("auto" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [397 428])
+                            ("all_of" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Arg" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [494 499])
+                                    ("" variable (:type ("head" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [500 505])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [506 512])
+                                    ("" variable (:type ("tail" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [516 521]))                                  
+                                :type ("auto" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [482 578])
+                            ("all_base_of" function (:type ("auto" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [772 837])
+                            ("all_base_of" function (:type ("auto" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [973 1061])
+                            ("_join_impl" function
+                               (:template 
+                                  ( ("Delimiter" type (:type "class") nil nil))                                  
+                                :type ("std::string" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :type ("std::ostringstream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1116 1143])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("Delimiter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1144 1155])
+                                    ("" variable (:type ("delimiter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1156 1166]))                                  )
+                                (reparse-symbol namespacesubparts) [1063 1192])
+                            ("join_impl" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Delimiter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1922 1933])
+                                    ("" variable (:type ("delimiter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1934 1944])
+                                    ("" variable
+                                       (:constant-flag t
+                                        :type ("std::tuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1956 1973])
+                                    ("" variable (:type ("Types" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1973 1979])
+                                    ("" variable (:type ("tuple" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1984 1990])
+                                    ("" variable (:type ("std::index_sequence" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2002 2022])
+                                    ("" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2022 2024]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1900 2105])
+                            ("join" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Delimiter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2173 2184])
+                                    ("" variable (:type ("delimiter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2185 2195])
+                                    ("" variable
+                                       (:constant-flag t
+                                        :type ("std::tuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2196 2213])
+                                    ("" variable (:type ("Types" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2213 2219])
+                                    ("" variable (:type ("tuple" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2224 2230]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2156 2353])
+                            ("call" type
+                               (:members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Callable" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2426 2436])
+                                            ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2437 2439]))                                          
+                                        :type ("auto" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2410 2464]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2355 2467])
+                            ("noop" type
+                               (:members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2533 2536])
+                                            ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2537 2539]))                                          
+                                        :type ("auto" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2517 2562]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2469 2565])
+                            ("transform_and_join_range" function
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil)
+                                    ("Functor" type (:type "class") nil nil))                                  
+                                :type ("std::string" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("delimiter" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2651 2680])
+                                    ("begin" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2700 2715])
+                                    ("end" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2735 2748])
+                                    ("f" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2768 2778]))                                  )
+                                (reparse-symbol namespacesubparts) [2567 2928])
+                            ("transform_and_join_range" function
+                               (:template 
+                                  ( ("Range" type (:type "class") nil nil)
+                                    ("Functor" type (:type "class") nil nil))                                  
+                                :type ("std::string" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("delimiter" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3011 3040])
+                                    ("range" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Range" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3060 3079])
+                                    ("f" variable (:type ("Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3099 3109]))                                  )
+                                (reparse-symbol namespacesubparts) [2930 3224])
+                            ("join_range" function
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil))                                  
+                                :type ("std::string" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("delimiter" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3278 3307])
+                                    ("begin" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3308 3323])
+                                    ("end" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3324 3337]))                                  )
+                                (reparse-symbol namespacesubparts) [3226 3406])
+                            ("join_range" function
+                               (:template 
+                                  ( ("Range" type (:type "class") nil nil))                                  
+                                :type ("std::string" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("delimiter" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3457 3486])
+                                    ("range" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Range" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3487 3506]))                                  )
+                                (reparse-symbol namespacesubparts) [3408 3570])
+                            ("join_to_tuple" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3626 3632])
+                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3636 3641]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3600 3723])
+                            ("iterator" function
+                               (:template 
+                                  ( ("Range" type (:type "class") nil nil))                                  
+                                :type ("auto" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Range" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3765 3772])
+                                    ("" variable (:type ("range" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3773 3779])
+                                    ("index" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3780 3798]))                                  )
+                                (reparse-symbol namespacesubparts) [3725 3926])
+                            ("at" function
+                               (:arguments 
+                                  ( ("range" variable (:type ("Range" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3972 3984])
+                                    ("index" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3985 4003]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3969 4061])
+                            ("convert" function
+                               (:template 
+                                  ( ("To" type (:type "class") nil nil)
+                                    ("From" type (:type "class") nil nil))                                  
+                                :type ("To" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("from" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4112 4129]))                                  )
+                                (reparse-symbol namespacesubparts) [4063 4215])
+                            ("std::tuple_element::type" variable
+                               (:typemodifiers ("typename")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4280 4353])
+                            ("to_tuple_impl" function
+                               (:arguments 
+                                  ( ("source" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4431 4470])
+                                    ("" variable (:type ("std::index_sequence" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4487 4507])
+                                    ("" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4507 4509]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4417 4609])
+                            ("to_tuple" function
+                               (:arguments 
+                                  ( ("source" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4664 4703]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4655 4779])
+                            ("is_expression" variable
+                               (:default-value "(
+	std::is_same<std::decay_t<T>, Syntax::Expression>::value ||
+	std::is_convertible<std::decay_t<T>, std::string>::value
+)"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [4926 5070])
+                            ("std::enable_if_t" variable (:type "int") (reparse-symbol namespacesubparts) [5279 5314]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [239 5440]))                  
+                :type "namespace")
+                nil [181 5442]))          
+      :file "utility.hpp"
+      :pointmax 5474
+      :fsize 5473
+      :lastmodtime '(22290 18834 0 0)
+      :unmatched-syntax '((punctuation 5437 . 5438) (punctuation 5436 . 5437) (semantic-list 5414 . 5436) (symbol 5408 . 5414) (punctuation 5407 . 5408) (punctuation 5406 . 5407) (symbol 5399 . 5406) (punctuation 5398 . 5399) (symbol 5387 . 5398) (punctuation 5386 . 5387) (punctuation 5385 . 5386) (symbol 5382 . 5385) (punctuation 5378 . 5379) (symbol 5348 . 5377) (USING 5342 . 5347) (punctuation 5340 . 5341) (symbol 5338 . 5340) (punctuation 5336 . 5337) (punctuation 5335 . 5336) (punctuation 5334 . 5335) (TYPENAME 5326 . 5334) (punctuation 5325 . 5326) (TEMPLATE 5316 . 5324) (punctuation 5277 . 5278) (symbol 5256 . 5276) (USING 5250 . 5255) (punctuation 5248 . 5249) (symbol 5247 . 5248) (TYPENAME 5238 . 5246) (punctuation 5237 . 5238) (TEMPLATE 5228 . 5236) (symbol 4916 . 4925) (punctuation 4914 . 4915) (symbol 4913 . 4914) (TYPENAME 4904 . 4912) (punctuation 4903 . 4904) (TEMPLATE 4894 . 4902) (punctuation 4653 . 4654) (punctuation 4652 . 4653) (punctuation 4651 . 4652) (punctuation 4650 . 4651) (symbol 4648 . 4650) (punctuation 4647 . 4648) (symbol 4642 . 4647) (punctuation 4641 . 4642) (punctuation 4640 . 4641) (symbol 4637 . 4640) (punctuation 4635 . 4636) (symbol 4633 . 4635) (punctuation 4631 . 4632) (punctuation 4630 . 4631) (punctuation 4629 . 4630) (TYPENAME 4621 . 4629) (punctuation 4620 . 4621) (TEMPLATE 4611 . 4619) (punctuation 4511 . 4512) (punctuation 4510 . 4511) (punctuation 4509 . 4510) (punctuation 4508 . 4509) (punctuation 4506 . 4507) (punctuation 4415 . 4416) (punctuation 4414 . 4415) (punctuation 4413 . 4414) (punctuation 4412 . 4413) (symbol 4410 . 4412) (punctuation 4409 . 4410) (symbol 4404 . 4409) (punctuation 4403 . 4404) (punctuation 4402 . 4403) (symbol 4399 . 4402) (punctuation 4397 . 4398) (symbol 4396 . 4397) (punctuation 4394 . 4395) (punctuation 4393 . 4394) (punctuation 4392 . 4393) (symbol 4386 . 4392) (punctuation 4385 . 4386) (punctuation 4384 . 4385) (symbol 4381 . 4384) (punctuation 4379 . 4380) (symbol 4377 . 4379) (punctuation 4375 . 4376) (punctuation 4374 . 4375) (punctuation 4373 . 4374) (TYPENAME 4365 . 4373) (punctuation 4364 . 4365) (TEMPLATE 4355 . 4363) (punctuation 4276 . 4277) (symbol 4268 . 4275) (USING 4262 . 4267) (punctuation 4260 . 4261) (symbol 4255 . 4260) (TYPENAME 4246 . 4254) (punctuation 4244 . 4245) (symbol 4239 . 4244) (symbol 4232 . 4238) (punctuation 4231 . 4232) (punctuation 4230 . 4231) (symbol 4227 . 4230) (punctuation 4226 . 4227) (TEMPLATE 4217 . 4225) (semantic-list 3962 . 3968) (symbol 3954 . 3962) (punctuation 3952 . 3953) (symbol 3947 . 3952) (TYPENAME 3938 . 3946) (punctuation 3937 . 3938) (TEMPLATE 3928 . 3936) (punctuation 3771 . 3772) (punctuation 3634 . 3635) (punctuation 3633 . 3634) (punctuation 3632 . 3633) (punctuation 3631 . 3632) (punctuation 3598 . 3599) (symbol 3594 . 3598) (punctuation 3592 . 3593) (punctuation 3591 . 3592) (punctuation 3590 . 3591) (TYPENAME 3582 . 3590) (punctuation 3581 . 3582) (TEMPLATE 3572 . 3580) (punctuation 2535 . 2536) (symbol 2507 . 2516) (punctuation 2504 . 2505) (symbol 2503 . 2504) (TYPENAME 2494 . 2502) (punctuation 2493 . 2494) (TEMPLATE 2484 . 2492) (punctuation 2435 . 2436) (symbol 2400 . 2409) (punctuation 2397 . 2398) (symbol 2389 . 2397) (TYPENAME 2380 . 2388) (punctuation 2379 . 2380) (TEMPLATE 2370 . 2378) (punctuation 2222 . 2223) (punctuation 2221 . 2222) (punctuation 2220 . 2221) (punctuation 2219 . 2220) (punctuation 2218 . 2219) (punctuation 2212 . 2213) (punctuation 2183 . 2184) (punctuation 2154 . 2155) (symbol 2149 . 2154) (punctuation 2147 . 2148) (punctuation 2146 . 2147) (punctuation 2145 . 2146) (TYPENAME 2137 . 2145) (punctuation 2135 . 2136) (symbol 2126 . 2135) (TYPENAME 2117 . 2125) (punctuation 2116 . 2117) (TEMPLATE 2107 . 2115) (punctuation 2026 . 2027) (punctuation 2025 . 2026) (punctuation 2024 . 2025) (punctuation 2023 . 2024) (punctuation 2021 . 2022) (punctuation 1982 . 1983) (punctuation 1981 . 1982) (punctuation 1980 . 1981) (punctuation 1979 . 1980) (punctuation 1978 . 1979) (punctuation 1972 . 1973) (punctuation 1932 . 1933) (punctuation 1898 . 1899) (symbol 1897 . 1898) (punctuation 1895 . 1896) (punctuation 1894 . 1895) (punctuation 1893 . 1894) (symbol 1887 . 1893) (punctuation 1886 . 1887) (punctuation 1885 . 1886) (symbol 1882 . 1885) (punctuation 1880 . 1881) (symbol 1875 . 1880) (punctuation 1873 . 1874) (punctuation 1872 . 1873) (punctuation 1871 . 1872) (TYPENAME 1863 . 1871) (punctuation 1861 . 1862) (symbol 1852 . 1861) (TYPENAME 1843 . 1851) (punctuation 1842 . 1843) (TEMPLATE 1833 . 1841) (semantic-list 1702 . 1831) (symbol 1693 . 1701) (semantic-list 1653 . 1692) (symbol 1649 . 1653) (punctuation 1685 . 1686) (punctuation 1684 . 1685) (punctuation 1683 . 1684) (punctuation 1682 . 1683) (punctuation 1664 . 1665) (symbol 1642 . 1648) (punctuation 1685 . 1686) (punctuation 1684 . 1685) (punctuation 1683 . 1684) (punctuation 1682 . 1683) (punctuation 1664 . 1665) (punctuation 1641 . 1642) (punctuation 1640 . 1641) (symbol 1637 . 1640) (punctuation 1685 . 1686) (punctuation 1684 . 1685) (punctuation 1683 . 1684) (punctuation 1682 . 1683) (punctuation 1664 . 1665) (punctuation 1635 . 1636) (symbol 1631 . 1635) (punctuation 1629 . 1630) (punctuation 1628 . 1629) (punctuation 1627 . 1628) (TYPENAME 1619 . 1627) (punctuation 1617 . 1618) (symbol 1608 . 1617) (TYPENAME 1599 . 1607) (punctuation 1598 . 1599) (TEMPLATE 1589 . 1597) (semantic-list 1405 . 1587) (symbol 1396 . 1404) (semantic-list 1279 . 1395) (symbol 1269 . 1279) (punctuation 1388 . 1389) (punctuation 1387 . 1388) (punctuation 1386 . 1387) (punctuation 1385 . 1386) (punctuation 1360 . 1361) (punctuation 1330 . 1331) (symbol 1262 . 1268) (punctuation 1388 . 1389) (punctuation 1387 . 1388) (punctuation 1386 . 1387) (punctuation 1385 . 1386) (punctuation 1360 . 1361) (punctuation 1330 . 1331) (punctuation 1261 . 1262) (punctuation 1260 . 1261) (symbol 1257 . 1260) (punctuation 1388 . 1389) (punctuation 1387 . 1388) (punctuation 1386 . 1387) (punctuation 1385 . 1386) (punctuation 1360 . 1361) (punctuation 1330 . 1331) (punctuation 1255 . 1256) (symbol 1251 . 1255) (punctuation 1249 . 1250) (punctuation 1248 . 1249) (punctuation 1247 . 1248) (TYPENAME 1239 . 1247) (punctuation 1237 . 1238) (symbol 1233 . 1237) (TYPENAME 1224 . 1232) (punctuation 1222 . 1223) (symbol 1213 . 1222) (TYPENAME 1204 . 1212) (punctuation 1203 . 1204) (TEMPLATE 1194 . 1202) (punctuation 1154 . 1155) (symbol 963 . 972) (punctuation 961 . 962) (punctuation 960 . 961) (semantic-list 939 . 960) (punctuation 938 . 939) (symbol 927 . 938) (punctuation 926 . 927) (punctuation 925 . 926) (symbol 922 . 925) (punctuation 920 . 921) (TYPENAME 911 . 919) (punctuation 904 . 905) (symbol 900 . 904) (punctuation 898 . 899) (punctuation 897 . 898) (punctuation 896 . 897) (TYPENAME 888 . 896) (punctuation 881 . 882) (symbol 878 . 881) (TYPENAME 869 . 877) (punctuation 862 . 863) (symbol 858 . 862) (TYPENAME 849 . 857) (punctuation 848 . 849) (TEMPLATE 839 . 847) (symbol 762 . 771) (punctuation 760 . 761) (symbol 757 . 760) (TYPENAME 748 . 756) (punctuation 746 . 747) (symbol 742 . 746) (TYPENAME 733 . 741) (punctuation 732 . 733) (TEMPLATE 723 . 731) (punctuation 514 . 515) (punctuation 513 . 514) (punctuation 512 . 513) (punctuation 511 . 512) (punctuation 498 . 499) (symbol 472 . 481) (punctuation 470 . 471) (symbol 466 . 470) (punctuation 464 . 465) (punctuation 463 . 464) (punctuation 462 . 463) (TYPENAME 454 . 462) (punctuation 452 . 453) (symbol 449 . 452) (TYPENAME 440 . 448) (punctuation 439 . 440) (TEMPLATE 430 . 438) (symbol 387 . 396))
+      :lexical-table 
+        '(("DALI_UTILITY_HPP")
+          )
+))
+  :file "!Users!petergoldsborough!Documents!Projects!dali!include!dali!utility!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

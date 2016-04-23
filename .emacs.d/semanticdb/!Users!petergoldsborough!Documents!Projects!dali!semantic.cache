@@ -1,0 +1,19 @@
+;; Object dali/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dali/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("dali/dali.hpp" include nil nil [21 45]))          
+      :file "main.cpp"
+      :pointmax 2008
+      :fsize 1995
+      :lastmodtime '(22299 31829 0 0)
+      :unmatched-syntax '((semantic-list 86 . 1988) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1987) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1984) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1978) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1988) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1990) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1988) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1987) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1982) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1983) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1981) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1980) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71) (semantic-list 86 . 1976) (INT 82 . 85) (punctuation 80 . 81) (punctuation 79 . 80) (semantic-list 76 . 78) (symbol 72 . 76) (symbol 67 . 71)))
+)
+  :file "!Users!petergoldsborough!Documents!Projects!dali!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

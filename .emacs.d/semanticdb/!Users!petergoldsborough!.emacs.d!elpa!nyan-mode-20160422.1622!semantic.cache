@@ -1,0 +1,16 @@
+;; Object nyan-mode-20160422.1622/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nyan-mode-20160422.1622/"
+  :tables
+  (list
+    (semanticdb-table "nyan-mode-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "nyan-mode-autoloads.el"
+      :pointmax 291
+      :fsize 1097
+      :lastmodtime '(22299 19895 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!nyan-mode-20160422.1622!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -34,3 +34,6 @@ cat interact.sql | pbcopy
 cat interact.sql | pbcopy
 cat interact.sql | pbcopy
 echo $ECLIPSE_HOME
+ls
+ls | grep "foo"
+z home

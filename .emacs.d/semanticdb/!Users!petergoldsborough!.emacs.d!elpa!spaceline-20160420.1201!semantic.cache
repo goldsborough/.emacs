@@ -1,0 +1,16 @@
+;; Object spaceline-20160420.1201/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spaceline-20160420.1201/"
+  :tables
+  (list
+    (semanticdb-table "spaceline-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "spaceline-autoloads.el"
+      :pointmax 291
+      :fsize 447
+      :lastmodtime '(22299 19887 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!spaceline-20160420.1201!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

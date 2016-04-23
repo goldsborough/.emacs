@@ -1,0 +1,206 @@
+;; Object insertion/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "insertion/"
+  :tables
+  (list
+    (semanticdb-table "task.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_TASK_HPP" variable (:constant-flag t) nil [31 44])
+            ("dali/insertion/values.hpp" include nil nil [46 82])
+            ("dali/selection/query.hpp" include nil nil [83 118])
+            ("dali/syntax/expression.hpp" include nil nil [119 156])
+            ("dali/utility/exceptions.hpp" include nil nil [157 195])
+            ("dali/utility/utility.hpp" include nil nil [196 231])
+            ("memory" include (:system-flag t) nil [233 250])
+            ("sstream" include (:system-flag t) nil [251 269])
+            ("Dali" type
+               (:members 
+                  ( ("Insertion" type
+                       (:members 
+                          ( ("Task" type
+                               (:superclasses 
+                                  ( ("Syntax::Expression" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [353 360])
+                                    ("Task" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("connection" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("Backend::Connection" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [367 422])
+                                            ("table" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [427 452]))                                          
+                                        :type ("Task" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [362 453])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Attributes" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [508 520])
+                                            ("" variable (:type ("attributes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [524 535]))                                          
+                                        :type ("Task" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [491 635])
+                                    ("values" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [681 687])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [691 696]))                                          
+                                        :type ("Values" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [667 786])
+                                    ("select" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Attributes" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [848 860])
+                                            ("" variable (:type ("attributes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [864 875]))                                          
+                                        :type ("Selection::Query" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [824 984])
+                                    ("range" function
+                                       (:template 
+                                          ( ("Iterator" type (:type "class") nil nil))                                          
+                                        :type ("Values" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("begin" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1030 1045])
+                                            ("end" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1046 1059]))                                          )
+                                        (reparse-symbol classsubparts) [987 1322])
+                                    ("range" function
+                                       (:template 
+                                          ( ("Range" type (:type "class") nil nil))                                          
+                                        :type ("Values" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("container" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Range" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1365 1388]))                                          )
+                                        (reparse-symbol classsubparts) [1325 1482])
+                                    ("private" label nil (reparse-symbol classsubparts) [1485 1493])
+                                    ("_connection" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("Backend::Connection" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1495 1544]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [311 1547]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [288 1549]))                  
+                :type "namespace")
+                nil [271 1551]))          
+      :file "task.hpp"
+      :pointmax 1579
+      :fsize 1578
+      :lastmodtime '(22288 7559 0 0)
+      :unmatched-syntax '((punctuation 862 . 863) (punctuation 861 . 862) (punctuation 860 . 861) (punctuation 859 . 860) (punctuation 821 . 822) (symbol 811 . 821) (punctuation 809 . 810) (punctuation 808 . 809) (punctuation 807 . 808) (TYPENAME 799 . 807) (punctuation 798 . 799) (TEMPLATE 789 . 797) (punctuation 689 . 690) (punctuation 688 . 689) (punctuation 687 . 688) (punctuation 686 . 687) (punctuation 664 . 665) (symbol 660 . 664) (punctuation 658 . 659) (punctuation 657 . 658) (punctuation 656 . 657) (TYPENAME 648 . 656) (punctuation 647 . 648) (TEMPLATE 638 . 646) (punctuation 522 . 523) (punctuation 521 . 522) (punctuation 520 . 521) (punctuation 519 . 520) (punctuation 488 . 489) (symbol 478 . 488) (punctuation 476 . 477) (punctuation 475 . 476) (punctuation 474 . 475) (TYPENAME 466 . 474) (punctuation 465 . 466) (TEMPLATE 456 . 464))
+      :lexical-table 
+        '(("DALI_TASK_HPP")
+          )
+)
+    (semanticdb-table "values.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_VALUES_HPP" variable (:constant-flag t) nil [33 48])
+            ("dali/operations/abstract-operation.hpp" include nil nil [50 99])
+            ("dali/utility/utility.hpp" include nil nil [100 135])
+            ("cppformat/format.h" include (:system-flag t) nil [137 166])
+            ("string" include (:system-flag t) nil [167 184])
+            ("type_traits" include (:system-flag t) nil [185 207])
+            ("Dali" type
+               (:members 
+                  ( ("Insertion" type
+                       (:members 
+                          ( ("Task" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [249 260])
+                            ("Values" type
+                               (:superclasses 
+                                  ( ("Operations::AbstractOperation" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [317 324])
+                                    ("Values" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("connection" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("Backend::Connection" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [360 415])
+                                            ("operation" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Task" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [421 443])
+                                            ("initial" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [449 476]))                                          
+                                        :type ("Values" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [353 477])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [586 592])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [596 601]))                                          
+                                        :type ("Values" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [567 710])
+                                    ("()" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("Values" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [755 758])
+                                            ("" variable (:type ("single" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [759 766]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [713 847]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [262 850]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [226 852]))                  
+                :type "namespace")
+                nil [209 854]))          
+      :file "values.hpp"
+      :pointmax 884
+      :fsize 883
+      :lastmodtime '(22287 22744 0 0)
+      :unmatched-syntax '((punctuation 757 . 758) (punctuation 594 . 595) (punctuation 593 . 594) (punctuation 592 . 593) (punctuation 591 . 592) (punctuation 564 . 565) (punctuation 563 . 564) (semantic-list 542 . 563) (punctuation 541 . 542) (symbol 530 . 541) (punctuation 529 . 530) (punctuation 528 . 529) (symbol 525 . 528) (punctuation 523 . 524) (TYPENAME 514 . 522) (punctuation 506 . 507) (symbol 502 . 506) (punctuation 500 . 501) (punctuation 499 . 500) (punctuation 498 . 499) (TYPENAME 490 . 498) (punctuation 489 . 490) (TEMPLATE 480 . 488) (punctuation 349 . 350) (semantic-list 347 . 349) (OPERATOR 339 . 347) (punctuation 338 . 339) (punctuation 337 . 338) (symbol 332 . 337) (USING 326 . 331))
+      :lexical-table 
+        '(("DALI_VALUES_HPP")
+          )
+))
+  :file "!Users!petergoldsborough!Documents!Projects!dali!include!dali!insertion!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

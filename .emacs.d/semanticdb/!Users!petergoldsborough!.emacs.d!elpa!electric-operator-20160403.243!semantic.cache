@@ -1,0 +1,16 @@
+;; Object electric-operator-20160403.243/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "electric-operator-20160403.243/"
+  :tables
+  (list
+    (semanticdb-table "electric-operator-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "electric-operator-autoloads.el"
+      :pointmax 307
+      :fsize 942
+      :lastmodtime '(22299 19914 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!electric-operator-20160403.243!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object cpputils-cmake-20160313.1658/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cpputils-cmake-20160313.1658/"
+  :tables
+  (list
+    (semanticdb-table "cpputils-cmake-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "cpputils-cmake-autoloads.el"
+      :pointmax 301
+      :fsize 1140
+      :lastmodtime '(22299 19916 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!cpputils-cmake-20160313.1658!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

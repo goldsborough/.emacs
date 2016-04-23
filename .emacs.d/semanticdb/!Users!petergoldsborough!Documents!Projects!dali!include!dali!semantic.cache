@@ -1,0 +1,466 @@
+;; Object dali/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dali/"
+  :tables
+  (list
+    (semanticdb-table "dali.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_HPP" variable (:constant-flag t) nil [26 34])
+            ("dali/backend/mysql.hpp" include nil nil [36 69])
+            ("dali/backend/postgres.hpp" include nil nil [70 106])
+            ("dali/backend/sqlite.hpp" include nil nil [107 141])
+            ("dali/backend/stream.hpp" include nil nil [142 176])
+            ("dali/creation.hpp" include nil nil [178 206])
+            ("dali/database.hpp" include nil nil [207 235])
+            ("dali/insertion.hpp" include nil nil [236 265])
+            ("dali/operations.hpp" include nil nil [266 296])
+            ("dali/other/prepared.hpp" include nil nil [297 331])
+            ("dali/other/transaction.hpp" include nil nil [332 369])
+            ("dali/selection.hpp" include nil nil [370 399])
+            ("dali/syntax.hpp" include nil nil [400 426]))          
+      :file "dali.hpp"
+      :pointmax 450
+      :fsize 449
+      :lastmodtime '(22290 8530 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DALI_HPP")
+          )
+)
+    (semanticdb-table "creation.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_CREATION_HPP" variable (:constant-flag t) nil [35 52])
+            ("dali/creation/attribute.hpp" include nil nil [54 92])
+            ("dali/creation/constraint.hpp" include nil nil [93 132])
+            ("dali/creation/index.hpp" include nil nil [133 167])
+            ("dali/creation/schema.hpp" include nil nil [168 203])
+            ("dali/creation/table.hpp" include nil nil [204 238])
+            ("dali/creation/type.hpp" include nil nil [239 272])
+            ("dali/creation/view.hpp" include nil nil [273 306])
+            ("Dali" type
+               (:members 
+                  ( ("Creation" type
+                       (:members 
+                          ( ("Type" using (:type ("Type" type
+                                 (:prototype t
+                                  :type "namespace")
+                                  nil nil)) (reparse-symbol namespacesubparts) [347 368])
+                            ("Constraint" using (:type ("Constraint" type
+                                 (:prototype t
+                                  :type "namespace")
+                                  nil nil)) (reparse-symbol namespacesubparts) [369 396]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [325 398]))                  
+                :type "namespace")
+                nil [308 400]))          
+      :file "creation.hpp"
+      :pointmax 427
+      :fsize 426
+      :lastmodtime '(22288 54444 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DALI_CREATION_HPP")
+          )
+)
+    (semanticdb-table "database.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_DATABASE_HPP" variable (:constant-flag t) nil [35 52])
+            ("dali/backend/connection.hpp" include nil nil [54 92])
+            ("dali/creation/index.hpp" include nil nil [93 127])
+            ("dali/creation/table.hpp" include nil nil [128 162])
+            ("dali/creation/view.hpp" include nil nil [163 196])
+            ("dali/insertion/task.hpp" include nil nil [197 231])
+            ("dali/operations.hpp" include nil nil [232 262])
+            ("dali/selection/query.hpp" include nil nil [263 298])
+            ("dali/utility/utility.hpp" include nil nil [299 334])
+            ("string" include (:system-flag t) nil [336 353])
+            ("Dali" type
+               (:members 
+                  ( ("Prepared" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [373 388])
+                    ("Transaction" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [389 407])
+                    ("Database" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [427 434])
+                            ("Database" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("backend" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Backend::AbstractBackend" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [454 494]))                                  
+                                :type ("Database" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [445 495])
+                            ("Database" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [498 518])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [571 586])
+                            ("backend" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("new_backend" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Backend::AbstractBackend" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [609 653]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [588 654])
+                            ("create_table" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Syntax::Expression" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [686 717])
+                                    ("schema" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Creation::Schema" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [734 765]))                                  
+                                :type ("Creation::Table" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [657 772])
+                            ("create_table" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [804 828])
+                                    ("schema" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Creation::Schema" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [829 860]))                                  
+                                :type ("Creation::Table" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [774 867])
+                            ("create_view" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Syntax::Expression" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [897 928]))                                  
+                                :type ("Creation::View" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [870 935])
+                            ("create_view" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [964 988]))                                  
+                                :type ("Creation::View" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [937 995])
+                            ("create_index" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Syntax::Expression" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1027 1058]))                                  
+                                :type ("Creation::Index" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [998 1065])
+                            ("create_index" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1096 1120]))                                  
+                                :type ("Creation::Index" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1067 1127])
+                            ("create_unique_index" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Syntax::Expression" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1166 1197]))                                  
+                                :type ("Creation::Index" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1130 1204])
+                            ("create_unique_index" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1242 1266]))                                  
+                                :type ("Creation::Index" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1206 1273])
+                            ("insert_into" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1312 1337]))                                  
+                                :type ("Insertion::Task" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1276 1344])
+                            ("update" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1380 1405]))                                  
+                                :type ("Operations::Update" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1346 1412])
+                            ("select" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Attributes" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1474 1486])
+                                    ("" variable (:type ("attributes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1490 1501]))                                  
+                                :type ("Selection::Query" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1450 1603])
+                            ("transaction" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("defer_begin" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [1638 1662]))                                  
+                                :type ("Transaction" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1606 1670])
+                            ("delete_from" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1712 1737]))                                  
+                                :type ("Operations::Delete" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1673 1744])
+                            ("alter_table" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1784 1809]))                                  
+                                :type ("Operations::Alter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1746 1816])
+                            ("drop_table" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Syntax::Expression" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1847 1879]))                                  
+                                :type ("Operations::Drop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1819 1886])
+                            ("drop_table" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1916 1941]))                                  
+                                :type ("Operations::Drop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1888 1948])
+                            ("drop_view" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("view" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Syntax::Expression" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1978 2009]))                                  
+                                :type ("Operations::Drop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1951 2016])
+                            ("drop_view" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("view" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2045 2069]))                                  
+                                :type ("Operations::Drop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2018 2076])
+                            ("truncate_table" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2123 2148]))                                  
+                                :type ("Operations::Truncate" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2079 2155])
+                            ("execute" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("statement" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Prepared" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2179 2205]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2158 2206])
+                            ("protected" label nil (reparse-symbol classsubparts) [2209 2219])
+                            ("_connection" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("Backend::Connection" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2221 2270]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [409 2273]))                  
+                :type "namespace")
+                nil [355 2275]))          
+      :file "database.hpp"
+      :pointmax 2308
+      :fsize 2307
+      :lastmodtime '(22290 8568 0 0)
+      :unmatched-syntax '((punctuation 1488 . 1489) (punctuation 1487 . 1488) (punctuation 1486 . 1487) (punctuation 1485 . 1486) (punctuation 1447 . 1448) (symbol 1437 . 1447) (punctuation 1435 . 1436) (punctuation 1434 . 1435) (punctuation 1433 . 1434) (TYPENAME 1425 . 1433) (punctuation 1424 . 1425) (TEMPLATE 1415 . 1423) (semantic-list 568 . 570) (symbol 561 . 568) (punctuation 559 . 560) (symbol 544 . 559) (punctuation 543 . 544) (punctuation 542 . 543) (symbol 535 . 542) (CONST 529 . 534) (VIRTUAL 521 . 528) (EXPLICIT 436 . 444))
+      :lexical-table 
+        '(("DALI_DATABASE_HPP")
+          )
+)
+    (semanticdb-table "insertion.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_INSERTION_HPP" variable (:constant-flag t) nil [36 54])
+            ("dali/insertion/task.hpp" include nil nil [56 90])
+            ("dali/insertion/values.hpp" include nil nil [91 127]))          
+      :file "insertion.hpp"
+      :pointmax 160
+      :fsize 159
+      :lastmodtime '(22287 22744 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DALI_INSERTION_HPP")
+          )
+)
+    (semanticdb-table "operations.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_OPERATIONS_HPP" variable (:constant-flag t) nil [37 56])
+            ("dali/operations/alter.hpp" include nil nil [58 94])
+            ("dali/operations/delete.hpp" include nil nil [95 132])
+            ("dali/operations/drop.hpp" include nil nil [133 168])
+            ("dali/operations/truncate.hpp" include nil nil [169 208])
+            ("dali/operations/update.hpp" include nil nil [209 246]))          
+      :file "operations.hpp"
+      :pointmax 280
+      :fsize 279
+      :lastmodtime '(22290 8613 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DALI_OPERATIONS_HPP")
+          )
+)
+    (semanticdb-table "selection.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_SELECTION_HPP" variable (:constant-flag t) nil [36 54])
+            ("dali/selection/aggregation.hpp" include nil nil [56 97])
+            ("dali/selection/lazy-result.hpp" include nil nil [98 139])
+            ("dali/selection/order.hpp" include nil nil [140 175])
+            ("dali/selection/query.hpp" include nil nil [176 211])
+            ("dali/selection/result.hpp" include nil nil [212 248])
+            ("dali/utility/utility.hpp" include nil nil [250 285])
+            ("Dali" type
+               (:members 
+                  ( ("Selection" type
+                       (:members 
+                          ( ("Aggregation" using (:type ("Aggregation" type
+                                 (:prototype t
+                                  :type "namespace")
+                                  nil nil)) (reparse-symbol namespacesubparts) [327 355])
+                            ("select" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Attributes" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [422 434])
+                                    ("" variable (:type ("attributes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [438 449]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [409 524]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [304 526]))                  
+                :type "namespace")
+                nil [287 528]))          
+      :file "selection.hpp"
+      :pointmax 561
+      :fsize 560
+      :lastmodtime '(22287 51392 0 0)
+      :unmatched-syntax '((punctuation 436 . 437) (punctuation 435 . 436) (punctuation 434 . 435) (punctuation 433 . 434) (punctuation 407 . 408) (symbol 397 . 407) (punctuation 395 . 396) (punctuation 394 . 395) (punctuation 393 . 394) (TYPENAME 385 . 393) (punctuation 384 . 385) (TEMPLATE 375 . 383))
+      :lexical-table 
+        '(("DALI_SELECTION_HPP")
+          )
+)
+    (semanticdb-table "syntax.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_SYNTAX_HPP" variable (:constant-flag t) nil [33 48])
+            ("dali/syntax/case.hpp" include nil nil [50 81])
+            ("dali/syntax/other.hpp" include nil nil [82 114])
+            ("dali/syntax/overloads.hpp" include nil nil [115 151])
+            ("Dali" type
+               (:members 
+                  ( ("Syntax" type
+                       (:members 
+                          ( ("Overloads" using (:type ("Overloads" type
+                                 (:prototype t
+                                  :type "namespace")
+                                  nil nil)) (reparse-symbol namespacesubparts) [189 215])
+                            ("Other" using (:type ("Other" type
+                                 (:prototype t
+                                  :type "namespace")
+                                  nil nil)) (reparse-symbol namespacesubparts) [216 238]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [170 240]))                  
+                :type "namespace")
+                nil [153 242]))          
+      :file "syntax.hpp"
+      :pointmax 272
+      :fsize 271
+      :lastmodtime '(22288 7894 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DALI_SYNTAX_HPP")
+          )
+))
+  :file "!Users!petergoldsborough!Documents!Projects!dali!include!dali!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

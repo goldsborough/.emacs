@@ -1,0 +1,16 @@
+;; Object company-20160413.1347/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "company-20160413.1347/"
+  :tables
+  (list
+    (semanticdb-table "company-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "company-autoloads.el"
+      :pointmax 287
+      :fsize 8718
+      :lastmodtime '(22299 19919 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!company-20160413.1347!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

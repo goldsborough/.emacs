@@ -1,0 +1,401 @@
+;; Object storage/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "storage/"
+  :tables
+  (list
+    (semanticdb-table "buffer.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PALDI_BUFFER_HPP" variable (:constant-flag t) nil [34 50])
+            ("models/appliance.hpp" include nil nil [52 83])
+            ("storage/http.hpp" include nil nil [84 111])
+            ("utility/flagset.hpp" include nil nil [112 142])
+            ("utility/global.hpp" include nil nil [143 172])
+            ("algorithm" include (:system-flag t) nil [174 194])
+            ("cstddef" include (:system-flag t) nil [195 213])
+            ("memory" include (:system-flag t) nil [214 231])
+            ("unordered_map" include (:system-flag t) nil [232 256])
+            ("unordered_set" include (:system-flag t) nil [257 281])
+            ("Buffer" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [318 325])
+                    ("To" type (:type "class") (reparse-symbol classsubparts) [332 381])
+                    ("Limit" type (:type "class") (reparse-symbol classsubparts) [388 442])
+                    ("Auto" type (:type "class") (reparse-symbol classsubparts) [449 492])
+                    ("std::size_t" variable (:type "int") (reparse-symbol classsubparts) [510 522])
+                    ("std::time_t" variable (:type "int") (reparse-symbol classsubparts) [539 551])
+                    ("FlagSet" variable (:type "int") (reparse-symbol classsubparts) [567 578])
+                    ("Buffer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("flags" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "To"
+                                :type ("Flags" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1221 1244])
+                            ("" variable (:type ("DB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1246 1250])
+                            ("" variable (:type ("Limit::TIME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1251 1264])
+                            ("" variable (:type ("Auto::CLEAN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1265 1277]))                          
+                        :type ("Buffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1214 1380])
+                    ("Buffer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("http" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("HTTP" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1390 1424])
+                            ("flags" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "ToR"
+                                :type ("Flags" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1430 1454])
+                            ("" variable (:type ("DB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1456 1460])
+                            ("" variable (:type ("To::HTTP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1461 1471])
+                            ("" variable (:type ("Limit::TIME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1472 1485])
+                            ("" variable (:type ("Auto::CLEAN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1486 1498]))                          
+                        :type ("Buffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1383 1616])
+                    ("insert" function
+                       (:arguments 
+                          ( ("list" variable (:type ("std::initializer_list" type
+                                 (:template-specifier 
+                                    ( ("std::pair" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1632 1698]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1619 1759])
+                    ("insert" function
+                       (:arguments 
+                          ( ("appliance" variable
+                               (:reference 1
+                                :type ("Appliance" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1774 1795])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1796 1810]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1762 1917])
+                    ("flush" function
+                       (:arguments 
+                          ( ("appliance" variable
+                               (:reference 1
+                                :type ("Appliance" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1931 1952]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1920 2304])
+                    ("flush" function
+                       (:arguments 
+                          ( ("house" variable
+                               (:reference 1
+                                :type ("House" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2318 2331]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2307 2386])
+                    ("update" function
+                       (:arguments 
+                          ( ("house" variable
+                               (:reference 1
+                                :type ("House" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2401 2414]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2389 2611])
+                    ("clean" function
+                       (:arguments 
+                          ( ("house" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("House" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2625 2644]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2614 2909])
+                    ("clear" function
+                       (:arguments 
+                          ( ("appliance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Appliance" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2924 2951]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2913 2992])
+                    ("clear_all" function (:type "void") (reparse-symbol classsubparts) [2995 3082])
+                    ("remove" function
+                       (:arguments 
+                          ( ("appliance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Appliance" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3098 3125]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3086 3179])
+                    ("remove_all" function (:type "void") (reparse-symbol classsubparts) [3182 3224])
+                    ("full" function
+                       (:arguments 
+                          ( ("appliance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Appliance" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3238 3265]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3228 3374])
+                    ("all_full" function (:type "bool") (reparse-symbol classsubparts) [3398 3574])
+                    ("any_full" function (:type "bool") (reparse-symbol classsubparts) [3577 3753])
+                    ("none_full" function (:type "bool") (reparse-symbol classsubparts) [3756 3934])
+                    ("size_limit" function
+                       (:arguments 
+                          ( ("new_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4038 4054]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4022 4156])
+                    ("flags" function
+                       (:arguments 
+                          ( ("flags" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Flags" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4516 4535]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4505 4558])
+                    ("to_database" function
+                       (:arguments 
+                          ( ("yes" variable (:type "bool") (reparse-symbol arg-sub-list) [4944 4953]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4927 4985])
+                    ("to_http" function
+                       (:arguments 
+                          ( ("yes" variable (:type "bool") (reparse-symbol arg-sub-list) [5069 5078]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5056 5112])
+                    ("http" function
+                       (:arguments 
+                          ( ("http" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("HTTP" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5332 5366]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5322 5387])
+                    ("private" label nil (reparse-symbol classsubparts) [5390 5398])
+                    ("std::unordered_map" variable (:type "int") (reparse-symbol classsubparts) [5418 5466])
+                    ("_buffers" variable (:type ("BufferMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5469 5488])
+                    ("_flags" variable (:type ("Flags" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5491 5504])
+                    ("_http" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("HTTP" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5507 5535])
+                    ("_time_limit" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5538 5557])
+                    ("_size_limit" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5560 5579])
+                    ("_clean_time" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5582 5601]))                  )
+                nil [283 5604]))          
+      :file "buffer.hpp"
+      :pointmax 5636
+      :fsize 5634
+      :lastmodtime '(22295 39821 0 0)
+      :unmatched-syntax '((punctuation 5416 . 5417) (symbol 5406 . 5415) (USING 5400 . 5405) (semantic-list 5298 . 5319) (symbol 5289 . 5297) (CONST 5283 . 5288) (semantic-list 5280 . 5282) (symbol 5276 . 5280) (punctuation 5274 . 5275) (symbol 5270 . 5274) (CONST 5264 . 5269) (semantic-list 5224 . 5260) (symbol 5215 . 5223) (semantic-list 5204 . 5214) (symbol 5194 . 5204) (VOID 5189 . 5193) (semantic-list 5148 . 5186) (symbol 5139 . 5147) (CONST 5133 . 5138) (semantic-list 5130 . 5132) (symbol 5120 . 5130) (BOOL 5115 . 5119) (semantic-list 5018 . 5053) (symbol 5009 . 5017) (CONST 5003 . 5008) (semantic-list 5000 . 5002) (symbol 4993 . 5000) (BOOL 4988 . 4992) (semantic-list 4891 . 4924) (symbol 4882 . 4890) (CONST 4876 . 4881) (semantic-list 4873 . 4875) (symbol 4862 . 4873) (BOOL 4857 . 4861) (semantic-list 4818 . 4854) (symbol 4809 . 4817) (semantic-list 4798 . 4808) (symbol 4788 . 4798) (VOID 4783 . 4787) (semantic-list 4742 . 4780) (symbol 4733 . 4741) (CONST 4727 . 4732) (semantic-list 4724 . 4726) (symbol 4714 . 4724) (BOOL 4709 . 4713) (semantic-list 4670 . 4706) (symbol 4661 . 4669) (semantic-list 4650 . 4660) (symbol 4640 . 4650) (VOID 4635 . 4639) (semantic-list 4594 . 4632) (symbol 4585 . 4593) (CONST 4579 . 4584) (semantic-list 4576 . 4578) (symbol 4566 . 4576) (BOOL 4561 . 4565) (semantic-list 4481 . 4502) (symbol 4472 . 4480) (CONST 4466 . 4471) (semantic-list 4463 . 4465) (symbol 4458 . 4463) (punctuation 4456 . 4457) (symbol 4451 . 4456) (CONST 4445 . 4450) (semantic-list 4394 . 4441) (symbol 4385 . 4393) (semantic-list 4371 . 4384) (symbol 4361 . 4371) (VOID 4356 . 4360) (semantic-list 4327 . 4353) (symbol 4318 . 4326) (CONST 4312 . 4317) (semantic-list 4309 . 4311) (symbol 4299 . 4309) (symbol 4292 . 4298) (semantic-list 4262 . 4289) (symbol 4253 . 4261) (semantic-list 4238 . 4252) (symbol 4228 . 4238) (VOID 4223 . 4227) (semantic-list 4194 . 4220) (symbol 4185 . 4193) (CONST 4179 . 4184) (semantic-list 4176 . 4178) (symbol 4166 . 4176) (symbol 4159 . 4165) (semantic-list 3993 . 4019) (symbol 3984 . 3992) (CONST 3978 . 3983) (semantic-list 3975 . 3977) (symbol 3965 . 3975) (symbol 3958 . 3964) (punctuation 1484 . 1485) (punctuation 1470 . 1471) (punctuation 1459 . 1460) (punctuation 1455 . 1456) (punctuation 1454 . 1455) (punctuation 1263 . 1264) (punctuation 1249 . 1250) (punctuation 1245 . 1246) (punctuation 1244 . 1245) (semantic-list 1155 . 1211) (symbol 1146 . 1154) (semantic-list 1102 . 1145) (punctuation 1101 . 1102) (OPERATOR 1093 . 1101) (symbol 1087 . 1091) (symbol 1077 . 1086) (FRIEND 1070 . 1076) (punctuation 1067 . 1068) (punctuation 1066 . 1067) (symbol 1061 . 1066) (punctuation 1060 . 1061) (punctuation 1059 . 1060) (punctuation 1058 . 1059) (symbol 1047 . 1058) (punctuation 1046 . 1047) (symbol 1039 . 1046) (punctuation 1038 . 1039) (punctuation 1037 . 1038) (symbol 1034 . 1037) (punctuation 1012 . 1013) (punctuation 1011 . 1012) (symbol 1005 . 1010) (punctuation 1004 . 1005) (punctuation 1003 . 1004) (punctuation 1002 . 1003) (symbol 994 . 1002) (punctuation 993 . 994) (symbol 982 . 993) (punctuation 981 . 982) (punctuation 980 . 981) (symbol 977 . 980) (punctuation 976 . 977) (symbol 965 . 976) (punctuation 964 . 965) (punctuation 963 . 964) (symbol 960 . 963) (punctuation 958 . 959) (TYPENAME 949 . 957) (punctuation 941 . 942) (symbol 933 . 941) (TYPENAME 924 . 932) (punctuation 916 . 917) (symbol 905 . 916) (TYPENAME 896 . 904) (punctuation 895 . 896) (TEMPLATE 886 . 894) (semantic-list 814 . 883) (symbol 805 . 813) (semantic-list 776 . 804) (punctuation 775 . 776) (OPERATOR 767 . 775) (symbol 762 . 766) (symbol 752 . 761) (FRIEND 745 . 751) (punctuation 742 . 743) (punctuation 741 . 742) (symbol 736 . 741) (punctuation 735 . 736) (punctuation 734 . 735) (punctuation 733 . 734) (symbol 727 . 733) (punctuation 726 . 727) (symbol 719 . 726) (punctuation 718 . 719) (punctuation 717 . 718) (symbol 714 . 717) (punctuation 692 . 693) (punctuation 691 . 692) (symbol 685 . 690) (punctuation 684 . 685) (punctuation 683 . 684) (punctuation 682 . 683) (symbol 677 . 682) (punctuation 676 . 677) (symbol 669 . 676) (punctuation 668 . 669) (punctuation 667 . 668) (symbol 664 . 667) (punctuation 663 . 664) (symbol 652 . 663) (punctuation 651 . 652) (punctuation 650 . 651) (symbol 647 . 650) (punctuation 645 . 646) (TYPENAME 636 . 644) (punctuation 628 . 629) (symbol 622 . 628) (TYPENAME 613 . 621) (punctuation 605 . 606) (symbol 600 . 605) (TYPENAME 591 . 599) (punctuation 590 . 591) (TEMPLATE 581 . 589) (punctuation 565 . 566) (symbol 559 . 564) (USING 553 . 558) (punctuation 537 . 538) (symbol 530 . 536) (USING 524 . 529) (punctuation 508 . 509) (symbol 501 . 507) (USING 495 . 500) (number 485 . 489) (punctuation 483 . 484) (symbol 477 . 482) (punctuation 475 . 476) (number 472 . 475) (punctuation 470 . 471) (symbol 462 . 469) (number 485 . 489) (punctuation 483 . 484) (symbol 477 . 482) (punctuation 475 . 476) (number 472 . 475) (punctuation 470 . 471) (symbol 462 . 469) (ENUM 444 . 448) (number 436 . 439) (punctuation 434 . 435) (symbol 429 . 433) (punctuation 427 . 428) (number 424 . 427) (punctuation 422 . 423) (symbol 417 . 421) (punctuation 415 . 416) (number 412 . 415) (punctuation 410 . 411) (symbol 402 . 409) (number 436 . 439) (punctuation 434 . 435) (symbol 429 . 433) (punctuation 427 . 428) (number 424 . 427) (punctuation 422 . 423) (symbol 417 . 421) (punctuation 415 . 416) (number 412 . 415) (punctuation 410 . 411) (symbol 402 . 409) (ENUM 383 . 387) (number 375 . 378) (punctuation 373 . 374) (symbol 368 . 372) (punctuation 366 . 367) (number 363 . 366) (punctuation 361 . 362) (symbol 358 . 360) (punctuation 356 . 357) (number 353 . 356) (punctuation 351 . 352) (symbol 343 . 350) (number 375 . 378) (punctuation 373 . 374) (symbol 368 . 372) (punctuation 366 . 367) (number 363 . 366) (punctuation 361 . 362) (symbol 358 . 360) (punctuation 356 . 357) (number 353 . 356) (punctuation 351 . 352) (symbol 343 . 350) (ENUM 327 . 331) (punctuation 1596 . 1597) (semantic-list 1581 . 1594) (symbol 1570 . 1581) (punctuation 1568 . 1569) (semantic-list 1561 . 1566) (symbol 1550 . 1561) (number 1562 . 1565) (punctuation 1548 . 1549) (semantic-list 1528 . 1546) (symbol 1517 . 1528) (punctuation 1531 . 1532) (number 1529 . 1530) (punctuation 1515 . 1516) (semantic-list 1507 . 1513) (symbol 1502 . 1507) (punctuation 1500 . 1501) (semantic-list 1389 . 1498) (symbol 1383 . 1389) (punctuation 1484 . 1485) (punctuation 1470 . 1471) (punctuation 1459 . 1460) (punctuation 1455 . 1456) (punctuation 1454 . 1455))
+      :lexical-table 
+        '(("PALDI_BUFFER_HPP")
+          )
+)
+    (semanticdb-table "http.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PALDI_HTTP_HPP" variable (:constant-flag t) nil [32 46])
+            ("data/data.hpp" include nil nil [48 72])
+            ("utility/global.hpp" include nil nil [73 102])
+            ("utility/utility.hpp" include nil nil [103 133])
+            ("json.hpp" include (:system-flag t) nil [135 154])
+            ("memory" include (:system-flag t) nil [155 172])
+            ("string" include (:system-flag t) nil [173 190])
+            ("nlohmann::json" variable (:type "int") nil [205 220])
+            ("cpr" type
+               (:members 
+                  ( ("Response" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [238 253]))                  
+                :type "namespace")
+                nil [222 255])
+            ("Appliance" type
+               (:prototype t
+                :type "class")
+                nil [257 273])
+            ("Data" type
+               (:prototype t
+                :type "class")
+                nil [274 285])
+            ("Sample" type
+               (:prototype t
+                :type "struct")
+                nil [286 300])
+            ("HTTP" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [316 323])
+                    ("Test" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("HTTP" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [325 361])
+                    ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [371 380])
+                    ("HTTP" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("username" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [387 415])
+                            ("password" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [416 444]))                          
+                        :type ("HTTP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [382 445])
+                    ("authenticate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("username" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [466 494])
+                            ("password" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [495 523]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [448 524])
+                    ("create" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appliance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Appliance" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [538 565]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [526 566])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appliance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Appliance" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [580 607]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [568 608])
+                    ("send_data" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appliance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Appliance" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [626 653])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [654 671]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [611 678])
+                    ("send_data" function
+                       (:template 
+                          ( ("Iterator" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("appliance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Appliance" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [727 754])
+                            ("begin" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [755 770])
+                            ("end" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [771 784]))                          )
+                        (reparse-symbol classsubparts) [681 1007])
+                    ("noexcept" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1034 1049])
+                    ("noexcept" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1076 1091])
+                    ("noexcept" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1124 1139])
+                    ("noexcept" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1171 1186])
+                    ("private" label nil (reparse-symbol classsubparts) [1189 1197])
+                    ("_base_url" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1199 1234])
+                    ("_send_data" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("appliance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Appliance" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1253 1280])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1281 1305]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1237 1312])
+                    ("_handle_response" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("response" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cpr::Response" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1336 1366]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1314 1373])
+                    ("_auth_key" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1376 1398])
+                    ("_username" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1400 1422])
+                    ("_is_authenticated" variable (:type "bool") (reparse-symbol classsubparts) [1424 1447]))                  
+                :type "class")
+                nil [302 1450]))          
+      :file "http.hpp"
+      :pointmax 1479
+      :fsize 1478
+      :lastmodtime '(22295 23709 0 0)
+      :unmatched-syntax '((semantic-list 1168 . 1170) (symbol 1160 . 1168) (punctuation 1158 . 1159) (symbol 1152 . 1158) (punctuation 1151 . 1152) (punctuation 1150 . 1151) (symbol 1147 . 1150) (CONST 1141 . 1146) (semantic-list 1121 . 1123) (symbol 1113 . 1121) (punctuation 1111 . 1112) (symbol 1105 . 1111) (punctuation 1104 . 1105) (punctuation 1103 . 1104) (symbol 1100 . 1103) (CONST 1094 . 1099) (semantic-list 1073 . 1075) (BOOL 1069 . 1073) (OPERATOR 1060 . 1068) (EXPLICIT 1051 . 1059) (semantic-list 1031 . 1033) (symbol 1015 . 1031) (BOOL 1010 . 1014) (semantic-list 368 . 370) (symbol 364 . 368) (USING 192 . 197))
+      :lexical-table 
+        '(("PALDI_HTTP_HPP")
+          )
+))
+  :file "!Users!petergoldsborough!Documents!Work!paldi!include!storage!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

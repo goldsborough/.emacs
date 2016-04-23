@@ -1,0 +1,16 @@
+;; Object hl-anything-20160422.1008/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hl-anything-20160422.1008/"
+  :tables
+  (list
+    (semanticdb-table "hl-anything-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "hl-anything-autoloads.el"
+      :pointmax 295
+      :fsize 2587
+      :lastmodtime '(22299 19901 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!hl-anything-20160422.1008!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

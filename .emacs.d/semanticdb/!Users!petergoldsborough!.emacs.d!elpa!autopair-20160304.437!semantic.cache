@@ -1,0 +1,16 @@
+;; Object autopair-20160304.437/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "autopair-20160304.437/"
+  :tables
+  (list
+    (semanticdb-table "autopair-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "autopair-autoloads.el"
+      :pointmax 289
+      :fsize 1302
+      :lastmodtime '(22299 19924 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!autopair-20160304.437!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object helm-flycheck-20160318.2317/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "helm-flycheck-20160318.2317/"
+  :tables
+  (list
+    (semanticdb-table "helm-flycheck-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "helm-flycheck-autoloads.el"
+      :pointmax 299
+      :fsize 532
+      :lastmodtime '(22299 19902 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!helm-flycheck-20160318.2317!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

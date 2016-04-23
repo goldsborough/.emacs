@@ -1,0 +1,16 @@
+;; Object helm-gtags-20160417.555/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "helm-gtags-20160417.555/"
+  :tables
+  (list
+    (semanticdb-table "helm-gtags-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "helm-gtags-autoloads.el"
+      :pointmax 293
+      :fsize 3424
+      :lastmodtime '(22299 19902 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!helm-gtags-20160417.555!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

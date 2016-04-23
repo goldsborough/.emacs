@@ -1,0 +1,16 @@
+;; Object powerline-20160224.2052/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "powerline-20160224.2052/"
+  :tables
+  (list
+    (semanticdb-table "powerline-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "powerline-autoloads.el"
+      :pointmax 291
+      :fsize 2369
+      :lastmodtime '(22299 19891 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!powerline-20160224.2052!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

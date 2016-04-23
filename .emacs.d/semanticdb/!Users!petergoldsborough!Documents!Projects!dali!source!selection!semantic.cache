@@ -1,0 +1,187 @@
+;; Object selection/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "selection/"
+  :tables
+  (list
+    (semanticdb-table "query.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("dali/selection/query.hpp" include nil nil [3 38])
+            ("dali/backend/connection.hpp" include nil nil [39 77])
+            ("dali/insertion/task.hpp" include nil nil [78 112])
+            ("dali/selection/order.hpp" include nil nil [113 148])
+            ("Dali" type
+               (:members 
+                  ( ("Selection" type
+                       (:members 
+                          ( ("Query" function
+                               (:constructor-flag t
+                                :parent "Query"
+                                :arguments 
+                                  ( ("attributes" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [203 233]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [190 262])
+                            ("Query" function
+                               (:constructor-flag t
+                                :parent "Query"
+                                :arguments 
+                                  ( ("connection" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("Backend::Connection" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [276 331])
+                                    ("operation" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Operations::AbstractOperation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [339 386])
+                                    ("attributes" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [394 424]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [263 500])
+                            ("Query" function
+                               (:constructor-flag t
+                                :parent "Query"
+                                :arguments 
+                                  ( ("connection" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("Backend::Connection" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [515 570])
+                                    ("attributes" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [578 608]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [502 672])
+                            ("order_by" function
+                               (:parent "Query"
+                                :arguments 
+                                  ( ("attribute" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [697 726])
+                                    ("order" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Order" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [727 746]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [674 828])
+                            ("limit" function
+                               (:parent "Query"
+                                :arguments 
+                                  ( ("number" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [850 864]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [830 930])
+                            ("union_" function
+                               (:parent "Query"
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [932 996])
+                            ("union_all" function
+                               (:parent "Query"
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [998 1069])
+                            ("join" function
+                               (:parent "Query"
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1091 1116]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1072 1179])
+                            ("inner_join" function
+                               (:parent "Query"
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1206 1231]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1181 1300])
+                            ("cross_join" function
+                               (:parent "Query"
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1327 1352]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1302 1421])
+                            ("natural_join" function
+                               (:parent "Query"
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1450 1475]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1423 1546])
+                            ("full_outer_join" function
+                               (:parent "Query"
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1578 1603]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1548 1677])
+                            ("left_outer_join" function
+                               (:parent "Query"
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1709 1734]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1679 1808])
+                            ("right_outer_join" function
+                               (:parent "Query"
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1841 1866]))                                  
+                                :type ("Query" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1810 1941])
+                            ("raw" function
+                               (:parent "Query"
+                                :type ("RawResult" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1943 2005]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [167 2007]))                  
+                :type "namespace")
+                nil [150 2009]))          
+      :file "query.cpp"
+      :pointmax 2010
+      :fsize 2007
+      :lastmodtime '(22299 32425 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!Documents!Projects!dali!source!selection!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

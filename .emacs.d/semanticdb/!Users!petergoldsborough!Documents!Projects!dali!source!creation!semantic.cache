@@ -1,0 +1,88 @@
+;; Object creation/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "creation/"
+  :tables
+  (list
+    (semanticdb-table "index.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("dali/creation/index.hpp" include nil nil [1 35])
+            ("ostream" include (:system-flag t) nil [37 55])
+            ("Dali" type
+               (:members 
+                  ( ("Creation" type
+                       (:members 
+                          ( ("Index" function
+                               (:constructor-flag t
+                                :parent "Index"
+                                :arguments 
+                                  ( ("connection" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("Backend::Connection" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [109 164])
+                                    ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Syntax::Expression" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [172 203])
+                                    ("unique" variable (:type ("Unique" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [211 225]))                                  
+                                :type ("Index" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [96 306])
+                            ("Index" function
+                               (:constructor-flag t
+                                :parent "Index"
+                                :arguments 
+                                  ( ("connection" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("Backend::Connection" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [321 376])
+                                    ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [384 408])
+                                    ("unique" variable (:type ("Unique" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [416 430]))                                  
+                                :type ("Index" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [308 488])
+                            ("on" function
+                               (:parent "Index"
+                                :arguments 
+                                  ( ("table" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [507 532]))                                  
+                                :type ("Index" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [490 593])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [620 641])
+                                    ("unique" variable (:type ("Index::Unique" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [642 663]))                                  
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [595 739]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [74 741]))                  
+                :type "namespace")
+                nil [57 743]))          
+      :file "index.cpp"
+      :pointmax 744
+      :fsize 743
+      :lastmodtime '(22299 32056 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!Documents!Projects!dali!source!creation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object cmake-mode-20160317.641/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cmake-mode-20160317.641/"
+  :tables
+  (list
+    (semanticdb-table "cmake-mode-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "cmake-mode-autoloads.el"
+      :pointmax 293
+      :fsize 1609
+      :lastmodtime '(22299 19922 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!cmake-mode-20160317.641!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

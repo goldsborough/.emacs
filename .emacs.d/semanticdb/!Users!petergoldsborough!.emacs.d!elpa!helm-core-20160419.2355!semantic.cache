@@ -1,0 +1,16 @@
+;; Object helm-core-20160419.2355/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "helm-core-20160419.2355/"
+  :tables
+  (list
+    (semanticdb-table "helm-core-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "helm-core-autoloads.el"
+      :pointmax 291
+      :fsize 6223
+      :lastmodtime '(22299 19905 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!petergoldsborough!.emacs.d!elpa!helm-core-20160419.2355!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

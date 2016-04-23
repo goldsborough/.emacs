@@ -1,0 +1,96 @@
+;; Object syntax/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "syntax/"
+  :tables
+  (list
+    (semanticdb-table "expression.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DALI_EXPRESSION_HPP" variable (:constant-flag t) nil [37 56])
+            ("string" include (:system-flag t) nil [58 75])
+            ("Dali" type
+               (:members 
+                  ( ("Syntax" type
+                       (:members 
+                          ( ("Expression" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [134 141])
+                                    ("Expression" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("string" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :default-value "std::string()"
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [163 204]))                                          
+                                        :type ("Expression" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [152 206])
+                                    ("Expression" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [209 231])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [283 298])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [349 364])
+                                    ("()" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [367 401])
+                                    ("()" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :typemodifiers ("virtual")
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [403 449])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :typemodifiers ("friend")
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("std::ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [485 506])
+                                            ("keyword" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Syntax::Expression" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [507 541]))                                          
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [452 542])
+                                    ("protected" label nil (reparse-symbol classsubparts) [545 555])
+                                    ("super" variable
+                                       (:default-value "Expression"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [563 582])
+                                    ("_string" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [585 605]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [114 608]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [94 610]))                  
+                :type "namespace")
+                nil [77 612]))          
+      :file "expression.hpp"
+      :pointmax 646
+      :fsize 645
+      :lastmodtime '(22290 8758 0 0)
+      :unmatched-syntax '((USING 557 . 562) (semantic-list 323 . 348) (punctuation 322 . 323) (punctuation 321 . 322) (OPERATOR 313 . 321) (BOOL 308 . 312) (VIRTUAL 300 . 307) (semantic-list 257 . 282) (punctuation 256 . 257) (punctuation 255 . 256) (OPERATOR 247 . 255) (BOOL 242 . 246) (VIRTUAL 234 . 241) (EXPLICIT 143 . 151))
+      :lexical-table 
+        '(("DALI_EXPRESSION_HPP")
+          )
+))
+  :file "!Users!petergoldsborough!Documents!Projects!dali!include!dali!syntax!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
